@@ -14,13 +14,17 @@ CRC-MMR-study/
 ├── LICENSE
 ├── .gitignore
 ├── script/
+│   └── 00_cohort_diversity.R
 ├── data/
 │   ├── inputdata/
-│   └── intermediate/
+│   │   ├── MMR_study_metadata.xlsx
+│   │   └── metaphlan4_profile.xlsx
+│   ├── intermediate/
+│   └── output/
 └── results/
     ├── figures/
     ├── tables/
-    └── supplementary/
+    └── supplementary table/
         ├── figures/
         └── tables/
 ```
@@ -42,4 +46,3 @@ The following entries are placeholders and will be updated before publication.
 
 - Manuscript citation: [To be added]
 - Manuscript DOI: `doi:xxx`
-
