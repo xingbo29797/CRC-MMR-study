@@ -14,11 +14,14 @@ CRC-MMR-study/
 ├── LICENSE
 ├── .gitignore
 ├── script/
-│   └── 00_cohort_diversity.R
+│   ├── 00_cohort_diversity.R
+│   └── 01_crc_differential_abundance.R
 ├── data/
 │   ├── inputdata/
 │   │   ├── MMR_study_metadata.xlsx
-│   │   └── metaphlan4_profile.xlsx
+│   │   ├── metaphlan4_profile.xlsx
+│   │   ├── filter_summary_n2578.txt
+│   │   └── filter_summary_n2432.txt
 │   ├── intermediate/
 │   └── output/
 └── results/

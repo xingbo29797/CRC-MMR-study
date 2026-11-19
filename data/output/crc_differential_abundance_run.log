@@ -1,0 +1,2045 @@
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 4.4.3 
+Warning message:
+package ‘tidyr’ was built under R version 4.4.3 
+Warning message:
+package ‘tibble’ was built under R version 4.4.3 
+Warning message:
+package ‘readr’ was built under R version 4.4.3 
+Warning message:
+package ‘MicrobiomeStat’ was built under R version 4.4.3 
+Registered S3 method overwritten by 'httr':
+  method         from  
+  print.response rmutil
+Warning message:
+package ‘ANCOMBC’ was built under R version 4.4.2 
+Warning message:
+package ‘ggrepel’ was built under R version 4.4.3 
+
+Starting: sysucc_crc_vs_harbin_normal
+sysucc_crc_vs_harbin_normal: cases = 308; controls = 262; core species = 511
+2026-11-19 18:32:46.291696 WARNING::Input is a matrix, passing through as.data.frame() .
+[1] "Creating output folder"
+[1] "Creating output feature tables folder"
+[1] "Creating output fits folder"
+[1] "Creating output figures folder"
+2026-11-19 18:32:46.297949 INFO::Writing function arguments to log file
+2026-11-19 18:32:46.302317 INFO::Verifying options selected are valid
+2026-11-19 18:32:46.318858 INFO::Determining format of input files
+2026-11-19 18:32:46.319176 INFO::Input format is data samples as rows and metadata samples as rows
+2026-11-19 18:32:46.32317 INFO::Formula for fixed effects: expr ~  Age + Sex + disease
+2026-11-19 18:32:46.323619 INFO::Factor detected for categorial metadata 'Sex'. Provide a reference argument or manually set factor ordering to change reference level.
+2026-11-19 18:32:46.323986 INFO::Filter data based on min abundance and min prevalence
+2026-11-19 18:32:46.324208 INFO::Total samples in data: 570
+2026-11-19 18:32:46.32442 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2026-11-19 18:32:46.32846 INFO::Total filtered features: 0
+2026-11-19 18:32:46.328778 INFO::Filtered feature names from abundance and prevalence filtering:
+2026-11-19 18:32:46.336193 INFO::Total filtered features with variance filtering: 0
+2026-11-19 18:32:46.336487 INFO::Filtered feature names from variance filtering:
+2026-11-19 18:32:46.336694 INFO::Running selected normalization method: TSS
+2026-11-19 18:32:46.381624 INFO::Applying z-score to standardize continuous metadata
+2026-11-19 18:32:46.384145 INFO::Running selected transform method: LOG
+2026-11-19 18:32:46.397327 INFO::Running selected analysis method: LM
+2026-11-19 18:32:46.401629 INFO::Fitting model to feature number 1, Segatella_copri
+2026-11-19 18:32:46.409282 INFO::Fitting model to feature number 2, Eubacterium_siraeum
+2026-11-19 18:32:46.410518 INFO::Fitting model to feature number 3, Eubacterium_rectale
+2026-11-19 18:32:46.411701 INFO::Fitting model to feature number 4, Faecalibacterium_prausnitzii
+2026-11-19 18:32:46.412844 INFO::Fitting model to feature number 5, Dialister_hominis
+2026-11-19 18:32:46.413967 INFO::Fitting model to feature number 6, GGB9342_SGB14306
+2026-11-19 18:32:46.415088 INFO::Fitting model to feature number 7, Wujia_chipingensis
+2026-11-19 18:32:46.416213 INFO::Fitting model to feature number 8, Paraprevotella_clara
+2026-11-19 18:32:46.417331 INFO::Fitting model to feature number 9, Lachnospira_pectinoschiza
+2026-11-19 18:32:46.418456 INFO::Fitting model to feature number 10, Lachnospira_eligens
+2026-11-19 18:32:46.419579 INFO::Fitting model to feature number 11, Phocaeicola_plebeius
+2026-11-19 18:32:46.420699 INFO::Fitting model to feature number 12, Phocaeicola_vulgatus
+2026-11-19 18:32:46.421812 INFO::Fitting model to feature number 13, Klebsiella_pneumoniae
+2026-11-19 18:32:46.422978 INFO::Fitting model to feature number 14, Akkermansia_muciniphila
+2026-11-19 18:32:46.424147 INFO::Fitting model to feature number 15, GGB9635_SGB15106
+2026-11-19 18:32:46.425291 INFO::Fitting model to feature number 16, Alistipes_putredinis
+2026-11-19 18:32:46.426439 INFO::Fitting model to feature number 17, Oscillibacter_sp_ER4
+2026-11-19 18:32:46.427591 INFO::Fitting model to feature number 18, GGB9345_SGB14311
+2026-11-19 18:32:46.428725 INFO::Fitting model to feature number 19, GGB9758_SGB15368
+2026-11-19 18:32:46.429845 INFO::Fitting model to feature number 20, Roseburia_faecis
+2026-11-19 18:32:46.431019 INFO::Fitting model to feature number 21, Roseburia_inulinivorans
+2026-11-19 18:32:46.432143 INFO::Fitting model to feature number 22, GGB9602_SGB15031
+2026-11-19 18:32:46.433265 INFO::Fitting model to feature number 23, Oscillospiraceae_bacterium
+2026-11-19 18:32:46.434411 INFO::Fitting model to feature number 24, GGB4552_SGB6276
+2026-11-19 18:32:46.435548 INFO::Fitting model to feature number 25, Alistipes_onderdonkii
+2026-11-19 18:32:46.436665 INFO::Fitting model to feature number 26, Oscillibacter_valericigenes
+2026-11-19 18:32:46.437774 INFO::Fitting model to feature number 27, GGB3256_SGB4303
+2026-11-19 18:32:46.438904 INFO::Fitting model to feature number 28, Bacteroides_uniformis
+2026-11-19 18:32:46.440034 INFO::Fitting model to feature number 29, GGB4683_SGB6473
+2026-11-19 18:32:46.441139 INFO::Fitting model to feature number 30, GGB3277_SGB4327
+2026-11-19 18:32:46.442253 INFO::Fitting model to feature number 31, GGB9747_SGB15356
+2026-11-19 18:32:46.443367 INFO::Fitting model to feature number 32, GGB9715_SGB15265
+2026-11-19 18:32:46.444528 INFO::Fitting model to feature number 33, Brotolimicola_acetigignens
+2026-11-19 18:32:46.445688 INFO::Fitting model to feature number 34, Alistipes_shahii
+2026-11-19 18:32:46.446803 INFO::Fitting model to feature number 35, Ruminococcus_callidus
+2026-11-19 18:32:46.447919 INFO::Fitting model to feature number 36, Coprococcus_eutactus
+2026-11-19 18:32:46.449065 INFO::Fitting model to feature number 37, Agathobaculum_butyriciproducens
+2026-11-19 18:32:46.450222 INFO::Fitting model to feature number 38, GGB3304_SGB4367
+2026-11-19 18:32:46.451431 INFO::Fitting model to feature number 39, GGB3619_SGB4894
+2026-11-19 18:32:46.452598 INFO::Fitting model to feature number 40, Simiaoa_sunii
+2026-11-19 18:32:46.453808 INFO::Fitting model to feature number 41, GGB13493_SGB15238
+2026-11-19 18:32:46.454975 INFO::Fitting model to feature number 42, Mediterraneibacter_faecis
+2026-11-19 18:32:46.45618 INFO::Fitting model to feature number 43, Faecalibacterium_SGB15346
+2026-11-19 18:32:46.457368 INFO::Fitting model to feature number 44, Bifidobacterium_adolescentis
+2026-11-19 18:32:46.458583 INFO::Fitting model to feature number 45, GGB4684_SGB6478
+2026-11-19 18:32:46.459767 INFO::Fitting model to feature number 46, Odoribacter_splanchnicus
+2026-11-19 18:32:46.460955 INFO::Fitting model to feature number 47, Dorea_longicatena
+2026-11-19 18:32:46.462124 INFO::Fitting model to feature number 48, GGB9708_SGB15234
+2026-11-19 18:32:46.463288 INFO::Fitting model to feature number 49, Barnesiella_intestinihominis
+2026-11-19 18:32:46.464466 INFO::Fitting model to feature number 50, Ruminococcus_bromii
+2026-11-19 18:32:46.465623 INFO::Fitting model to feature number 51, Oscillibacter_sp_MSJ_31
+2026-11-19 18:32:46.466783 INFO::Fitting model to feature number 52, Ruminococcus_bicirculans
+2026-11-19 18:32:46.467959 INFO::Fitting model to feature number 53, Gemmiger_formicilis
+2026-11-19 18:32:46.469132 INFO::Fitting model to feature number 54, Fusicatenibacter_saccharivorans
+2026-11-19 18:32:46.477182 INFO::Fitting model to feature number 55, Escherichia_coli
+2026-11-19 18:32:46.478539 INFO::Fitting model to feature number 56, Roseburia_hominis
+2026-11-19 18:32:46.479735 INFO::Fitting model to feature number 57, Parasutterella_SGB9260
+2026-11-19 18:32:46.480877 INFO::Fitting model to feature number 58, Clostridium_fessum
+2026-11-19 18:32:46.481998 INFO::Fitting model to feature number 59, Coprococcus_comes
+2026-11-19 18:32:46.483122 INFO::Fitting model to feature number 60, Clostridiales_bacterium_KLE1615
+2026-11-19 18:32:46.484241 INFO::Fitting model to feature number 61, Candidatus_Cibionibacter_quicibialis
+2026-11-19 18:32:46.485352 INFO::Fitting model to feature number 62, Roseburia_intestinalis
+2026-11-19 18:32:46.486473 INFO::Fitting model to feature number 63, Mesosutterella_multiformis
+2026-11-19 18:32:46.487591 INFO::Fitting model to feature number 64, Victivallis_vadensis
+2026-11-19 18:32:46.488697 INFO::Fitting model to feature number 65, GGB33469_SGB15236
+2026-11-19 18:32:46.489878 INFO::Fitting model to feature number 66, Klebsiella_quasipneumoniae
+2026-11-19 18:32:46.490996 INFO::Fitting model to feature number 67, Phocaeicola_coprocola
+2026-11-19 18:32:46.492123 INFO::Fitting model to feature number 68, Lacrimispora_amygdalina
+2026-11-19 18:32:46.493238 INFO::Fitting model to feature number 69, GGB3653_SGB4964
+2026-11-19 18:32:46.494352 INFO::Fitting model to feature number 70, Clostridiaceae_bacterium_Marseille_Q4149
+2026-11-19 18:32:46.495467 INFO::Fitting model to feature number 71, Parabacteroides_goldsteinii
+2026-11-19 18:32:46.496586 INFO::Fitting model to feature number 72, Collinsella_aerofaciens
+2026-11-19 18:32:46.497719 INFO::Fitting model to feature number 73, GGB3345_SGB4425
+2026-11-19 18:32:46.498881 INFO::Fitting model to feature number 74, GGB9715_SGB15267
+2026-11-19 18:32:46.50004 INFO::Fitting model to feature number 75, Parabacteroides_merdae
+2026-11-19 18:32:46.501191 INFO::Fitting model to feature number 76, Clostridium_sp_AM22_11AC
+2026-11-19 18:32:46.502324 INFO::Fitting model to feature number 77, Lachnospiraceae_bacterium_OM04_12BH
+2026-11-19 18:32:46.503477 INFO::Fitting model to feature number 78, Bilophila_wadsworthia
+2026-11-19 18:32:46.50461 INFO::Fitting model to feature number 79, Oxalobacter_formigenes
+2026-11-19 18:32:46.505765 INFO::Fitting model to feature number 80, Gemmiger_SGB15295
+2026-11-19 18:32:46.506894 INFO::Fitting model to feature number 81, Alistipes_senegalensis
+2026-11-19 18:32:46.50801 INFO::Fitting model to feature number 82, Intestinimonas_massiliensis
+2026-11-19 18:32:46.509158 INFO::Fitting model to feature number 83, Roseburia_lenta
+2026-11-19 18:32:46.510293 INFO::Fitting model to feature number 84, Blautia_glucerasea
+2026-11-19 18:32:46.511518 INFO::Fitting model to feature number 85, GGB9699_SGB15216
+2026-11-19 18:32:46.512792 INFO::Fitting model to feature number 86, Phascolarctobacterium_faecium
+2026-11-19 18:32:46.513985 INFO::Fitting model to feature number 87, GGB13404_SGB14252
+2026-11-19 18:32:46.515158 INFO::Fitting model to feature number 88, Bacteroides_cellulosilyticus
+2026-11-19 18:32:46.516322 INFO::Fitting model to feature number 89, Blautia_sp_MCC283
+2026-11-19 18:32:46.517458 INFO::Fitting model to feature number 90, Bacteroides_ovatus
+2026-11-19 18:32:46.518576 INFO::Fitting model to feature number 91, Clostridium_SGB4750
+2026-11-19 18:32:46.519739 INFO::Fitting model to feature number 92, GGB9730_SGB15291
+2026-11-19 18:32:46.520961 INFO::Fitting model to feature number 93, Oscillospiraceae_bacterium_CLA_AA_H250
+2026-11-19 18:32:46.522204 INFO::Fitting model to feature number 94, Alistipes_sp_AF17_16
+2026-11-19 18:32:46.523516 INFO::Fitting model to feature number 95, GGB6518_SGB9205
+2026-11-19 18:32:46.525246 INFO::Fitting model to feature number 96, Faecalicatena_fissicatena
+2026-11-19 18:32:46.52672 INFO::Fitting model to feature number 97, Bacteroides_stercoris
+2026-11-19 18:32:46.528034 INFO::Fitting model to feature number 98, Lachnospira_sp_NSJ_43
+2026-11-19 18:32:46.529319 INFO::Fitting model to feature number 99, Alistipes_communis
+2026-11-19 18:32:46.530558 INFO::Fitting model to feature number 100, Clostridium_sp_AF27_2AA
+2026-11-19 18:32:46.531754 INFO::Fitting model to feature number 101, Lachnospiraceae_bacterium_AM48_27BH
+2026-11-19 18:32:46.532926 INFO::Fitting model to feature number 102, GGB9534_SGB14937
+2026-11-19 18:32:46.534094 INFO::Fitting model to feature number 103, Bacteroides_eggerthii
+2026-11-19 18:32:46.535248 INFO::Fitting model to feature number 104, Blautia_wexlerae
+2026-11-19 18:32:46.536446 INFO::Fitting model to feature number 105, Anaerobutyricum_hallii
+2026-11-19 18:32:46.537664 INFO::Fitting model to feature number 106, Parabacteroides_distasonis
+2026-11-19 18:32:46.53883 INFO::Fitting model to feature number 107, Lachnospiraceae_bacterium_CLA_AA_H244
+2026-11-19 18:32:46.540009 INFO::Fitting model to feature number 108, Bacteroides_faecis
+2026-11-19 18:32:46.541151 INFO::Fitting model to feature number 109, GGB3740_SGB5076
+2026-11-19 18:32:46.54232 INFO::Fitting model to feature number 110, Bifidobacterium_longum
+2026-11-19 18:32:46.543503 INFO::Fitting model to feature number 111, Eubacterium_ventriosum
+2026-11-19 18:32:46.544691 INFO::Fitting model to feature number 112, Clostridiaceae_bacterium
+2026-11-19 18:32:46.545858 INFO::Fitting model to feature number 113, GGB9616_SGB15051
+2026-11-19 18:32:46.547079 INFO::Fitting model to feature number 114, Bifidobacterium_bifidum
+2026-11-19 18:32:46.548222 INFO::Fitting model to feature number 115, GGB9707_SGB15229
+2026-11-19 18:32:46.549356 INFO::Fitting model to feature number 116, Ruminococcus_SGB4421
+2026-11-19 18:32:46.550505 INFO::Fitting model to feature number 117, Bacteroides_caccae
+2026-11-19 18:32:46.551665 INFO::Fitting model to feature number 118, Clostridium_sp_AM33_3
+2026-11-19 18:32:46.552811 INFO::Fitting model to feature number 119, Clostridium_sp_AF36_4
+2026-11-19 18:32:46.553981 INFO::Fitting model to feature number 120, Clostridiaceae_bacterium_AF18_31LB
+2026-11-19 18:32:46.555139 INFO::Fitting model to feature number 121, GGB9359_SGB14334
+2026-11-19 18:32:46.55637 INFO::Fitting model to feature number 122, Hydrogenoanaerobacterium_saccharovorans
+2026-11-19 18:32:46.557564 INFO::Fitting model to feature number 123, Parasutterella_excrementihominis
+2026-11-19 18:32:46.558764 INFO::Fitting model to feature number 124, Victivallis_lenta
+2026-11-19 18:32:46.559931 INFO::Fitting model to feature number 125, Blautia_faecis
+2026-11-19 18:32:46.561096 INFO::Fitting model to feature number 126, GGB51884_SGB49168
+2026-11-19 18:32:46.562245 INFO::Fitting model to feature number 127, GGB9502_SGB14899
+2026-11-19 18:32:46.563395 INFO::Fitting model to feature number 128, Blautia_obeum
+2026-11-19 18:32:46.56453 INFO::Fitting model to feature number 129, Clostridiaceae_bacterium_Marseille_Q4143
+2026-11-19 18:32:46.565699 INFO::Fitting model to feature number 130, Dorea_formicigenerans
+2026-11-19 18:32:46.566833 INFO::Fitting model to feature number 131, Lawsonibacter_hominis
+2026-11-19 18:32:46.567971 INFO::Fitting model to feature number 132, Coprococcus_catus
+2026-11-19 18:32:46.56914 INFO::Fitting model to feature number 133, Dysosmobacter_welbionis
+2026-11-19 18:32:46.5703 INFO::Fitting model to feature number 134, Clostridium_SGB6179
+2026-11-19 18:32:46.571459 INFO::Fitting model to feature number 135, GGB9524_SGB14924
+2026-11-19 18:32:46.572657 INFO::Fitting model to feature number 136, Oliverpabstia_intestinalis
+2026-11-19 18:32:46.57393 INFO::Fitting model to feature number 137, Tyzzerella_SGB4587
+2026-11-19 18:32:46.575089 INFO::Fitting model to feature number 138, GGB36267_SGB14177
+2026-11-19 18:32:46.576242 INFO::Fitting model to feature number 139, Alistipes_indistinctus
+2026-11-19 18:32:46.577421 INFO::Fitting model to feature number 140, Lawsonibacter_SGB15145
+2026-11-19 18:32:46.578566 INFO::Fitting model to feature number 141, Vescimonas_SGB15087
+2026-11-19 18:32:46.579705 INFO::Fitting model to feature number 142, GGB33512_SGB15201
+2026-11-19 18:32:46.580888 INFO::Fitting model to feature number 143, GGB9760_SGB15373
+2026-11-19 18:32:46.582068 INFO::Fitting model to feature number 144, Cloacibacillus_evryensis
+2026-11-19 18:32:46.59772 INFO::Fitting model to feature number 145, Bacteroides_xylanisolvens
+2026-11-19 18:32:46.59915 INFO::Fitting model to feature number 146, GGB9593_SGB15015
+2026-11-19 18:32:46.600357 INFO::Fitting model to feature number 147, Eubacteriaceae_bacterium
+2026-11-19 18:32:46.601559 INFO::Fitting model to feature number 148, GGB3321_SGB4394
+2026-11-19 18:32:46.602785 INFO::Fitting model to feature number 149, Jutongia_hominis
+2026-11-19 18:32:46.603949 INFO::Fitting model to feature number 150, Clostridium_SGB4751
+2026-11-19 18:32:46.605141 INFO::Fitting model to feature number 151, Ruminococcus_torques
+2026-11-19 18:32:46.606522 INFO::Fitting model to feature number 152, Roseburia_sp_AF02_12
+2026-11-19 18:32:46.607784 INFO::Fitting model to feature number 153, Anaerostipes_hadrus
+2026-11-19 18:32:46.608984 INFO::Fitting model to feature number 154, Lawsonibacter_asaccharolyticus
+2026-11-19 18:32:46.610185 INFO::Fitting model to feature number 155, Bifidobacterium_pseudocatenulatum
+2026-11-19 18:32:46.611321 INFO::Fitting model to feature number 156, GGB9760_SGB15374
+2026-11-19 18:32:46.612432 INFO::Fitting model to feature number 157, GGB9715_SGB15260
+2026-11-19 18:32:46.6136 INFO::Fitting model to feature number 158, Vescimonas_coprocola
+2026-11-19 18:32:46.614709 INFO::Fitting model to feature number 159, Clostridium_sp_AF32_12BH
+2026-11-19 18:32:46.615826 INFO::Fitting model to feature number 160, Fusicatenibacter_sp_CLA_AA_H277
+2026-11-19 18:32:46.616955 INFO::Fitting model to feature number 161, GGB9559_SGB14969
+2026-11-19 18:32:46.618098 INFO::Fitting model to feature number 162, Clostridiaceae_bacterium_Marseille_Q4145
+2026-11-19 18:32:46.619323 INFO::Fitting model to feature number 163, Clostridium_sp_AF20_17LB
+2026-11-19 18:32:46.620541 INFO::Fitting model to feature number 164, GGB2998_SGB3988
+2026-11-19 18:32:46.621756 INFO::Fitting model to feature number 165, Streptococcus_salivarius
+2026-11-19 18:32:46.623057 INFO::Fitting model to feature number 166, Anaerotignum_sp_MSJ_24
+2026-11-19 18:32:46.624335 INFO::Fitting model to feature number 167, Eubacterium_sp_AF34_35BH
+2026-11-19 18:32:46.625577 INFO::Fitting model to feature number 168, GGB2653_SGB3574
+2026-11-19 18:32:46.62674 INFO::Fitting model to feature number 169, GGB51441_SGB71759
+2026-11-19 18:32:46.627864 INFO::Fitting model to feature number 170, Butyricimonas_virosa
+2026-11-19 18:32:46.628983 INFO::Fitting model to feature number 171, GGB9634_SGB15093
+2026-11-19 18:32:46.630143 INFO::Fitting model to feature number 172, Flavonifractor_plautii
+2026-11-19 18:32:46.631271 INFO::Fitting model to feature number 173, Bacteroides_intestinalis
+2026-11-19 18:32:46.632413 INFO::Fitting model to feature number 174, GGB9614_SGB15049
+2026-11-19 18:32:46.633555 INFO::Fitting model to feature number 175, Anaeromassilibacillus_senegalensis
+2026-11-19 18:32:46.63473 INFO::Fitting model to feature number 176, GGB33586_SGB53517
+2026-11-19 18:32:46.635887 INFO::Fitting model to feature number 177, Dorea_sp_AF36_15AT
+2026-11-19 18:32:46.637166 INFO::Fitting model to feature number 178, Allisonella_histaminiformans
+2026-11-19 18:32:46.638445 INFO::Fitting model to feature number 179, Bacteroides_fragilis
+2026-11-19 18:32:46.639688 INFO::Fitting model to feature number 180, Oscillospiraceae_unclassified_SGB15252
+2026-11-19 18:32:46.640872 INFO::Fitting model to feature number 181, Coprobacter_secundus
+2026-11-19 18:32:46.642061 INFO::Fitting model to feature number 182, Mediterraneibacter_butyricigenes
+2026-11-19 18:32:46.643299 INFO::Fitting model to feature number 183, Sanguibacteroides_justesenii
+2026-11-19 18:32:46.644467 INFO::Fitting model to feature number 184, Oscillospiraceae_bacterium_Marseille_Q3528
+2026-11-19 18:32:46.645661 INFO::Fitting model to feature number 185, Parabacteroides_johnsonii
+2026-11-19 18:32:46.64687 INFO::Fitting model to feature number 186, Ruminococcus_gnavus
+2026-11-19 18:32:46.648043 INFO::Fitting model to feature number 187, Coprobacillus_cateniformis
+2026-11-19 18:32:46.649219 INFO::Fitting model to feature number 188, GGB9616_SGB15052
+2026-11-19 18:32:46.650385 INFO::Fitting model to feature number 189, Parabacteroides_faecis
+2026-11-19 18:32:46.651584 INFO::Fitting model to feature number 190, Ruthenibacterium_lactatiformans
+2026-11-19 18:32:46.652808 INFO::Fitting model to feature number 191, Lachnospiraceae_bacterium
+2026-11-19 18:32:46.654015 INFO::Fitting model to feature number 192, Eubacterium_sp_AF16_48
+2026-11-19 18:32:46.655241 INFO::Fitting model to feature number 193, Eubacterium_ramulus
+2026-11-19 18:32:46.656537 INFO::Fitting model to feature number 194, Blautia_massiliensis
+2026-11-19 18:32:46.657751 INFO::Fitting model to feature number 195, GGB35068_SGB47850
+2026-11-19 18:32:46.658931 INFO::Fitting model to feature number 196, Anaerobutyricum_soehngenii
+2026-11-19 18:32:46.660089 INFO::Fitting model to feature number 197, Clostridium_leptum
+2026-11-19 18:32:46.661219 INFO::Fitting model to feature number 198, Clostridiaceae_unclassified_SGB4771
+2026-11-19 18:32:46.662419 INFO::Fitting model to feature number 199, Holdemania_filiformis
+2026-11-19 18:32:46.663587 INFO::Fitting model to feature number 200, Blautia_sp_OF03_15BH
+2026-11-19 18:32:46.664708 INFO::Fitting model to feature number 201, GGB58485_SGB80143
+2026-11-19 18:32:46.665829 INFO::Fitting model to feature number 202, Clostridium_sp_AM49_4BH
+2026-11-19 18:32:46.666945 INFO::Fitting model to feature number 203, Streptococcus_parasanguinis
+2026-11-19 18:32:46.668122 INFO::Fitting model to feature number 204, Bacteroides_finegoldii
+2026-11-19 18:32:46.669257 INFO::Fitting model to feature number 205, Alistipes_ihumii
+2026-11-19 18:32:46.670396 INFO::Fitting model to feature number 206, Butyricimonas_synergistica
+2026-11-19 18:32:46.671554 INFO::Fitting model to feature number 207, Blautia_SGB4815
+2026-11-19 18:32:46.672777 INFO::Fitting model to feature number 208, Blautia_luti
+2026-11-19 18:32:46.67403 INFO::Fitting model to feature number 209, Colidextribacter_sp_210702_DFI_3_9
+2026-11-19 18:32:46.675246 INFO::Fitting model to feature number 210, Adlercreutzia_equolifaciens
+2026-11-19 18:32:46.676402 INFO::Fitting model to feature number 211, GGB9522_SGB14921
+2026-11-19 18:32:46.677586 INFO::Fitting model to feature number 212, GGB9062_SGB13981
+2026-11-19 18:32:46.678781 INFO::Fitting model to feature number 213, Faecalibacillus_intestinalis
+2026-11-19 18:32:46.679991 INFO::Fitting model to feature number 214, Romboutsia_timonensis
+2026-11-19 18:32:46.681189 INFO::Fitting model to feature number 215, Klebsiella_variicola
+2026-11-19 18:32:46.682395 INFO::Fitting model to feature number 216, GGB3828_SGB5197
+2026-11-19 18:32:46.68363 INFO::Fitting model to feature number 217, Clostridium_sp_AM42_4
+2026-11-19 18:32:46.684829 INFO::Fitting model to feature number 218, Eubacteriales_bacterium
+2026-11-19 18:32:46.686046 INFO::Fitting model to feature number 219, Anaerotruncus_rubiinfantis
+2026-11-19 18:32:46.687225 INFO::Fitting model to feature number 220, GGB9627_SGB15081
+2026-11-19 18:32:46.688475 INFO::Fitting model to feature number 221, Youxingia_wuxianensis
+2026-11-19 18:32:46.689691 INFO::Fitting model to feature number 222, Bacteroides_bouchesdurhonensis
+2026-11-19 18:32:46.690866 INFO::Fitting model to feature number 223, Anaerosacchariphilus_sp_NSJ_68
+2026-11-19 18:32:46.69203 INFO::Fitting model to feature number 224, Phocea_massiliensis
+2026-11-19 18:32:46.693222 INFO::Fitting model to feature number 225, Phocaeicola_dorei
+2026-11-19 18:32:46.694431 INFO::Fitting model to feature number 226, GGB9237_SGB14179
+2026-11-19 18:32:46.695595 INFO::Fitting model to feature number 227, GGB9646_SGB15123
+2026-11-19 18:32:46.696786 INFO::Fitting model to feature number 228, GGB52130_SGB14966
+2026-11-19 18:32:46.697999 INFO::Fitting model to feature number 229, GGB9759_SGB15370
+2026-11-19 18:32:46.699227 INFO::Fitting model to feature number 230, Clostridium_sp_AF12_28
+2026-11-19 18:32:46.700432 INFO::Fitting model to feature number 231, bacterium_210917_DFI_7_65
+2026-11-19 18:32:46.701596 INFO::Fitting model to feature number 232, GGB9537_SGB14940
+2026-11-19 18:32:46.702782 INFO::Fitting model to feature number 233, Mediterraneibacter_sp_NSJ_151
+2026-11-19 18:32:46.703985 INFO::Fitting model to feature number 234, Coprobacter_fastidiosus
+2026-11-19 18:32:46.705262 INFO::Fitting model to feature number 235, Bacteroides_salyersiae
+2026-11-19 18:32:46.706485 INFO::Fitting model to feature number 236, Rothia_mucilaginosa
+2026-11-19 18:32:46.707756 INFO::Fitting model to feature number 237, Guopingia_tenuis
+2026-11-19 18:32:46.709064 INFO::Fitting model to feature number 238, Jingyaoa_shaoxingensis
+2026-11-19 18:32:46.710367 INFO::Fitting model to feature number 239, Anaerotignum_faecicola
+2026-11-19 18:32:46.711651 INFO::Fitting model to feature number 240, GGB9667_SGB15164
+2026-11-19 18:32:46.712982 INFO::Fitting model to feature number 241, Prevotella_corporis
+2026-11-19 18:32:46.714286 INFO::Fitting model to feature number 242, GGB9063_SGB13982
+2026-11-19 18:32:46.715645 INFO::Fitting model to feature number 243, GGB9770_SGB15390
+2026-11-19 18:32:46.716968 INFO::Fitting model to feature number 244, Intestinimonas_butyriciproducens
+2026-11-19 18:32:46.718326 INFO::Fitting model to feature number 245, Intestinibacter_bartlettii
+2026-11-19 18:32:46.719645 INFO::Fitting model to feature number 246, Prevotella_bivia
+2026-11-19 18:32:46.721001 INFO::Fitting model to feature number 247, Intestinimonas_gabonensis
+2026-11-19 18:32:46.722396 INFO::Fitting model to feature number 248, Blautia_faecicola
+2026-11-19 18:32:46.723661 INFO::Fitting model to feature number 249, GGB9491_SGB14888
+2026-11-19 18:32:46.724922 INFO::Fitting model to feature number 250, GGB2848_SGB3813
+2026-11-19 18:32:46.72618 INFO::Fitting model to feature number 251, Streptococcus_anginosus
+2026-11-19 18:32:46.727457 INFO::Fitting model to feature number 252, Lentihominibacter_faecis
+2026-11-19 18:32:46.728754 INFO::Fitting model to feature number 253, Bianquea_renquensis
+2026-11-19 18:32:46.730086 INFO::Fitting model to feature number 254, GGB2980_SGB3962
+2026-11-19 18:32:46.731334 INFO::Fitting model to feature number 255, Ruminococcus_sp_AF13_28
+2026-11-19 18:32:46.732593 INFO::Fitting model to feature number 256, Enterocloster_asparagiformis
+2026-11-19 18:32:46.733835 INFO::Fitting model to feature number 257, Pseudoflavonifractor_capillosus
+2026-11-19 18:32:46.735123 INFO::Fitting model to feature number 258, Desulfovibrio_fairfieldensis
+2026-11-19 18:32:46.736391 INFO::Fitting model to feature number 259, Haemophilus_parainfluenzae
+2026-11-19 18:32:46.737671 INFO::Fitting model to feature number 260, Clostridiales_bacterium
+2026-11-19 18:32:46.739 INFO::Fitting model to feature number 261, Streptococcus_australis
+2026-11-19 18:32:46.740455 INFO::Fitting model to feature number 262, Blautia_stercoris
+2026-11-19 18:32:46.741769 INFO::Fitting model to feature number 263, Bacteroides_thetaiotaomicron
+2026-11-19 18:32:46.74305 INFO::Fitting model to feature number 264, Bacteroides_nordii
+2026-11-19 18:32:46.744345 INFO::Fitting model to feature number 265, Hungatella_hathewayi
+2026-11-19 18:32:46.745657 INFO::Fitting model to feature number 266, Enterobacter_hormaechei
+2026-11-19 18:32:46.747003 INFO::Fitting model to feature number 267, GGB9561_SGB14972
+2026-11-19 18:32:46.748308 INFO::Fitting model to feature number 268, Clostridium_sp_Marseille_P3244
+2026-11-19 18:32:46.749612 INFO::Fitting model to feature number 269, GGB9531_SGB14932
+2026-11-19 18:32:46.750922 INFO::Fitting model to feature number 270, GGB58233_SGB79883
+2026-11-19 18:32:46.752221 INFO::Fitting model to feature number 271, Phocaeicola_massiliensis
+2026-11-19 18:32:46.753552 INFO::Fitting model to feature number 272, GGB58158_SGB79798
+2026-11-19 18:32:46.754858 INFO::Fitting model to feature number 273, Wansuia_hejianensis
+2026-11-19 18:32:46.756318 INFO::Fitting model to feature number 274, TM7_phylum_sp_oral_taxon_352
+2026-11-19 18:32:46.757734 INFO::Fitting model to feature number 275, Luoshenia_tenuis
+2026-11-19 18:32:46.770375 INFO::Fitting model to feature number 276, Streptococcus_sanguinis
+2026-11-19 18:32:46.771722 INFO::Fitting model to feature number 277, Eisenbergiella_tayi
+2026-11-19 18:32:46.773063 INFO::Fitting model to feature number 278, Pyramidobacter_piscolens
+2026-11-19 18:32:46.774286 INFO::Fitting model to feature number 279, Christensenella_minuta
+2026-11-19 18:32:46.775425 INFO::Fitting model to feature number 280, Enterocloster_citroniae
+2026-11-19 18:32:46.776568 INFO::Fitting model to feature number 281, Lachnotalea_sp_AF33_28
+2026-11-19 18:32:46.777697 INFO::Fitting model to feature number 282, Veillonella_parvula
+2026-11-19 18:32:46.778809 INFO::Fitting model to feature number 283, Fumia_xinanensis
+2026-11-19 18:32:46.779942 INFO::Fitting model to feature number 284, Anaerotruncus_colihominis
+2026-11-19 18:32:46.781082 INFO::Fitting model to feature number 285, Massiliimalia_massiliensis
+2026-11-19 18:32:46.782226 INFO::Fitting model to feature number 286, Megamonas_funiformis
+2026-11-19 18:32:46.783404 INFO::Fitting model to feature number 287, Veillonella_rogosae
+2026-11-19 18:32:46.784554 INFO::Fitting model to feature number 288, Enterocloster_hominis
+2026-11-19 18:32:46.785705 INFO::Fitting model to feature number 289, Evtepia_gabavorous
+2026-11-19 18:32:46.786857 INFO::Fitting model to feature number 290, Ruminococcus_sp_AF41_9
+2026-11-19 18:32:46.788002 INFO::Fitting model to feature number 291, Streptococcus_thermophilus
+2026-11-19 18:32:46.789249 INFO::Fitting model to feature number 292, Holdemania_massiliensis
+2026-11-19 18:32:46.79042 INFO::Fitting model to feature number 293, Alistipes_finegoldii
+2026-11-19 18:32:46.791545 INFO::Fitting model to feature number 294, Eggerthella_lenta
+2026-11-19 18:32:46.79266 INFO::Fitting model to feature number 295, Bifidobacterium_dentium
+2026-11-19 18:32:46.793782 INFO::Fitting model to feature number 296, GGB41458_SGB58520
+2026-11-19 18:32:46.794923 INFO::Fitting model to feature number 297, GGB34228_SGB72916
+2026-11-19 18:32:46.796052 INFO::Fitting model to feature number 298, Butyricimonas_faecihominis
+2026-11-19 18:32:46.797188 INFO::Fitting model to feature number 299, Dielma_fastidiosa
+2026-11-19 18:32:46.798314 INFO::Fitting model to feature number 300, Gordonibacter_pamelaeae
+2026-11-19 18:32:46.799466 INFO::Fitting model to feature number 301, Veillonella_tobetsuensis
+2026-11-19 18:32:46.800605 INFO::Fitting model to feature number 302, Clostridium_innocuum
+2026-11-19 18:32:46.801734 INFO::Fitting model to feature number 303, Enterocloster_bolteae
+2026-11-19 18:32:46.802869 INFO::Fitting model to feature number 304, Clostridium_sp_AT4
+2026-11-19 18:32:46.803994 INFO::Fitting model to feature number 305, Veillonella_atypica
+2026-11-19 18:32:46.805179 INFO::Fitting model to feature number 306, Parabacteroides_gordonii
+2026-11-19 18:32:46.806364 INFO::Fitting model to feature number 307, Veillonella_dispar
+2026-11-19 18:32:46.807503 INFO::Fitting model to feature number 308, Enterocloster_aldenensis
+2026-11-19 18:32:46.808612 INFO::Fitting model to feature number 309, Raoultibacter_timonensis
+2026-11-19 18:32:46.809725 INFO::Fitting model to feature number 310, Clostridium_scindens
+2026-11-19 18:32:46.81088 INFO::Fitting model to feature number 311, GGB55957_SGB77276
+2026-11-19 18:32:46.812013 INFO::Fitting model to feature number 312, Streptococcus_rubneri
+2026-11-19 18:32:46.813162 INFO::Fitting model to feature number 313, Granulicatella_SGB8255
+2026-11-19 18:32:46.814312 INFO::Fitting model to feature number 314, Faecalicatena_contorta
+2026-11-19 18:32:46.815441 INFO::Fitting model to feature number 315, Dialister_invisus
+2026-11-19 18:32:46.816606 INFO::Fitting model to feature number 316, Butyricimonas_paravirosa
+2026-11-19 18:32:46.817732 INFO::Fitting model to feature number 317, Clostridium_symbiosum
+2026-11-19 18:32:46.818898 INFO::Fitting model to feature number 318, Massilioclostridium_coli
+2026-11-19 18:32:46.820035 INFO::Fitting model to feature number 319, Segatella_sinensis
+2026-11-19 18:32:46.821162 INFO::Fitting model to feature number 320, Anaerofilum_hominis
+2026-11-19 18:32:46.822333 INFO::Fitting model to feature number 321, Eisenbergiella_massiliensis
+2026-11-19 18:32:46.823552 INFO::Fitting model to feature number 322, GGB12785_SGB19823
+2026-11-19 18:32:46.824713 INFO::Fitting model to feature number 323, Clostridia_bacterium_UC5_1_1D1
+2026-11-19 18:32:46.825858 INFO::Fitting model to feature number 324, Enterocloster_lavalensis
+2026-11-19 18:32:46.827018 INFO::Fitting model to feature number 325, Neobittarella_massiliensis
+2026-11-19 18:32:46.828143 INFO::Fitting model to feature number 326, Prevotella_disiens
+2026-11-19 18:32:46.829315 INFO::Fitting model to feature number 327, Cuneatibacter_sp_NSJ_177
+2026-11-19 18:32:46.830487 INFO::Fitting model to feature number 328, Erysipelatoclostridium_ramosum
+2026-11-19 18:32:46.831684 INFO::Fitting model to feature number 329, Streptococcus_cristatus
+2026-11-19 18:32:46.832835 INFO::Fitting model to feature number 330, Prevotella_stercorea
+2026-11-19 18:32:46.834009 INFO::Fitting model to feature number 331, Campylobacter_concisus
+2026-11-19 18:32:46.83523 INFO::Fitting model to feature number 332, Gemella_sanguinis
+2026-11-19 18:32:46.836411 INFO::Fitting model to feature number 333, Bacteroides_propionicigenes
+2026-11-19 18:32:46.837553 INFO::Fitting model to feature number 334, Actinomyces_sp_ICM47
+2026-11-19 18:32:46.838723 INFO::Fitting model to feature number 335, Escherichia_marmotae
+2026-11-19 18:32:46.839902 INFO::Fitting model to feature number 336, TM7_phylum_sp_oral_taxon_348
+2026-11-19 18:32:46.841055 INFO::Fitting model to feature number 337, GGB4456_SGB6141
+2026-11-19 18:32:46.842216 INFO::Fitting model to feature number 338, Bacteroides_clarus
+2026-11-19 18:32:46.843363 INFO::Fitting model to feature number 339, Phocaeicola_sartorii
+2026-11-19 18:32:46.844535 INFO::Fitting model to feature number 340, Fusobacterium_periodonticum
+2026-11-19 18:32:46.845726 INFO::Fitting model to feature number 341, Sutterella_wadsworthensis
+2026-11-19 18:32:46.846892 INFO::Fitting model to feature number 342, GGB51647_SGB4348
+2026-11-19 18:32:46.84811 INFO::Fitting model to feature number 343, GGB3363_SGB4447
+2026-11-19 18:32:46.849243 INFO::Fitting model to feature number 344, Ligilactobacillus_salivarius
+2026-11-19 18:32:46.850401 INFO::Fitting model to feature number 345, Negativibacillus_massiliensis
+2026-11-19 18:32:46.85157 INFO::Fitting model to feature number 346, Hydrogeniiclostridium_mannosilyticum
+2026-11-19 18:32:46.852751 INFO::Fitting model to feature number 347, Mediterraneibacter_glycyrrhizinilyticus
+2026-11-19 18:32:46.853919 INFO::Fitting model to feature number 348, Intestinimonas_sp_MSJ_38
+2026-11-19 18:32:46.855099 INFO::Fitting model to feature number 349, GGB9501_SGB14898
+2026-11-19 18:32:46.856242 INFO::Fitting model to feature number 350, GGB9619_SGB15066
+2026-11-19 18:32:46.857374 INFO::Fitting model to feature number 351, Zhenpiania_hominis
+2026-11-19 18:32:46.858494 INFO::Fitting model to feature number 352, GGB45613_SGB63326
+2026-11-19 18:32:46.859624 INFO::Fitting model to feature number 353, Streptococcus_mitis
+2026-11-19 18:32:46.860794 INFO::Fitting model to feature number 354, Intestinibacillus_sp_Marseille_P6563
+2026-11-19 18:32:46.861968 INFO::Fitting model to feature number 355, Enterobacter_roggenkampii
+2026-11-19 18:32:46.863149 INFO::Fitting model to feature number 356, Streptococcus_vestibularis
+2026-11-19 18:32:46.864322 INFO::Fitting model to feature number 357, Bittarella_massiliensis
+2026-11-19 18:32:46.865508 INFO::Fitting model to feature number 358, Pseudoflavonifractor_gallinarum
+2026-11-19 18:32:46.866697 INFO::Fitting model to feature number 359, Longicatena_caecimuris
+2026-11-19 18:32:46.867878 INFO::Fitting model to feature number 360, Streptococcus_gordonii
+2026-11-19 18:32:46.869057 INFO::Fitting model to feature number 361, Candidatus_Nanosynsacchari_sp_TM7_ANC_38_39_G1_1
+2026-11-19 18:32:46.870237 INFO::Fitting model to feature number 362, Gemella_morbillorum
+2026-11-19 18:32:46.871395 INFO::Fitting model to feature number 363, Mogibacterium_diversum
+2026-11-19 18:32:46.872601 INFO::Fitting model to feature number 364, Lactonifactor_longoviformis
+2026-11-19 18:32:46.873797 INFO::Fitting model to feature number 365, Schaalia_odontolytica
+2026-11-19 18:32:46.87496 INFO::Fitting model to feature number 366, Actinomyces_graevenitzii
+2026-11-19 18:32:46.876121 INFO::Fitting model to feature number 367, GGB3444_SGB4594
+2026-11-19 18:32:46.877325 INFO::Fitting model to feature number 368, Christensenella_hongkongensis
+2026-11-19 18:32:46.878513 INFO::Fitting model to feature number 369, Actinomyces_bouchesdurhonensis
+2026-11-19 18:32:46.879685 INFO::Fitting model to feature number 370, Enterobacter_kobei
+2026-11-19 18:32:46.880874 INFO::Fitting model to feature number 371, Eubacterium_sulci
+2026-11-19 18:32:46.882051 INFO::Fitting model to feature number 372, Diplocloster_agilis
+2026-11-19 18:32:46.883237 INFO::Fitting model to feature number 373, Enterocloster_clostridioformis
+2026-11-19 18:32:46.884416 INFO::Fitting model to feature number 374, Schaalia_SGB17168
+2026-11-19 18:32:46.885636 INFO::Fitting model to feature number 375, Streptococcus_oralis
+2026-11-19 18:32:46.88685 INFO::Fitting model to feature number 376, Schaalia_SGB17158
+2026-11-19 18:32:46.888025 INFO::Fitting model to feature number 377, Lachnoclostridium_sp_An138
+2026-11-19 18:32:46.889268 INFO::Fitting model to feature number 378, Solobacterium_SGB6829
+2026-11-19 18:32:46.890463 INFO::Fitting model to feature number 379, Candidatus_Nanoperiomorbus_periodonticus
+2026-11-19 18:32:46.891734 INFO::Fitting model to feature number 380, Roseburia_sp_AM23_20
+2026-11-19 18:32:46.892989 INFO::Fitting model to feature number 381, Actinomyces_SGB17132
+2026-11-19 18:32:46.894198 INFO::Fitting model to feature number 382, Granulicatella_adiacens
+2026-11-19 18:32:46.895363 INFO::Fitting model to feature number 383, Phascolarctobacterium_SGB5790
+2026-11-19 18:32:46.896538 INFO::Fitting model to feature number 384, GGB3109_SGB4121
+2026-11-19 18:32:46.897738 INFO::Fitting model to feature number 385, Amedibacillus_dolichus
+2026-11-19 18:32:46.898983 INFO::Fitting model to feature number 386, Blautia_hansenii
+2026-11-19 18:32:46.900182 INFO::Fitting model to feature number 387, Megasphaera_micronuciformis
+2026-11-19 18:32:46.901409 INFO::Fitting model to feature number 388, Lentihominibacter_hominis
+2026-11-19 18:32:46.902613 INFO::Fitting model to feature number 389, Phocaeicola_faecalis
+2026-11-19 18:32:46.903814 INFO::Fitting model to feature number 390, Massiliimalia_timonensis
+2026-11-19 18:32:46.905016 INFO::Fitting model to feature number 391, Actinomyces_sp_ph3
+2026-11-19 18:32:46.906273 INFO::Fitting model to feature number 392, Lancefieldella_parvula
+2026-11-19 18:32:46.907545 INFO::Fitting model to feature number 393, Dialister_pneumosintes
+2026-11-19 18:32:46.908761 INFO::Fitting model to feature number 394, Blautia_caecimuris
+2026-11-19 18:32:46.910012 INFO::Fitting model to feature number 395, Clostridiaceae_bacterium_Marseille_Q3526
+2026-11-19 18:32:46.911254 INFO::Fitting model to feature number 396, GGB3109_SGB4119
+2026-11-19 18:32:46.912475 INFO::Fitting model to feature number 397, Blautia_producta
+2026-11-19 18:32:46.913695 INFO::Fitting model to feature number 398, Eubacterium_callanderi
+2026-11-19 18:32:46.914901 INFO::Fitting model to feature number 399, Parabacteroides_acidifaciens
+2026-11-19 18:32:46.916086 INFO::Fitting model to feature number 400, Parabacteroides_sp_TM07_1AC
+2026-11-19 18:32:46.917311 INFO::Fitting model to feature number 401, Peptostreptococcus_stomatis
+2026-11-19 18:32:46.918544 INFO::Fitting model to feature number 402, Parvimonas_micra
+2026-11-19 18:32:46.919754 INFO::Fitting model to feature number 403, GGB4277_SGB5832
+2026-11-19 18:32:46.921007 INFO::Fitting model to feature number 404, Enterococcus_faecalis
+2026-11-19 18:32:46.938562 INFO::Fitting model to feature number 405, Anaerostipes_caccae
+2026-11-19 18:32:46.940557 INFO::Fitting model to feature number 406, GGB9619_SGB15067
+2026-11-19 18:32:46.942086 INFO::Fitting model to feature number 407, GGB3740_SGB5077
+2026-11-19 18:32:46.943614 INFO::Fitting model to feature number 408, GGB9602_SGB15028
+2026-11-19 18:32:46.945354 INFO::Fitting model to feature number 409, Ruminococcus_lactaris
+2026-11-19 18:32:46.946804 INFO::Fitting model to feature number 410, GGB2982_SGB3964
+2026-11-19 18:32:46.948047 INFO::Fitting model to feature number 411, GGB3612_SGB4882
+2026-11-19 18:32:46.949248 INFO::Fitting model to feature number 412, Alistipes_provencensis
+2026-11-19 18:32:46.950507 INFO::Fitting model to feature number 413, GGB9719_SGB15272
+2026-11-19 18:32:46.951782 INFO::Fitting model to feature number 414, GGB3550_SGB4746
+2026-11-19 18:32:46.953037 INFO::Fitting model to feature number 415, Lachnoclostridium_pacaense
+2026-11-19 18:32:46.954285 INFO::Fitting model to feature number 416, Eubacterium_hominis
+2026-11-19 18:32:46.955526 INFO::Fitting model to feature number 417, Neisseria_subflava
+2026-11-19 18:32:46.956711 INFO::Fitting model to feature number 418, Turicibacter_bilis
+2026-11-19 18:32:46.957867 INFO::Fitting model to feature number 419, Prevotella_melaninogenica
+2026-11-19 18:32:46.959117 INFO::Fitting model to feature number 420, Enterococcus_faecium
+2026-11-19 18:32:46.960332 INFO::Fitting model to feature number 421, GGB9480_SGB14874
+2026-11-19 18:32:46.961698 INFO::Fitting model to feature number 422, GGB9590_SGB15012
+2026-11-19 18:32:46.963073 INFO::Fitting model to feature number 423, GGB9635_SGB15103
+2026-11-19 18:32:46.964275 INFO::Fitting model to feature number 424, Mediterraneibacter_massiliensis
+2026-11-19 18:32:46.965445 INFO::Fitting model to feature number 425, Limosilactobacillus_mucosae
+2026-11-19 18:32:46.96663 INFO::Fitting model to feature number 426, Diplocloster_modestus
+2026-11-19 18:32:46.967807 INFO::Fitting model to feature number 427, Clostridium_saudiense
+2026-11-19 18:32:46.968991 INFO::Fitting model to feature number 428, Christensenella_intestinihominis
+2026-11-19 18:32:46.970161 INFO::Fitting model to feature number 429, Emergencia_timonensis
+2026-11-19 18:32:46.971334 INFO::Fitting model to feature number 430, Christensenella_sp_NSJ_35
+2026-11-19 18:32:46.97252 INFO::Fitting model to feature number 431, Turicibacter_sanguinis
+2026-11-19 18:32:46.973683 INFO::Fitting model to feature number 432, Faecalimonas_umbilicata
+2026-11-19 18:32:46.974847 INFO::Fitting model to feature number 433, Anaerococcus_obesiensis
+2026-11-19 18:32:46.976015 INFO::Fitting model to feature number 434, Citrobacter_freundii
+2026-11-19 18:32:46.977221 INFO::Fitting model to feature number 435, Campylobacter_ureolyticus
+2026-11-19 18:32:46.978412 INFO::Fitting model to feature number 436, Citrobacter_portucalensis
+2026-11-19 18:32:46.979584 INFO::Fitting model to feature number 437, Campylobacter_hominis
+2026-11-19 18:32:46.980801 INFO::Fitting model to feature number 438, Clostridium_sp_1001270J_160509_D11
+2026-11-19 18:32:46.982015 INFO::Fitting model to feature number 439, Streptococcus_constellatus
+2026-11-19 18:32:46.983221 INFO::Fitting model to feature number 440, Aggregatibacter_segnis
+2026-11-19 18:32:46.984458 INFO::Fitting model to feature number 441, Jilunia_laotingensis
+2026-11-19 18:32:46.985681 INFO::Fitting model to feature number 442, Solobacterium_SGB6834
+2026-11-19 18:32:46.986902 INFO::Fitting model to feature number 443, Streptococcus_infantis
+2026-11-19 18:32:46.988081 INFO::Fitting model to feature number 444, Peptostreptococcus_SGB749
+2026-11-19 18:32:46.989278 INFO::Fitting model to feature number 445, Porphyromonas_uenonis
+2026-11-19 18:32:46.990505 INFO::Fitting model to feature number 446, Clostridium_methylpentosum
+2026-11-19 18:32:46.991764 INFO::Fitting model to feature number 447, Sutterella_SGB9281
+2026-11-19 18:32:46.993124 INFO::Fitting model to feature number 448, Prevotella_timonensis
+2026-11-19 18:32:46.994512 INFO::Fitting model to feature number 449, Provencibacterium_massiliense
+2026-11-19 18:32:46.995802 INFO::Fitting model to feature number 450, Clostridium_perfringens
+2026-11-19 18:32:46.997057 INFO::Fitting model to feature number 451, Tyzzerella_nexilis
+2026-11-19 18:32:46.998293 INFO::Fitting model to feature number 452, Scardovia_wiggsiae
+2026-11-19 18:32:46.999558 INFO::Fitting model to feature number 453, Pseudoflavonifractor_phocaeensis
+2026-11-19 18:32:47.000806 INFO::Fitting model to feature number 454, Lancefieldella_rimae
+2026-11-19 18:32:47.002018 INFO::Fitting model to feature number 455, Holdemanella_porci
+2026-11-19 18:32:47.003233 INFO::Fitting model to feature number 456, GGB3818_SGB5183
+2026-11-19 18:32:47.004457 INFO::Fitting model to feature number 457, Pseudoflavonifractor_sp_AF19_9AC
+2026-11-19 18:32:47.005907 INFO::Fitting model to feature number 458, Clostridium_sp_chh4_2
+2026-11-19 18:32:47.007209 INFO::Fitting model to feature number 459, Sutterella_sp_AM11_39
+2026-11-19 18:32:47.008466 INFO::Fitting model to feature number 460, Eggerthella_sinensis
+2026-11-19 18:32:47.009924 INFO::Fitting model to feature number 461, GGB3005_SGB3996
+2026-11-19 18:32:47.011894 INFO::Fitting model to feature number 462, Sellimonas_intestinalis
+2026-11-19 18:32:47.014468 INFO::Fitting model to feature number 463, Fusobacterium_mortiferum
+2026-11-19 18:32:47.015984 INFO::Fitting model to feature number 464, Streptococcus_gallolyticus
+2026-11-19 18:32:47.017312 INFO::Fitting model to feature number 465, Porphyromonas_SGB1980
+2026-11-19 18:32:47.018609 INFO::Fitting model to feature number 466, GGB9712_SGB15244
+2026-11-19 18:32:47.019925 INFO::Fitting model to feature number 467, Fournierella_massiliensis
+2026-11-19 18:32:47.021225 INFO::Fitting model to feature number 468, Alistipes_SGB2300
+2026-11-19 18:32:47.022583 INFO::Fitting model to feature number 469, GGB9724_SGB15278
+2026-11-19 18:32:47.023963 INFO::Fitting model to feature number 470, Anaerotignum_lactatifermentans
+2026-11-19 18:32:47.025282 INFO::Fitting model to feature number 471, Desulfovibrio_piger
+2026-11-19 18:32:47.026533 INFO::Fitting model to feature number 472, GGB3632_SGB4921
+2026-11-19 18:32:47.027797 INFO::Fitting model to feature number 473, Alloprevotella_tannerae
+2026-11-19 18:32:47.029064 INFO::Fitting model to feature number 474, Fusobacterium_ulcerans
+2026-11-19 18:32:47.030493 INFO::Fitting model to feature number 475, Lachnospiraceae_bacterium_NSJ_143
+2026-11-19 18:32:47.03193 INFO::Fitting model to feature number 476, GGB1495_SGB2071
+2026-11-19 18:32:47.033219 INFO::Fitting model to feature number 477, Lachnoanaerobaculum_sp_ICM7
+2026-11-19 18:32:47.034506 INFO::Fitting model to feature number 478, Lachnoanaerobaculum_orale
+2026-11-19 18:32:47.035778 INFO::Fitting model to feature number 479, Cloacibacillus_porcorum
+2026-11-19 18:32:47.037058 INFO::Fitting model to feature number 480, Clostridium_paraputrificum
+2026-11-19 18:32:47.038447 INFO::Fitting model to feature number 481, Fusobacterium_nucleatum
+2026-11-19 18:32:47.039802 INFO::Fitting model to feature number 482, Fusobacterium_varium
+2026-11-19 18:32:47.041059 INFO::Fitting model to feature number 483, Clostridium_sp_AM29_11AC
+2026-11-19 18:32:47.042321 INFO::Fitting model to feature number 484, Peptostreptococcus_anaerobius
+2026-11-19 18:32:47.043664 INFO::Fitting model to feature number 485, Solobacterium_moorei
+2026-11-19 18:32:47.045213 INFO::Fitting model to feature number 486, Eubacterium_infirmum
+2026-11-19 18:32:47.046533 INFO::Fitting model to feature number 487, Morganella_morganii
+2026-11-19 18:32:47.047884 INFO::Fitting model to feature number 488, GGB6574_SGB9290
+2026-11-19 18:32:47.049125 INFO::Fitting model to feature number 489, Anaeroglobus_geminatus
+2026-11-19 18:32:47.050359 INFO::Fitting model to feature number 490, Bacteroides_sp_AF16_49
+2026-11-19 18:32:47.051564 INFO::Fitting model to feature number 491, Prevotella_intermedia
+2026-11-19 18:32:47.052745 INFO::Fitting model to feature number 492, Eikenella_corrodens
+2026-11-19 18:32:47.053927 INFO::Fitting model to feature number 493, Porphyromonas_endodontalis
+2026-11-19 18:32:47.055154 INFO::Fitting model to feature number 494, Oribacterium_sp_oral_taxon_102
+2026-11-19 18:32:47.056374 INFO::Fitting model to feature number 495, Paraeggerthella_hongkongensis
+2026-11-19 18:32:47.057587 INFO::Fitting model to feature number 496, Campylobacter_rectus
+2026-11-19 18:32:47.058822 INFO::Fitting model to feature number 497, GGB4300_SGB123921
+2026-11-19 18:32:47.059983 INFO::Fitting model to feature number 498, GGB38873_SGB47522
+2026-11-19 18:32:47.061111 INFO::Fitting model to feature number 499, Parabacteroides_bouchesdurhonensis
+2026-11-19 18:32:47.062238 INFO::Fitting model to feature number 500, Mogibacterium_timidum
+2026-11-19 18:32:47.063371 INFO::Fitting model to feature number 501, Filifactor_alocis
+2026-11-19 18:32:47.064525 INFO::Fitting model to feature number 502, Slackia_exigua
+2026-11-19 18:32:47.065661 INFO::Fitting model to feature number 503, Selenomonas_SGB5897
+2026-11-19 18:32:47.066799 INFO::Fitting model to feature number 504, Leptotrichia_sp_oral_taxon_223
+2026-11-19 18:32:47.067989 INFO::Fitting model to feature number 505, GGB3059_SGB69431
+2026-11-19 18:32:47.069223 INFO::Fitting model to feature number 506, Prevotella_nigrescens
+2026-11-19 18:32:47.070472 INFO::Fitting model to feature number 507, Alloprevotella_sp_oral_taxon_473
+2026-11-19 18:32:47.071653 INFO::Fitting model to feature number 508, Catonella_SGB69305
+2026-11-19 18:32:47.072861 INFO::Fitting model to feature number 509, Selenomonas_SGB5896
+2026-11-19 18:32:47.074159 INFO::Fitting model to feature number 510, Leptotrichia_trevisanii
+2026-11-19 18:32:47.075368 INFO::Fitting model to feature number 511, GGB96297_SGB123797
+2026-11-19 18:32:47.113333 INFO::Counting total values for each feature
+2026-11-19 18:32:47.149327 INFO::Writing filtered data to file data/output/maaslin2_sysucc_crc_vs_harbin_normal/features/filtered_data.tsv
+2026-11-19 18:32:47.23804 INFO::Writing filtered, normalized data to file data/output/maaslin2_sysucc_crc_vs_harbin_normal/features/filtered_data_norm.tsv
+2026-11-19 18:32:47.341152 INFO::Writing filtered, normalized, transformed data to file data/output/maaslin2_sysucc_crc_vs_harbin_normal/features/filtered_data_norm_transformed.tsv
+2026-11-19 18:32:47.504272 INFO::Writing residuals to file data/output/maaslin2_sysucc_crc_vs_harbin_normal/fits/residuals.rds
+2026-11-19 18:32:47.583699 INFO::Writing fitted values to file data/output/maaslin2_sysucc_crc_vs_harbin_normal/fits/fitted.rds
+2026-11-19 18:32:47.657416 INFO::Writing all results to file (ordered by increasing q-values): data/output/maaslin2_sysucc_crc_vs_harbin_normal/all_results.tsv
+2026-11-19 18:32:47.662528 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/output/maaslin2_sysucc_crc_vs_harbin_normal/significant_results.tsv
+2026-11-19 18:32:47.664539 INFO::Writing heatmap of significant results to file: data/output/maaslin2_sysucc_crc_vs_harbin_normal/heatmap.pdf
+2026-11-19 18:32:47.722 R[30027:19392068] XType: Using static font registry.
+2026-11-19 18:32:47.748215 INFO::Writing association plots (one for each significant association) to output folder: data/output/maaslin2_sysucc_crc_vs_harbin_normal
+2026-11-19 18:32:47.752572 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-11-19 18:32:47.752909 INFO::Plotting data for metadata number 1, disease
+2026-11-19 18:32:47.753528 INFO::Creating boxplot for categorical data, disease vs Peptostreptococcus_stomatis
+2026-11-19 18:32:47.91752 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_nucleatum
+2026-11-19 18:32:48.023255 INFO::Creating boxplot for categorical data, disease vs Parvimonas_micra
+2026-11-19 18:32:48.120859 INFO::Creating boxplot for categorical data, disease vs Gemella_morbillorum
+2026-11-19 18:32:48.212136 INFO::Creating boxplot for categorical data, disease vs Dialister_pneumosintes
+2026-11-19 18:32:48.305493 INFO::Creating boxplot for categorical data, disease vs Blautia_luti
+2026-11-19 18:32:48.3968 INFO::Creating boxplot for categorical data, disease vs Clostridium_symbiosum
+2026-11-19 18:32:48.492832 INFO::Creating boxplot for categorical data, disease vs Roseburia_intestinalis
+2026-11-19 18:32:48.596398 INFO::Creating boxplot for categorical data, disease vs Segatella_copri
+2026-11-19 18:32:48.687297 INFO::Creating boxplot for categorical data, disease vs Granulicatella_adiacens
+2026-11-19 18:32:48.783438 INFO::Creating boxplot for categorical data, disease vs Solobacterium_moorei
+2026-11-19 18:32:48.874691 INFO::Creating boxplot for categorical data, disease vs Eubacterium_rectale
+2026-11-19 18:32:48.967829 INFO::Creating boxplot for categorical data, disease vs GGB51441_SGB71759
+2026-11-19 18:32:49.065146 INFO::Creating boxplot for categorical data, disease vs GGB9561_SGB14972
+2026-11-19 18:32:49.154365 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_periodonticum
+2026-11-19 18:32:49.248801 INFO::Creating boxplot for categorical data, disease vs Prevotella_intermedia
+2026-11-19 18:32:49.340148 INFO::Creating boxplot for categorical data, disease vs Anaerobutyricum_hallii
+2026-11-19 18:32:49.435497 INFO::Creating boxplot for categorical data, disease vs Roseburia_faecis
+2026-11-19 18:32:49.536395 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_bicirculans
+2026-11-19 18:32:49.633816 INFO::Creating boxplot for categorical data, disease vs Hungatella_hathewayi
+2026-11-19 18:32:49.728839 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF27_2AA
+2026-11-19 18:32:49.825382 INFO::Creating boxplot for categorical data, disease vs Ruthenibacterium_lactatiformans
+2026-11-19 18:32:49.914047 INFO::Creating boxplot for categorical data, disease vs Lachnospira_pectinoschiza
+2026-11-19 18:32:50.009863 INFO::Creating boxplot for categorical data, disease vs Coprococcus_eutactus
+2026-11-19 18:32:50.111542 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM49_4BH
+2026-11-19 18:32:50.200871 INFO::Creating boxplot for categorical data, disease vs Fusicatenibacter_saccharivorans
+2026-11-19 18:32:50.295226 INFO::Creating boxplot for categorical data, disease vs Parasutterella_SGB9260
+2026-11-19 18:32:50.391149 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_varium
+2026-11-19 18:32:50.481083 INFO::Creating boxplot for categorical data, disease vs Blautia_wexlerae
+2026-11-19 18:32:50.575658 INFO::Creating boxplot for categorical data, disease vs Enterocloster_bolteae
+2026-11-19 18:32:50.672423 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM22_11AC
+2026-11-19 18:32:50.773031 INFO::Creating boxplot for categorical data, disease vs Anaerosacchariphilus_sp_NSJ_68
+2026-11-19 18:32:51.085063 INFO::Creating boxplot for categorical data, disease vs Bifidobacterium_adolescentis
+2026-11-19 18:32:51.179061 INFO::Creating boxplot for categorical data, disease vs Clostridiales_bacterium_KLE1615
+2026-11-19 18:32:51.266809 INFO::Creating boxplot for categorical data, disease vs Lawsonibacter_SGB15145
+2026-11-19 18:32:51.360634 INFO::Creating boxplot for categorical data, disease vs Alloprevotella_tannerae
+2026-11-19 18:32:51.447913 INFO::Creating boxplot for categorical data, disease vs Parasutterella_excrementihominis
+2026-11-19 18:32:51.539177 INFO::Creating boxplot for categorical data, disease vs Bacteroides_fragilis
+2026-11-19 18:32:51.63583 INFO::Creating boxplot for categorical data, disease vs Erysipelatoclostridium_ramosum
+2026-11-19 18:32:51.727028 INFO::Creating boxplot for categorical data, disease vs Anaerostipes_hadrus
+2026-11-19 18:32:51.819944 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_Marseille_Q4145
+2026-11-19 18:32:51.912212 INFO::Creating boxplot for categorical data, disease vs Clostridium_scindens
+2026-11-19 18:32:51.999507 INFO::Creating boxplot for categorical data, disease vs Blautia_obeum
+2026-11-19 18:32:52.095569 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM33_3
+2026-11-19 18:32:52.18711 INFO::Creating boxplot for categorical data, disease vs Negativibacillus_massiliensis
+2026-11-19 18:32:52.280806 INFO::Creating boxplot for categorical data, disease vs GGB3363_SGB4447
+2026-11-19 18:32:52.371284 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium
+2026-11-19 18:32:52.459591 INFO::Creating boxplot for categorical data, disease vs Christensenella_hongkongensis
+2026-11-19 18:32:52.556697 INFO::Creating boxplot for categorical data, disease vs Lachnospira_sp_NSJ_43
+2026-11-19 18:32:52.655114 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_endodontalis
+2026-11-19 18:32:52.745818 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB4750
+2026-11-19 18:32:52.839942 INFO::Creating boxplot for categorical data, disease vs Roseburia_hominis
+2026-11-19 18:32:52.933685 INFO::Creating boxplot for categorical data, disease vs GGB9758_SGB15368
+2026-11-19 18:32:53.023481 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_callidus
+2026-11-19 18:32:53.114822 INFO::Creating boxplot for categorical data, disease vs Eisenbergiella_massiliensis
+2026-11-19 18:32:53.208886 INFO::Creating boxplot for categorical data, disease vs GGB9707_SGB15229
+2026-11-19 18:32:53.29704 INFO::Creating boxplot for categorical data, disease vs Agathobaculum_butyriciproducens
+2026-11-19 18:32:53.389613 INFO::Creating boxplot for categorical data, disease vs Eubacterium_ventriosum
+2026-11-19 18:32:53.482101 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_mortiferum
+2026-11-19 18:32:53.579699 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_unclassified_SGB4771
+2026-11-19 18:32:53.670714 INFO::Creating boxplot for categorical data, disease vs Gemmiger_formicilis
+2026-11-19 18:32:53.763979 INFO::Creating boxplot for categorical data, disease vs Alloprevotella_sp_oral_taxon_473
+2026-11-19 18:32:53.86102 INFO::Creating boxplot for categorical data, disease vs GGB9616_SGB15051
+2026-11-19 18:32:53.949516 INFO::Creating boxplot for categorical data, disease vs Sutterella_SGB9281
+2026-11-19 18:32:54.066977 INFO::Creating boxplot for categorical data, disease vs Candidatus_Cibionibacter_quicibialis
+2026-11-19 18:32:54.167496 INFO::Creating boxplot for categorical data, disease vs Eikenella_corrodens
+2026-11-19 18:32:54.259955 INFO::Creating boxplot for categorical data, disease vs Blautia_glucerasea
+2026-11-19 18:32:54.3558 INFO::Creating boxplot for categorical data, disease vs GGB9730_SGB15291
+2026-11-19 18:32:54.447538 INFO::Creating boxplot for categorical data, disease vs Filifactor_alocis
+2026-11-19 18:32:54.549776 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_AF18_31LB
+2026-11-19 18:32:54.652803 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB6179
+2026-11-19 18:32:54.749337 INFO::Creating boxplot for categorical data, disease vs Blautia_stercoris
+2026-11-19 18:32:54.850022 INFO::Creating boxplot for categorical data, disease vs Blautia_sp_MCC283
+2026-11-19 18:32:54.948271 INFO::Creating boxplot for categorical data, disease vs GGB9759_SGB15370
+2026-11-19 18:32:55.039971 INFO::Creating boxplot for categorical data, disease vs Blautia_faecicola
+2026-11-19 18:32:55.146458 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_Marseille_Q4143
+2026-11-19 18:32:55.237814 INFO::Creating boxplot for categorical data, disease vs Mogibacterium_timidum
+2026-11-19 18:32:55.334093 INFO::Creating boxplot for categorical data, disease vs Wujia_chipingensis
+2026-11-19 18:32:55.429614 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_sp_AF41_9
+2026-11-19 18:32:55.51718 INFO::Creating boxplot for categorical data, disease vs GGB38873_SGB47522
+2026-11-19 18:32:55.618108 INFO::Creating boxplot for categorical data, disease vs GGB3828_SGB5197
+2026-11-19 18:32:55.715713 INFO::Creating boxplot for categorical data, disease vs GGB52130_SGB14966
+2026-11-19 18:32:55.806488 INFO::Creating boxplot for categorical data, disease vs GGB96297_SGB123797
+2026-11-19 18:32:55.901937 INFO::Creating boxplot for categorical data, disease vs GGB13404_SGB14252
+2026-11-19 18:32:55.996462 INFO::Creating boxplot for categorical data, disease vs Clostridium_innocuum
+2026-11-19 18:32:56.086731 INFO::Creating boxplot for categorical data, disease vs Faecalibacterium_SGB15346
+2026-11-19 18:32:56.186014 INFO::Creating boxplot for categorical data, disease vs Mediterraneibacter_butyricigenes
+2026-11-19 18:32:56.285169 INFO::Creating boxplot for categorical data, disease vs Faecalicatena_fissicatena
+2026-11-19 18:32:56.37986 INFO::Creating boxplot for categorical data, disease vs Slackia_exigua
+2026-11-19 18:32:56.472931 INFO::Creating boxplot for categorical data, disease vs Eubacterium_infirmum
+2026-11-19 18:32:56.571366 INFO::Creating boxplot for categorical data, disease vs Enterocloster_aldenensis
+2026-11-19 18:32:56.674838 INFO::Creating boxplot for categorical data, disease vs Clostridium_fessum
+2026-11-19 18:32:56.768377 INFO::Creating boxplot for categorical data, disease vs Prevotella_nigrescens
+2026-11-19 18:32:56.865952 INFO::Creating boxplot for categorical data, disease vs GGB41458_SGB58520
+2026-11-19 18:32:56.960552 INFO::Creating boxplot for categorical data, disease vs Bacteroides_nordii
+2026-11-19 18:32:57.082003 INFO::Creating boxplot for categorical data, disease vs Bilophila_wadsworthia
+2026-11-19 18:32:57.183663 INFO::Creating boxplot for categorical data, disease vs GGB3818_SGB5183
+2026-11-19 18:32:57.288512 INFO::Creating boxplot for categorical data, disease vs GGB9616_SGB15052
+2026-11-19 18:32:57.378157 INFO::Creating boxplot for categorical data, disease vs Faecalibacterium_prausnitzii
+2026-11-19 18:32:57.479359 INFO::Creating boxplot for categorical data, disease vs Roseburia_inulinivorans
+2026-11-19 18:32:57.583268 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_AM48_27BH
+2026-11-19 18:32:57.682468 INFO::Creating boxplot for categorical data, disease vs Gordonibacter_pamelaeae
+2026-11-19 18:32:57.786694 INFO::Creating boxplot for categorical data, disease vs Dorea_sp_AF36_15AT
+2026-11-19 18:32:57.877563 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_gordonii
+2026-11-19 18:32:57.976335 INFO::Creating boxplot for categorical data, disease vs Selenomonas_SGB5896
+2026-11-19 18:32:58.076414 INFO::Creating boxplot for categorical data, disease vs Mogibacterium_diversum
+2026-11-19 18:32:58.168448 INFO::Creating boxplot for categorical data, disease vs Selenomonas_SGB5897
+2026-11-19 18:32:58.273254 INFO::Creating boxplot for categorical data, disease vs Paraeggerthella_hongkongensis
+2026-11-19 18:32:58.373344 INFO::Creating boxplot for categorical data, disease vs Solobacterium_SGB6829
+2026-11-19 18:32:58.463524 INFO::Creating boxplot for categorical data, disease vs Blautia_sp_OF03_15BH
+2026-11-19 18:32:58.563416 INFO::Creating boxplot for categorical data, disease vs GGB6574_SGB9290
+2026-11-19 18:32:58.662354 INFO::Creating boxplot for categorical data, disease vs Oribacterium_sp_oral_taxon_102
+2026-11-19 18:32:58.782559 INFO::Creating boxplot for categorical data, disease vs Leptotrichia_trevisanii
+2026-11-19 18:32:58.884849 INFO::Creating boxplot for categorical data, disease vs Veillonella_dispar
+2026-11-19 18:32:58.98329 INFO::Creating boxplot for categorical data, disease vs Fusicatenibacter_sp_CLA_AA_H277
+2026-11-19 18:32:59.084604 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_bromii
+2026-11-19 18:32:59.187417 INFO::Creating boxplot for categorical data, disease vs GGB9760_SGB15373
+2026-11-19 18:32:59.287364 INFO::Creating boxplot for categorical data, disease vs GGB34228_SGB72916
+2026-11-19 18:32:59.378993 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_acidifaciens
+2026-11-19 18:32:59.476435 INFO::Creating boxplot for categorical data, disease vs Brotolimicola_acetigignens
+2026-11-19 18:32:59.575802 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_bouchesdurhonensis
+2026-11-19 18:32:59.669436 INFO::Creating boxplot for categorical data, disease vs Butyricimonas_virosa
+2026-11-19 18:32:59.77158 INFO::Creating boxplot for categorical data, disease vs Eubacterium_ramulus
+2026-11-19 18:32:59.875224 INFO::Creating boxplot for categorical data, disease vs Jutongia_hominis
+2026-11-19 18:32:59.972446 INFO::Creating boxplot for categorical data, disease vs Streptococcus_constellatus
+2026-11-19 18:33:00.072035 INFO::Creating boxplot for categorical data, disease vs Streptococcus_salivarius
+2026-11-19 18:33:00.177703 INFO::Creating boxplot for categorical data, disease vs Escherichia_coli
+2026-11-19 18:33:00.311329 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_CLA_AA_H244
+2026-11-19 18:33:00.404564 INFO::Creating boxplot for categorical data, disease vs Catonella_SGB69305
+2026-11-19 18:33:00.513126 INFO::Creating boxplot for categorical data, disease vs GGB3059_SGB69431
+2026-11-19 18:33:00.612653 INFO::Creating boxplot for categorical data, disease vs GGB4300_SGB123921
+2026-11-19 18:33:00.710764 INFO::Creating boxplot for categorical data, disease vs Tyzzerella_nexilis
+2026-11-19 18:33:00.8133 INFO::Creating boxplot for categorical data, disease vs GGB3345_SGB4425
+2026-11-19 18:33:00.906131 INFO::Creating boxplot for categorical data, disease vs Gemmiger_SGB15295
+2026-11-19 18:33:01.007025 INFO::Creating boxplot for categorical data, disease vs GGB9593_SGB15015
+2026-11-19 18:33:01.109167 INFO::Creating boxplot for categorical data, disease vs Streptococcus_anginosus
+2026-11-19 18:33:01.201577 INFO::Creating boxplot for categorical data, disease vs Streptococcus_oralis
+2026-11-19 18:33:01.30597 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF32_12BH
+2026-11-19 18:33:01.402398 INFO::Creating boxplot for categorical data, disease vs Allisonella_histaminiformans
+2026-11-19 18:33:01.497571 INFO::Creating boxplot for categorical data, disease vs GGB3653_SGB4964
+2026-11-19 18:33:01.600177 INFO::Creating boxplot for categorical data, disease vs Campylobacter_rectus
+2026-11-19 18:33:01.692564 INFO::Creating boxplot for categorical data, disease vs Romboutsia_timonensis
+2026-11-19 18:33:01.796104 INFO::Creating boxplot for categorical data, disease vs Lachnospira_eligens
+2026-11-19 18:33:01.89996 INFO::Creating boxplot for categorical data, disease vs Adlercreutzia_equolifaciens
+2026-11-19 18:33:01.994025 INFO::Creating boxplot for categorical data, disease vs Anaerotruncus_colihominis
+2026-11-19 18:33:02.098505 INFO::Creating boxplot for categorical data, disease vs Sutterella_sp_AM11_39
+2026-11-19 18:33:02.203478 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sp_AF16_48
+2026-11-19 18:33:02.294415 INFO::Creating boxplot for categorical data, disease vs Rothia_mucilaginosa
+2026-11-19 18:33:02.396993 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_NSJ_143
+2026-11-19 18:33:02.654608 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB4751
+2026-11-19 18:33:02.753152 INFO::Creating boxplot for categorical data, disease vs Leptotrichia_sp_oral_taxon_223
+2026-11-19 18:33:02.854267 INFO::Creating boxplot for categorical data, disease vs Bacteroides_thetaiotaomicron
+2026-11-19 18:33:02.957655 INFO::Creating boxplot for categorical data, disease vs Anaerobutyricum_soehngenii
+2026-11-19 18:33:03.067049 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_goldsteinii
+2026-11-19 18:33:03.167416 INFO::Creating boxplot for categorical data, disease vs Klebsiella_quasipneumoniae
+2026-11-19 18:33:03.277358 INFO::Creating boxplot for categorical data, disease vs Enterocloster_citroniae
+2026-11-19 18:33:03.382165 INFO::Creating boxplot for categorical data, disease vs Turicibacter_bilis
+2026-11-19 18:33:03.472986 INFO::Creating boxplot for categorical data, disease vs Christensenella_intestinihominis
+2026-11-19 18:33:03.574341 INFO::Creating boxplot for categorical data, disease vs Oliverpabstia_intestinalis
+2026-11-19 18:33:03.700484 INFO::Creating boxplot for categorical data, disease vs GGB9715_SGB15260
+2026-11-19 18:33:03.794081 INFO::Creating boxplot for categorical data, disease vs Peptostreptococcus_anaerobius
+2026-11-19 18:33:03.901854 INFO::Creating boxplot for categorical data, disease vs GGB9590_SGB15012
+2026-11-19 18:33:04.008382 INFO::Creating boxplot for categorical data, disease vs Bacteroides_sp_AF16_49
+2026-11-19 18:33:04.105862 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF12_28
+2026-11-19 18:33:04.213052 INFO::Creating boxplot for categorical data, disease vs Oscillospiraceae_bacterium_CLA_AA_H250
+2026-11-19 18:33:04.312927 INFO::Creating boxplot for categorical data, disease vs GGB9062_SGB13981
+2026-11-19 18:33:04.411193 INFO::Creating boxplot for categorical data, disease vs Lachnoclostridium_pacaense
+2026-11-19 18:33:04.51375 INFO::Creating boxplot for categorical data, disease vs Prevotella_stercorea
+2026-11-19 18:33:04.611382 INFO::Creating boxplot for categorical data, disease vs Desulfovibrio_piger
+2026-11-19 18:33:04.721242 INFO::Creating boxplot for categorical data, disease vs Morganella_morganii
+2026-11-19 18:33:04.828317 INFO::Creating boxplot for categorical data, disease vs Roseburia_sp_AF02_12
+2026-11-19 18:33:04.919897 INFO::Creating boxplot for categorical data, disease vs GGB9480_SGB14874
+2026-11-19 18:33:05.025566 INFO::Creating boxplot for categorical data, disease vs Alistipes_communis
+2026-11-19 18:33:05.134737 INFO::Creating boxplot for categorical data, disease vs GGB51884_SGB49168
+2026-11-19 18:33:05.255086 INFO::Creating boxplot for categorical data, disease vs Coprococcus_catus
+2026-11-19 18:33:05.371793 INFO::Creating boxplot for categorical data, disease vs Blautia_massiliensis
+2026-11-19 18:33:05.487765 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium
+2026-11-19 18:33:05.602357 INFO::Creating boxplot for categorical data, disease vs Anaeroglobus_geminatus
+2026-11-19 18:33:05.717745 INFO::Creating boxplot for categorical data, disease vs Coprococcus_comes
+2026-11-19 18:33:05.824339 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_lactaris
+2026-11-19 18:33:05.920164 INFO::Creating boxplot for categorical data, disease vs GGB9614_SGB15049
+2026-11-19 18:33:06.024393 INFO::Creating boxplot for categorical data, disease vs Eggerthella_lenta
+2026-11-19 18:33:06.132875 INFO::Creating boxplot for categorical data, disease vs GGB3109_SGB4121
+2026-11-19 18:33:06.247234 INFO::Creating boxplot for categorical data, disease vs Eisenbergiella_tayi
+2026-11-19 18:33:06.35608 INFO::Creating boxplot for categorical data, disease vs Desulfovibrio_fairfieldensis
+2026-11-19 18:33:06.471732 INFO::Creating boxplot for categorical data, disease vs Oscillospiraceae_bacterium_Marseille_Q3528
+2026-11-19 18:33:06.571928 INFO::Creating boxplot for categorical data, disease vs Bifidobacterium_longum
+2026-11-19 18:33:06.676911 INFO::Creating boxplot for categorical data, disease vs GGB9715_SGB15265
+2026-11-19 18:33:06.794279 INFO::Creating boxplot for categorical data, disease vs Paraprevotella_clara
+2026-11-19 18:33:06.904361 INFO::Creating boxplot for categorical data, disease vs Enterocloster_asparagiformis
+2026-11-19 18:33:07.037007 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_faecis
+2026-11-19 18:33:07.148685 INFO::Creating boxplot for categorical data, disease vs Alistipes_SGB2300
+2026-11-19 18:33:07.264314 INFO::Creating boxplot for categorical data, disease vs Lacrimispora_amygdalina
+2026-11-19 18:33:07.357025 INFO::Creating boxplot for categorical data, disease vs GGB13493_SGB15238
+2026-11-19 18:33:07.463369 INFO::Creating boxplot for categorical data, disease vs Veillonella_atypica
+2026-11-19 18:33:07.563078 INFO::Creating boxplot for categorical data, disease vs Clostridium_methylpentosum
+2026-11-19 18:33:07.664046 INFO::Creating boxplot for categorical data, disease vs GGB3740_SGB5076
+2026-11-19 18:33:07.774135 INFO::Creating boxplot for categorical data, disease vs Alistipes_provencensis
+2026-11-19 18:33:07.865696 INFO::Creating boxplot for categorical data, disease vs Zhenpiania_hominis
+2026-11-19 18:33:07.971504 INFO::Creating boxplot for categorical data, disease vs GGB9502_SGB14899
+2026-11-19 18:33:08.077657 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_sp_MSJ_31
+2026-11-19 18:33:08.171006 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF36_4
+2026-11-19 18:33:08.277994 INFO::Creating boxplot for categorical data, disease vs TM7_phylum_sp_oral_taxon_352
+2026-11-19 18:33:08.384755 INFO::Creating boxplot for categorical data, disease vs Alistipes_indistinctus
+2026-11-19 18:33:08.479547 INFO::Creating boxplot for categorical data, disease vs Pseudoflavonifractor_phocaeensis
+2026-11-19 18:33:08.59437 INFO::Creating boxplot for categorical data, disease vs Neobittarella_massiliensis
+2026-11-19 18:33:08.700489 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sp_AF34_35BH
+2026-11-19 18:33:08.798584 INFO::Creating boxplot for categorical data, disease vs Prevotella_corporis
+2026-11-19 18:33:08.904794 INFO::Creating boxplot for categorical data, disease vs Dorea_longicatena
+2026-11-19 18:33:09.009173 INFO::Creating boxplot for categorical data, disease vs GGB9634_SGB15093
+2026-11-19 18:33:09.107524 INFO::Creating boxplot for categorical data, disease vs GGB33469_SGB15236
+2026-11-19 18:33:09.214113 INFO::Creating boxplot for categorical data, disease vs Escherichia_marmotae
+2026-11-19 18:33:09.325022 INFO::Creating boxplot for categorical data, disease vs GGB9602_SGB15031
+2026-11-19 18:33:09.41817 INFO::Creating boxplot for categorical data, disease vs Campylobacter_ureolyticus
+2026-11-19 18:33:09.526039 INFO::Creating boxplot for categorical data, disease vs GGB9522_SGB14921
+2026-11-19 18:33:09.638866 INFO::Creating boxplot for categorical data, disease vs Jilunia_laotingensis
+2026-11-19 18:33:09.743057 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF20_17LB
+2026-11-19 18:33:09.844009 INFO::Creating boxplot for categorical data, disease vs GGB3304_SGB4367
+2026-11-19 18:33:09.9495 INFO::Creating boxplot for categorical data, disease vs Dielma_fastidiosa
+2026-11-19 18:33:10.052667 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_Marseille_P3244
+2026-11-19 18:33:10.147812 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_uenonis
+2026-11-19 18:33:10.254513 INFO::Creating boxplot for categorical data, disease vs Lancefieldella_rimae
+2026-11-19 18:33:10.57464 INFO::Creating boxplot for categorical data, disease vs Simiaoa_sunii
+2026-11-19 18:33:10.662621 INFO::Creating boxplot for categorical data, disease vs Aggregatibacter_segnis
+2026-11-19 18:33:10.755628 INFO::Creating boxplot for categorical data, disease vs Veillonella_rogosae
+2026-11-19 18:33:10.845757 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_SGB4421
+2026-11-19 18:33:10.932258 INFO::Creating boxplot for categorical data, disease vs Clostridium_perfringens
+2026-11-19 18:33:11.021724 INFO::Creating boxplot for categorical data, disease vs TM7_phylum_sp_oral_taxon_348
+2026-11-19 18:33:11.109263 INFO::Creating boxplot for categorical data, disease vs Flavonifractor_plautii
+2026-11-19 18:33:11.200612 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_gabonensis
+2026-11-19 18:33:11.294268 INFO::Creating boxplot for categorical data, disease vs GGB9342_SGB14306
+2026-11-19 18:33:11.379735 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_chh4_2
+2026-11-19 18:33:11.469045 INFO::Creating boxplot for categorical data, disease vs Alistipes_sp_AF17_16
+2026-11-19 18:33:11.55929 INFO::Creating boxplot for categorical data, disease vs Enterococcus_faecalis
+2026-11-19 18:33:11.649491 INFO::Creating boxplot for categorical data, disease vs GGB9747_SGB15356
+2026-11-19 18:33:11.74691 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_distasonis
+2026-11-19 18:33:11.842297 INFO::Creating boxplot for categorical data, disease vs Raoultibacter_timonensis
+2026-11-19 18:33:11.930136 INFO::Creating boxplot for categorical data, disease vs Streptococcus_parasanguinis
+2026-11-19 18:33:12.021122 INFO::Creating boxplot for categorical data, disease vs Cloacibacillus_evryensis
+2026-11-19 18:33:12.110026 INFO::Creating boxplot for categorical data, disease vs Anaerococcus_obesiensis
+2026-11-19 18:33:12.203346 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_coprocola
+2026-11-19 18:33:12.294741 INFO::Creating boxplot for categorical data, disease vs Holdemanella_porci
+2026-11-19 18:33:12.383188 INFO::Creating boxplot for categorical data, disease vs GGB9715_SGB15267
+2026-11-19 18:33:12.473501 INFO::Creating boxplot for categorical data, disease vs Blautia_SGB4815
+2026-11-19 18:33:12.567596 INFO::Creating boxplot for categorical data, disease vs Eubacterium_hominis
+2026-11-19 18:33:12.659259 INFO::Creating boxplot for categorical data, disease vs Jingyaoa_shaoxingensis
+2026-11-19 18:33:12.759073 INFO::Creating boxplot for categorical data, disease vs Roseburia_lenta
+2026-11-19 18:33:12.854592 INFO::Creating boxplot for categorical data, disease vs Sutterella_wadsworthensis
+2026-11-19 18:33:12.947292 INFO::Creating boxplot for categorical data, disease vs Oscillospiraceae_bacterium
+2026-11-19 18:33:13.035555 INFO::Creating boxplot for categorical data, disease vs Solobacterium_SGB6834
+2026-11-19 18:33:13.133761 INFO::Creating boxplot for categorical data, disease vs Alistipes_senegalensis
+2026-11-19 18:33:13.230626 INFO::Creating boxplot for categorical data, disease vs GGB9602_SGB15028
+2026-11-19 18:33:13.32345 INFO::Creating boxplot for categorical data, disease vs Bacteroides_xylanisolvens
+2026-11-19 18:33:13.416005 INFO::Creating boxplot for categorical data, disease vs Peptostreptococcus_SGB749
+2026-11-19 18:33:13.537063 INFO::Creating boxplot for categorical data, disease vs Oxalobacter_formigenes
+2026-11-19 18:33:13.632017 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_sp_ER4
+2026-11-19 18:33:13.73715 INFO::Creating boxplot for categorical data, disease vs GGB3321_SGB4394
+2026-11-19 18:33:13.839619 INFO::Creating boxplot for categorical data, disease vs Faecalicatena_contorta
+2026-11-19 18:33:13.930342 INFO::Creating boxplot for categorical data, disease vs Phascolarctobacterium_SGB5790
+2026-11-19 18:33:14.026094 INFO::Creating boxplot for categorical data, disease vs Lachnoanaerobaculum_sp_ICM7
+2026-11-19 18:33:14.11391 INFO::Creating boxplot for categorical data, disease vs Lachnoanaerobaculum_orale
+2026-11-19 18:33:14.21025 INFO::Creating boxplot for categorical data, disease vs GGB2982_SGB3964
+2026-11-19 18:33:14.30795 INFO::Creating boxplot for categorical data, disease vs Enterobacter_hormaechei
+2026-11-19 18:33:14.395492 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_OM04_12BH
+2026-11-19 18:33:14.490187 INFO::Creating boxplot for categorical data, disease vs GGB3256_SGB4303
+2026-11-19 18:33:14.586841 INFO::Creating boxplot for categorical data, disease vs Pseudoflavonifractor_sp_AF19_9AC
+2026-11-19 18:33:14.678819 INFO::Creating boxplot for categorical data, disease vs GGB3005_SGB3996
+2026-11-19 18:33:14.77806 INFO::Creating boxplot for categorical data, disease vs Anaerotignum_lactatifermentans
+2026-11-19 18:33:14.871175 INFO::Creating boxplot for categorical data, disease vs GGB9760_SGB15374
+2026-11-19 18:33:14.962221 INFO::Creating boxplot for categorical data, disease vs Scardovia_wiggsiae
+2026-11-19 18:33:15.056647 INFO::Creating boxplot for categorical data, disease vs Victivallis_vadensis
+2026-11-19 18:33:15.148407 INFO::Creating boxplot for categorical data, disease vs Dorea_formicigenerans
+2026-11-19 18:33:15.245351 INFO::Creating boxplot for categorical data, disease vs Eggerthella_sinensis
+2026-11-19 18:33:15.341611 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17158
+2026-11-19 18:33:15.428423 INFO::Creating boxplot for categorical data, disease vs GGB9345_SGB14311
+2026-11-19 18:33:15.522571 INFO::Creating boxplot for categorical data, disease vs Lactonifactor_longoviformis
+2026-11-19 18:33:15.619179 INFO::Creating boxplot for categorical data, disease vs Streptococcus_mitis
+2026-11-19 18:33:15.720048 INFO::Creating boxplot for categorical data, disease vs Bacteroides_faecis
+2026-11-19 18:33:15.815061 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_massiliensis
+2026-11-19 18:33:15.919645 INFO::Creating boxplot for categorical data, disease vs Streptococcus_infantis
+2026-11-19 18:33:16.033017 INFO::Creating boxplot for categorical data, disease vs Streptococcus_gallolyticus
+2026-11-19 18:33:16.166747 INFO::Creating boxplot for categorical data, disease vs Eubacterium_callanderi
+2026-11-19 18:33:16.265312 INFO::Creating boxplot for categorical data, disease vs Diplocloster_modestus
+2026-11-19 18:33:16.362942 INFO::Creating boxplot for categorical data, disease vs Anaerotruncus_rubiinfantis
+2026-11-19 18:33:16.450274 INFO::Creating boxplot for categorical data, disease vs Alistipes_ihumii
+2026-11-19 18:33:16.551992 INFO::Creating boxplot for categorical data, disease vs Youxingia_wuxianensis
+2026-11-19 18:33:16.681437 INFO::Creating boxplot for categorical data, disease vs Anaerostipes_caccae
+2026-11-19 18:33:16.775469 INFO::Creating boxplot for categorical data, disease vs Veillonella_tobetsuensis
+2026-11-19 18:33:16.88124 INFO::Creating boxplot for categorical data, disease vs GGB35068_SGB47850
+2026-11-19 18:33:16.984303 INFO::Creating boxplot for categorical data, disease vs Phocea_massiliensis
+2026-11-19 18:33:17.074401 INFO::Creating boxplot for categorical data, disease vs Cloacibacillus_porcorum
+2026-11-19 18:33:17.190281 INFO::Creating boxplot for categorical data, disease vs Butyricimonas_synergistica
+2026-11-19 18:33:17.283254 INFO::Creating boxplot for categorical data, disease vs Anaerotignum_faecicola
+2026-11-19 18:33:17.392583 INFO::Creating boxplot for categorical data, disease vs Sellimonas_intestinalis
+2026-11-19 18:33:17.494158 INFO::Creating boxplot for categorical data, disease vs GGB33512_SGB15201
+2026-11-19 18:33:17.590334 INFO::Creating boxplot for categorical data, disease vs GGB9646_SGB15123
+2026-11-19 18:33:17.696696 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_gnavus
+2026-11-19 18:33:17.801621 INFO::Creating boxplot for categorical data, disease vs Colidextribacter_sp_210702_DFI_3_9
+2026-11-19 18:33:17.893588 INFO::Creating boxplot for categorical data, disease vs GGB36267_SGB14177
+2026-11-19 18:33:17.998416 INFO::Creating boxplot for categorical data, disease vs Gemella_sanguinis
+2026-11-19 18:33:18.097959 INFO::Creating boxplot for categorical data, disease vs GGB33586_SGB53517
+2026-11-19 18:33:18.195102 INFO::Creating boxplot for categorical data, disease vs Actinomyces_SGB17132
+2026-11-19 18:33:18.297502 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sulci
+2026-11-19 18:33:18.395382 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_torques
+2026-11-19 18:33:18.488436 INFO::Creating boxplot for categorical data, disease vs Blautia_producta
+2026-11-19 18:33:18.597443 INFO::Creating boxplot for categorical data, disease vs Segatella_sinensis
+2026-11-19 18:33:18.702602 INFO::Creating boxplot for categorical data, disease vs GGB9708_SGB15234
+2026-11-19 18:33:18.79674 INFO::Creating boxplot for categorical data, disease vs Anaerotignum_sp_MSJ_24
+2026-11-19 18:33:18.897537 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AT4
+2026-11-19 18:33:19.00089 INFO::Creating boxplot for categorical data, disease vs Tyzzerella_SGB4587
+2026-11-19 18:33:19.099949 INFO::Creating boxplot for categorical data, disease vs Phascolarctobacterium_faecium
+2026-11-19 18:33:19.206182 INFO::Creating boxplot for categorical data, disease vs Barnesiella_intestinihominis
+2026-11-19 18:33:19.307908 INFO::Creating boxplot for categorical data, disease vs Actinomyces_bouchesdurhonensis
+2026-11-19 18:33:19.403279 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17168
+2026-11-19 18:33:19.500897 INFO::Creating boxplot for categorical data, disease vs Intestinibacillus_sp_Marseille_P6563
+2026-11-19 18:33:19.603016 INFO::Creating boxplot for categorical data, disease vs Emergencia_timonensis
+2026-11-19 18:33:19.704925 INFO::Creating boxplot for categorical data, disease vs Enterocloster_clostridioformis
+2026-11-19 18:33:19.803106 INFO::Creating boxplot for categorical data, disease vs Streptococcus_thermophilus
+2026-11-19 18:33:19.939367 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_merdae
+2026-11-19 18:33:20.052774 INFO::Creating boxplot for categorical data, disease vs GGB9724_SGB15278
+2026-11-19 18:33:20.15326 INFO::Creating boxplot for categorical data, disease vs GGB9619_SGB15067
+2026-11-19 18:33:20.266214 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_sp_MSJ_38
+2026-11-19 18:33:20.360878 INFO::Creating boxplot for categorical data, disease vs Faecalibacillus_intestinalis
+2026-11-19 18:33:20.467668 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_plebeius
+2026-11-19 18:33:20.590755 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_sp_TM07_1AC
+2026-11-19 18:33:20.685537 INFO::Creating boxplot for categorical data, disease vs Granulicatella_SGB8255
+2026-11-19 18:33:20.795162 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_valericigenes
+2026-11-19 18:33:20.902778 INFO::Creating boxplot for categorical data, disease vs Bacteroides_uniformis
+2026-11-19 18:33:21.109256 INFO::Creating boxplot for categorical data, disease vs Butyricimonas_paravirosa
+2026-11-19 18:33:21.355553 INFO::Creating boxplot for categorical data, disease vs Enterocloster_lavalensis
+2026-11-19 18:33:21.470388 INFO::Creating boxplot for categorical data, disease vs Eubacteriaceae_bacterium
+2026-11-19 18:33:21.594755 INFO::Creating boxplot for categorical data, disease vs GGB58233_SGB79883
+2026-11-19 18:33:21.766874 INFO::Creating boxplot for categorical data, disease vs Blautia_faecis
+2026-11-19 18:33:21.888671 INFO::Creating boxplot for categorical data, disease vs Bacteroides_ovatus
+2026-11-19 18:33:22.086116 INFO::Creating boxplot for categorical data, disease vs GGB9712_SGB15244
+2026-11-19 18:33:22.223789 INFO::Creating boxplot for categorical data, disease vs Coprobacter_fastidiosus
+2026-11-19 18:33:22.342911 INFO::Creating boxplot for categorical data, disease vs GGB4456_SGB6141
+2026-11-19 18:33:22.490653 INFO::Creating boxplot for categorical data, disease vs Faecalimonas_umbilicata
+2026-11-19 18:33:22.597009 INFO::Creating boxplot for categorical data, disease vs Citrobacter_freundii
+2026-11-19 18:33:22.706266 INFO::Creating boxplot for categorical data, disease vs Mediterraneibacter_faecis
+2026-11-19 18:33:22.80822 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_butyriciproducens
+2026-11-19 18:33:22.91241 INFO::Creating boxplot for categorical data, disease vs Schaalia_odontolytica
+2026-11-19 18:33:23.017832 INFO::Creating boxplot for categorical data, disease vs Pyramidobacter_piscolens
+2026-11-19 18:33:23.112136 INFO::Creating boxplot for categorical data, disease vs Longicatena_caecimuris
+2026-11-19 18:33:23.214468 INFO::Creating boxplot for categorical data, disease vs Lachnoclostridium_sp_An138
+2026-11-19 18:33:23.332046 INFO::Creating boxplot for categorical data, disease vs Candidatus_Nanosynsacchari_sp_TM7_ANC_38_39_G1_1
+2026-11-19 18:33:23.435472 INFO::Creating boxplot for categorical data, disease vs Odoribacter_splanchnicus
+2026-11-19 18:33:23.534889 INFO::Creating boxplot for categorical data, disease vs Bacteroides_clarus
+2026-11-19 18:33:23.643765 INFO::Creating boxplot for categorical data, disease vs GGB3740_SGB5077
+2026-11-19 18:33:23.775373 INFO::Creating boxplot for categorical data, disease vs GGB9524_SGB14924
+2026-11-19 18:33:23.869542 INFO::Creating boxplot for categorical data, disease vs Lawsonibacter_hominis
+2026-11-19 18:33:23.973965 INFO::Creating boxplot for categorical data, disease vs Enterocloster_hominis
+2026-11-19 18:33:24.074791 INFO::Creating boxplot for categorical data, disease vs Massiliimalia_timonensis
+2026-11-19 18:33:24.177349 INFO::Creating boxplot for categorical data, disease vs Clostridiales_bacterium
+2026-11-19 18:33:24.284396 INFO::Creating boxplot for categorical data, disease vs Bittarella_massiliensis
+2026-11-19 18:33:24.378557 INFO::Creating boxplot for categorical data, disease vs Bacteroides_cellulosilyticus
+2026-11-19 18:33:24.514365 INFO::Creating boxplot for categorical data, disease vs GGB3277_SGB4327
+2026-11-19 18:33:24.728266 INFO::Creating boxplot for categorical data, disease vs Mediterraneibacter_sp_NSJ_151
+2026-11-19 18:33:24.897132 INFO::Creating boxplot for categorical data, disease vs Parabacteroides_johnsonii
+2026-11-19 18:33:25.049868 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_1001270J_160509_D11
+2026-11-19 18:33:25.155545 INFO::Creating boxplot for categorical data, disease vs Diplocloster_agilis
+2026-11-19 18:33:25.269253 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_ulcerans
+2026-11-19 18:33:25.496841 INFO::Creating boxplot for categorical data, disease vs GGB9491_SGB14888
+2026-11-19 18:33:25.659451 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM29_11AC
+2026-11-19 18:33:25.774008 INFO::Creating boxplot for categorical data, disease vs Clostridia_bacterium_UC5_1_1D1
+2026-11-19 18:33:25.916576 INFO::Creating boxplot for categorical data, disease vs Eubacterium_siraeum
+2026-11-19 18:33:26.039763 INFO::Creating boxplot for categorical data, disease vs GGB9635_SGB15106
+2026-11-19 18:33:26.144901 INFO::Creating boxplot for categorical data, disease vs Christensenella_sp_NSJ_35
+2026-11-19 18:33:26.262612 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_Marseille_Q3526
+2026-11-19 18:33:26.371307 INFO::Creating boxplot for categorical data, disease vs Campylobacter_hominis
+2026-11-19 18:33:26.497774 INFO::Creating boxplot for categorical data, disease vs GGB9627_SGB15081
+2026-11-19 18:33:26.673384 INFO::Creating boxplot for categorical data, disease vs Streptococcus_cristatus
+2026-11-19 18:33:26.807155 INFO::Creating boxplot for categorical data, disease vs GGB58485_SGB80143
+2026-11-19 18:33:26.913385 INFO::Creating boxplot for categorical data, disease vs Vescimonas_SGB15087
+2026-11-19 18:33:27.023946 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_vulgatus
+2026-11-19 18:33:28.859908 INFO::Plotting data for metadata number 2, Age
+2026-11-19 18:33:28.862064 INFO::Creating scatter plot for continuous data, Age vs Streptococcus_gordonii
+0  features are filtered!
+The filtered data has  570  samples and  511  features will be tested!
+Fit linear models ...
+Completed.
+Checking the input data type ...
+The input data is of type: matrix
+The imported data is in a generic 'matrix'/'data.frame' format.
+PASS
+Checking the sample metadata ...
+The specified variables in the formula: disease, Age, Sex
+The available variables in the sample metadata: cohort, disease, type, patientID, Age, BMI, Sex, Stage, Tumor_Location, PNI, mmr_status, RECIST, NeoImmunity, MMR_study
+PASS
+Checking other arguments ...
+PASS
+Obtaining initial estimates ...
+Estimating sample-specific biases ...
+Loading required package: foreach
+Loading required package: rngtools
+Conducting sensitivity analysis for pseudo-count addition to 0s ...
+For taxa that are significant but do not pass the sensitivity analysis,
+please flag them and proceed with caution, as they are likely false positives.
+For detailed instructions on performing sensitivity analysis,
+please refer to the package vignette.
+ANCOM-BC2 primary results ...
+New names:
+• `` -> `...1`
+# A tibble: 1 × 6
+  Maaslin_filtered_count Maaslin_up_count Maaslin_down_count Final_is_1_count
+                   <int>            <int>              <int>            <int>
+1                    229               80                149              221
+# ℹ 2 more variables: Final_up_count <int>, Final_down_count <int>
+Completed: sysucc_crc_vs_harbin_normal
+Warning messages:
+1: There was 1 warning in `mutate()`.
+ℹ In argument: `BMI = as.numeric(BMI)`.
+Caused by warning:
+! NAs introduced by coercion 
+2: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead.
+ℹ The deprecated feature was likely used in the Maaslin2 package.
+  Please report the issue at <https://github.com/biobakery/maaslin2/issues>. 
+3: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+ℹ Please use `linewidth` instead.
+ℹ The deprecated feature was likely used in the Maaslin2 package.
+  Please report the issue at <https://github.com/biobakery/maaslin2/issues>. 
+4: In run_crc_comparison(case_cohort = "SYSUCC", output_prefix = "sysucc_crc_vs_harbin_normal",  :
+  sysucc_crc_vs_harbin_normal: validated MaAsLin2 results; continuing after a later error: <ggplot2::labels> object is invalid:
+- every label must be named.
+5: package ‘doRNG’ was built under R version 4.4.3 
+
+Starting: harbin_crc_vs_harbin_normal
+harbin_crc_vs_harbin_normal: cases = 164; controls = 262; core species = 598
+2026-11-19 18:34:22.085166 WARNING::Input is a matrix, passing through as.data.frame() .
+[1] "Creating output folder"
+[1] "Creating output feature tables folder"
+[1] "Creating output fits folder"
+[1] "Creating output figures folder"
+2026-11-19 18:34:22.093769 INFO::Writing function arguments to log file
+2026-11-19 18:34:22.095805 INFO::Verifying options selected are valid
+2026-11-19 18:34:22.096055 INFO::Determining format of input files
+2026-11-19 18:34:22.096295 INFO::Input format is data samples as rows and metadata samples as rows
+2026-11-19 18:34:22.100934 INFO::Formula for fixed effects: expr ~  Age + Sex + disease
+2026-11-19 18:34:22.101372 INFO::Factor detected for categorial metadata 'Sex'. Provide a reference argument or manually set factor ordering to change reference level.
+2026-11-19 18:34:22.101797 INFO::Filter data based on min abundance and min prevalence
+2026-11-19 18:34:22.102057 INFO::Total samples in data: 426
+2026-11-19 18:34:22.102288 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
+2026-11-19 18:34:22.106738 INFO::Total filtered features: 0
+2026-11-19 18:34:22.107059 INFO::Filtered feature names from abundance and prevalence filtering:
+2026-11-19 18:34:22.114284 INFO::Total filtered features with variance filtering: 0
+2026-11-19 18:34:22.114544 INFO::Filtered feature names from variance filtering:
+2026-11-19 18:34:22.114745 INFO::Running selected normalization method: TSS
+2026-11-19 18:34:22.125596 INFO::Applying z-score to standardize continuous metadata
+2026-11-19 18:34:22.12719 INFO::Running selected transform method: LOG
+2026-11-19 18:34:22.141938 INFO::Running selected analysis method: LM
+2026-11-19 18:34:22.142422 INFO::Fitting model to feature number 1, Segatella_copri
+2026-11-19 18:34:22.144164 INFO::Fitting model to feature number 2, Eubacterium_siraeum
+2026-11-19 18:34:22.145614 INFO::Fitting model to feature number 3, Eubacterium_rectale
+2026-11-19 18:34:22.146882 INFO::Fitting model to feature number 4, Faecalibacterium_prausnitzii
+2026-11-19 18:34:22.148097 INFO::Fitting model to feature number 5, Dialister_hominis
+2026-11-19 18:34:22.149315 INFO::Fitting model to feature number 6, GGB9342_SGB14306
+2026-11-19 18:34:22.150537 INFO::Fitting model to feature number 7, Methanobrevibacter_smithii
+2026-11-19 18:34:22.151705 INFO::Fitting model to feature number 8, Wujia_chipingensis
+2026-11-19 18:34:22.152902 INFO::Fitting model to feature number 9, Paraprevotella_clara
+2026-11-19 18:34:22.154072 INFO::Fitting model to feature number 10, Lachnospira_pectinoschiza
+2026-11-19 18:34:22.155208 INFO::Fitting model to feature number 11, Lachnospira_eligens
+2026-11-19 18:34:22.15637 INFO::Fitting model to feature number 12, Phocaeicola_plebeius
+2026-11-19 18:34:22.157469 INFO::Fitting model to feature number 13, Phocaeicola_vulgatus
+2026-11-19 18:34:22.158568 INFO::Fitting model to feature number 14, Klebsiella_pneumoniae
+2026-11-19 18:34:22.15965 INFO::Fitting model to feature number 15, Akkermansia_muciniphila
+2026-11-19 18:34:22.160733 INFO::Fitting model to feature number 16, GGB9635_SGB15106
+2026-11-19 18:34:22.161827 INFO::Fitting model to feature number 17, Alistipes_putredinis
+2026-11-19 18:34:22.162946 INFO::Fitting model to feature number 18, Oscillibacter_sp_ER4
+2026-11-19 18:34:22.16403 INFO::Fitting model to feature number 19, GGB9345_SGB14311
+2026-11-19 18:34:22.165151 INFO::Fitting model to feature number 20, GGB9758_SGB15368
+2026-11-19 18:34:22.166321 INFO::Fitting model to feature number 21, Roseburia_faecis
+2026-11-19 18:34:22.167443 INFO::Fitting model to feature number 22, Roseburia_inulinivorans
+2026-11-19 18:34:22.168588 INFO::Fitting model to feature number 23, GGB9602_SGB15031
+2026-11-19 18:34:22.169691 INFO::Fitting model to feature number 24, Oscillospiraceae_bacterium
+2026-11-19 18:34:22.170805 INFO::Fitting model to feature number 25, Phocaeicola_coprophilus
+2026-11-19 18:34:22.171933 INFO::Fitting model to feature number 26, Alistipes_onderdonkii
+2026-11-19 18:34:22.173096 INFO::Fitting model to feature number 27, Oscillibacter_valericigenes
+2026-11-19 18:34:22.174204 INFO::Fitting model to feature number 28, GGB3256_SGB4303
+2026-11-19 18:34:22.175365 INFO::Fitting model to feature number 29, GGB9708_SGB15233
+2026-11-19 18:34:22.176476 INFO::Fitting model to feature number 30, Holdemanella_biformis
+2026-11-19 18:34:22.177587 INFO::Fitting model to feature number 31, Bacteroides_uniformis
+2026-11-19 18:34:22.178759 INFO::Fitting model to feature number 32, GGB4683_SGB6473
+2026-11-19 18:34:22.179906 INFO::Fitting model to feature number 33, GGB3277_SGB4327
+2026-11-19 18:34:22.18108 INFO::Fitting model to feature number 34, GGB9747_SGB15356
+2026-11-19 18:34:22.182209 INFO::Fitting model to feature number 35, GGB9715_SGB15265
+2026-11-19 18:34:22.193622 INFO::Fitting model to feature number 36, Brotolimicola_acetigignens
+2026-11-19 18:34:22.194918 INFO::Fitting model to feature number 37, Alistipes_shahii
+2026-11-19 18:34:22.196049 INFO::Fitting model to feature number 38, Ruminococcus_callidus
+2026-11-19 18:34:22.197154 INFO::Fitting model to feature number 39, Coprococcus_eutactus
+2026-11-19 18:34:22.198254 INFO::Fitting model to feature number 40, Agathobaculum_butyriciproducens
+2026-11-19 18:34:22.199359 INFO::Fitting model to feature number 41, GGB3304_SGB4367
+2026-11-19 18:34:22.200438 INFO::Fitting model to feature number 42, GGB3619_SGB4894
+2026-11-19 18:34:22.201521 INFO::Fitting model to feature number 43, Simiaoa_sunii
+2026-11-19 18:34:22.202599 INFO::Fitting model to feature number 44, GGB13493_SGB15238
+2026-11-19 18:34:22.20369 INFO::Fitting model to feature number 45, Mediterraneibacter_faecis
+2026-11-19 18:34:22.204776 INFO::Fitting model to feature number 46, GGB9813_SGB15447
+2026-11-19 18:34:22.205906 INFO::Fitting model to feature number 47, Faecalibacterium_SGB15346
+2026-11-19 18:34:22.207008 INFO::Fitting model to feature number 48, Bifidobacterium_adolescentis
+2026-11-19 18:34:22.208091 INFO::Fitting model to feature number 49, GGB4684_SGB6478
+2026-11-19 18:34:22.20917 INFO::Fitting model to feature number 50, Odoribacter_splanchnicus
+2026-11-19 18:34:22.210338 INFO::Fitting model to feature number 51, Dorea_longicatena
+2026-11-19 18:34:22.211421 INFO::Fitting model to feature number 52, GGB9708_SGB15234
+2026-11-19 18:34:22.2125 INFO::Fitting model to feature number 53, Barnesiella_intestinihominis
+2026-11-19 18:34:22.213581 INFO::Fitting model to feature number 54, Ruminococcus_bromii
+2026-11-19 18:34:22.214659 INFO::Fitting model to feature number 55, Oscillibacter_sp_MSJ_31
+2026-11-19 18:34:22.215739 INFO::Fitting model to feature number 56, Ruminococcus_bicirculans
+2026-11-19 18:34:22.216854 INFO::Fitting model to feature number 57, Gemmiger_formicilis
+2026-11-19 18:34:22.21795 INFO::Fitting model to feature number 58, Fusicatenibacter_saccharivorans
+2026-11-19 18:34:22.219046 INFO::Fitting model to feature number 59, Escherichia_coli
+2026-11-19 18:34:22.220119 INFO::Fitting model to feature number 60, Roseburia_hominis
+2026-11-19 18:34:22.221188 INFO::Fitting model to feature number 61, Parasutterella_SGB9260
+2026-11-19 18:34:22.222274 INFO::Fitting model to feature number 62, Clostridium_fessum
+2026-11-19 18:34:22.223409 INFO::Fitting model to feature number 63, Butyricicoccus_SGB14990
+2026-11-19 18:34:22.224499 INFO::Fitting model to feature number 64, Coprococcus_comes
+2026-11-19 18:34:22.225585 INFO::Fitting model to feature number 65, Clostridiales_bacterium_KLE1615
+2026-11-19 18:34:22.226724 INFO::Fitting model to feature number 66, Candidatus_Cibionibacter_quicibialis
+2026-11-19 18:34:22.22781 INFO::Fitting model to feature number 67, Catenibacterium_tridentinum
+2026-11-19 18:34:22.228896 INFO::Fitting model to feature number 68, Roseburia_intestinalis
+2026-11-19 18:34:22.23007 INFO::Fitting model to feature number 69, Mesosutterella_multiformis
+2026-11-19 18:34:22.231161 INFO::Fitting model to feature number 70, GGB33469_SGB15236
+2026-11-19 18:34:22.232238 INFO::Fitting model to feature number 71, Klebsiella_quasipneumoniae
+2026-11-19 18:34:22.233363 INFO::Fitting model to feature number 72, Phocaeicola_coprocola
+2026-11-19 18:34:22.234446 INFO::Fitting model to feature number 73, Lacrimispora_amygdalina
+2026-11-19 18:34:22.235533 INFO::Fitting model to feature number 74, GGB3653_SGB4964
+2026-11-19 18:34:22.236636 INFO::Fitting model to feature number 75, Clostridiaceae_bacterium_Marseille_Q4149
+2026-11-19 18:34:22.237766 INFO::Fitting model to feature number 76, Parabacteroides_goldsteinii
+2026-11-19 18:34:22.238879 INFO::Fitting model to feature number 77, Collinsella_aerofaciens
+2026-11-19 18:34:22.240036 INFO::Fitting model to feature number 78, Faecalibacterium_sp_HTFF
+2026-11-19 18:34:22.241164 INFO::Fitting model to feature number 79, GGB3345_SGB4425
+2026-11-19 18:34:22.242274 INFO::Fitting model to feature number 80, GGB9715_SGB15267
+2026-11-19 18:34:22.243362 INFO::Fitting model to feature number 81, Parabacteroides_merdae
+2026-11-19 18:34:22.244489 INFO::Fitting model to feature number 82, Clostridium_sp_AM22_11AC
+2026-11-19 18:34:22.245614 INFO::Fitting model to feature number 83, Lachnospiraceae_bacterium_OM04_12BH
+2026-11-19 18:34:22.246709 INFO::Fitting model to feature number 84, Bilophila_wadsworthia
+2026-11-19 18:34:22.247795 INFO::Fitting model to feature number 85, Gemmiger_SGB15295
+2026-11-19 18:34:22.248875 INFO::Fitting model to feature number 86, Alistipes_senegalensis
+2026-11-19 18:34:22.249978 INFO::Fitting model to feature number 87, Intestinimonas_massiliensis
+2026-11-19 18:34:22.251076 INFO::Fitting model to feature number 88, Roseburia_lenta
+2026-11-19 18:34:22.252167 INFO::Fitting model to feature number 89, Blautia_glucerasea
+2026-11-19 18:34:22.253327 INFO::Fitting model to feature number 90, GGB9699_SGB15216
+2026-11-19 18:34:22.254466 INFO::Fitting model to feature number 91, Phascolarctobacterium_faecium
+2026-11-19 18:34:22.255578 INFO::Fitting model to feature number 92, GGB13404_SGB14252
+2026-11-19 18:34:22.256893 INFO::Fitting model to feature number 93, Bacteroides_cellulosilyticus
+2026-11-19 18:34:22.25819 INFO::Fitting model to feature number 94, Blautia_sp_MCC283
+2026-11-19 18:34:22.259363 INFO::Fitting model to feature number 95, Bacteroides_ovatus
+2026-11-19 18:34:22.26051 INFO::Fitting model to feature number 96, Clostridium_SGB4750
+2026-11-19 18:34:22.261643 INFO::Fitting model to feature number 97, GGB9730_SGB15291
+2026-11-19 18:34:22.262827 INFO::Fitting model to feature number 98, Oscillospiraceae_bacterium_CLA_AA_H250
+2026-11-19 18:34:22.264134 INFO::Fitting model to feature number 99, Alistipes_sp_AF17_16
+2026-11-19 18:34:22.265501 INFO::Fitting model to feature number 100, Faecalicatena_fissicatena
+2026-11-19 18:34:22.266727 INFO::Fitting model to feature number 101, Bacteroides_stercoris
+2026-11-19 18:34:22.267897 INFO::Fitting model to feature number 102, Lachnospira_sp_NSJ_43
+2026-11-19 18:34:22.269007 INFO::Fitting model to feature number 103, Alistipes_communis
+2026-11-19 18:34:22.270119 INFO::Fitting model to feature number 104, Clostridium_sp_AF27_2AA
+2026-11-19 18:34:22.271222 INFO::Fitting model to feature number 105, GGB2958_SGB3940
+2026-11-19 18:34:22.272362 INFO::Fitting model to feature number 106, Lachnospiraceae_bacterium_AM48_27BH
+2026-11-19 18:34:22.273544 INFO::Fitting model to feature number 107, GGB9534_SGB14937
+2026-11-19 18:34:22.274725 INFO::Fitting model to feature number 108, GGB9642_SGB15119
+2026-11-19 18:34:22.275941 INFO::Fitting model to feature number 109, Bacteroides_eggerthii
+2026-11-19 18:34:22.277209 INFO::Fitting model to feature number 110, Blautia_wexlerae
+2026-11-19 18:34:22.278405 INFO::Fitting model to feature number 111, Anaerobutyricum_hallii
+2026-11-19 18:34:22.279596 INFO::Fitting model to feature number 112, Parabacteroides_distasonis
+2026-11-19 18:34:22.281005 INFO::Fitting model to feature number 113, Lachnospiraceae_bacterium_CLA_AA_H244
+2026-11-19 18:34:22.282284 INFO::Fitting model to feature number 114, Bacteroides_faecis
+2026-11-19 18:34:22.283474 INFO::Fitting model to feature number 115, Bifidobacterium_longum
+2026-11-19 18:34:22.284636 INFO::Fitting model to feature number 116, Eubacterium_ventriosum
+2026-11-19 18:34:22.285787 INFO::Fitting model to feature number 117, Clostridiaceae_bacterium
+2026-11-19 18:34:22.286958 INFO::Fitting model to feature number 118, GGB9616_SGB15051
+2026-11-19 18:34:22.28812 INFO::Fitting model to feature number 119, Bifidobacterium_bifidum
+2026-11-19 18:34:22.289282 INFO::Fitting model to feature number 120, GGB9707_SGB15229
+2026-11-19 18:34:22.290465 INFO::Fitting model to feature number 121, Ruminococcus_SGB4421
+2026-11-19 18:34:22.291602 INFO::Fitting model to feature number 122, Bacteroides_caccae
+2026-11-19 18:34:22.292727 INFO::Fitting model to feature number 123, Butyricimonas_faecalis
+2026-11-19 18:34:22.293874 INFO::Fitting model to feature number 124, Clostridium_sp_AM33_3
+2026-11-19 18:34:22.295026 INFO::Fitting model to feature number 125, Clostridium_sp_AF36_4
+2026-11-19 18:34:22.296191 INFO::Fitting model to feature number 126, Clostridiaceae_bacterium_AF18_31LB
+2026-11-19 18:34:22.297364 INFO::Fitting model to feature number 127, GGB9359_SGB14334
+2026-11-19 18:34:22.298644 INFO::Fitting model to feature number 128, Hydrogenoanaerobacterium_saccharovorans
+2026-11-19 18:34:22.300041 INFO::Fitting model to feature number 129, Parasutterella_excrementihominis
+2026-11-19 18:34:22.30117 INFO::Fitting model to feature number 130, GGB2983_SGB3965
+2026-11-19 18:34:22.302274 INFO::Fitting model to feature number 131, GGB9595_SGB15019
+2026-11-19 18:34:22.303467 INFO::Fitting model to feature number 132, Blautia_faecis
+2026-11-19 18:34:22.305382 INFO::Fitting model to feature number 133, GGB51884_SGB49168
+2026-11-19 18:34:22.306652 INFO::Fitting model to feature number 134, GGB9502_SGB14899
+2026-11-19 18:34:22.307884 INFO::Fitting model to feature number 135, Blautia_obeum
+2026-11-19 18:34:22.309128 INFO::Fitting model to feature number 136, GGB9766_SGB15383
+2026-11-19 18:34:22.310331 INFO::Fitting model to feature number 137, Clostridiaceae_bacterium_Marseille_Q4143
+2026-11-19 18:34:22.311504 INFO::Fitting model to feature number 138, Dorea_formicigenerans
+2026-11-19 18:34:22.312622 INFO::Fitting model to feature number 139, Lawsonibacter_hominis
+2026-11-19 18:34:22.313765 INFO::Fitting model to feature number 140, Coprococcus_catus
+2026-11-19 18:34:22.314909 INFO::Fitting model to feature number 141, Clostridium_SGB6173
+2026-11-19 18:34:22.316041 INFO::Fitting model to feature number 142, Dysosmobacter_welbionis
+2026-11-19 18:34:22.317187 INFO::Fitting model to feature number 143, GGB9690_SGB15196
+2026-11-19 18:34:22.318343 INFO::Fitting model to feature number 144, Clostridium_SGB6179
+2026-11-19 18:34:22.319532 INFO::Fitting model to feature number 145, GGB9524_SGB14924
+2026-11-19 18:34:22.320692 INFO::Fitting model to feature number 146, GGB9770_SGB15389
+2026-11-19 18:34:22.321872 INFO::Fitting model to feature number 147, Oliverpabstia_intestinalis
+2026-11-19 18:34:22.323224 INFO::Fitting model to feature number 148, Tyzzerella_SGB4587
+2026-11-19 18:34:22.324625 INFO::Fitting model to feature number 149, GGB36267_SGB14177
+2026-11-19 18:34:22.325933 INFO::Fitting model to feature number 150, Alistipes_indistinctus
+2026-11-19 18:34:22.327169 INFO::Fitting model to feature number 151, Lawsonibacter_SGB15145
+2026-11-19 18:34:22.328419 INFO::Fitting model to feature number 152, Vescimonas_SGB15087
+2026-11-19 18:34:22.329679 INFO::Fitting model to feature number 153, GGB33512_SGB15201
+2026-11-19 18:34:22.33101 INFO::Fitting model to feature number 154, GGB9760_SGB15373
+2026-11-19 18:34:22.332545 INFO::Fitting model to feature number 155, Bacteroides_xylanisolvens
+2026-11-19 18:34:22.333999 INFO::Fitting model to feature number 156, GGB3730_SGB5060
+2026-11-19 18:34:22.335679 INFO::Fitting model to feature number 157, GGB9593_SGB15015
+2026-11-19 18:34:22.336937 INFO::Fitting model to feature number 158, Eubacteriaceae_bacterium
+2026-11-19 18:34:22.338218 INFO::Fitting model to feature number 159, GGB3321_SGB4394
+2026-11-19 18:34:22.339531 INFO::Fitting model to feature number 160, GGB9618_SGB15065
+2026-11-19 18:34:22.340778 INFO::Fitting model to feature number 161, Clostridium_SGB4751
+2026-11-19 18:34:22.341981 INFO::Fitting model to feature number 162, Ruminococcus_torques
+2026-11-19 18:34:22.34321 INFO::Fitting model to feature number 163, Acidaminococcus_massiliensis
+2026-11-19 18:34:22.344396 INFO::Fitting model to feature number 164, Roseburia_sp_AF02_12
+2026-11-19 18:34:22.345569 INFO::Fitting model to feature number 165, Anaerostipes_hadrus
+2026-11-19 18:34:22.346764 INFO::Fitting model to feature number 166, Lawsonibacter_asaccharolyticus
+2026-11-19 18:34:22.347974 INFO::Fitting model to feature number 167, GGB9597_SGB15022
+2026-11-19 18:34:22.349182 INFO::Fitting model to feature number 168, Bifidobacterium_pseudocatenulatum
+2026-11-19 18:34:22.350435 INFO::Fitting model to feature number 169, GGB9760_SGB15374
+2026-11-19 18:34:22.351636 INFO::Fitting model to feature number 170, GGB9715_SGB15260
+2026-11-19 18:34:22.352842 INFO::Fitting model to feature number 171, GGB9444_SGB14834
+2026-11-19 18:34:22.354068 INFO::Fitting model to feature number 172, Vescimonas_coprocola
+2026-11-19 18:34:22.355246 INFO::Fitting model to feature number 173, Clostridium_sp_AF32_12BH
+2026-11-19 18:34:22.356586 INFO::Fitting model to feature number 174, Fusicatenibacter_sp_CLA_AA_H277
+2026-11-19 18:34:22.35791 INFO::Fitting model to feature number 175, Clostridiaceae_bacterium_Marseille_Q4145
+2026-11-19 18:34:22.36093 INFO::Fitting model to feature number 176, Clostridium_sp_AF20_17LB
+2026-11-19 18:34:22.36299 INFO::Fitting model to feature number 177, GGB9293_SGB14250
+2026-11-19 18:34:22.364672 INFO::Fitting model to feature number 178, GGB2998_SGB3988
+2026-11-19 18:34:22.366078 INFO::Fitting model to feature number 179, Streptococcus_salivarius
+2026-11-19 18:34:22.36745 INFO::Fitting model to feature number 180, Anaerotignum_sp_MSJ_24
+2026-11-19 18:34:22.368869 INFO::Fitting model to feature number 181, Eubacterium_sp_AF34_35BH
+2026-11-19 18:34:22.370216 INFO::Fitting model to feature number 182, GGB2653_SGB3574
+2026-11-19 18:34:22.371562 INFO::Fitting model to feature number 183, GGB51441_SGB71759
+2026-11-19 18:34:22.372897 INFO::Fitting model to feature number 184, Butyricimonas_virosa
+2026-11-19 18:34:22.374387 INFO::Fitting model to feature number 185, GGB9634_SGB15093
+2026-11-19 18:34:22.375797 INFO::Fitting model to feature number 186, Flavonifractor_plautii
+2026-11-19 18:34:22.37718 INFO::Fitting model to feature number 187, GGB49418_SGB69331
+2026-11-19 18:34:22.378525 INFO::Fitting model to feature number 188, Bacteroides_intestinalis
+2026-11-19 18:34:22.379824 INFO::Fitting model to feature number 189, GGB9790_SGB15413
+2026-11-19 18:34:22.381142 INFO::Fitting model to feature number 190, GGB9614_SGB15049
+2026-11-19 18:34:22.382466 INFO::Fitting model to feature number 191, Anaeromassilibacillus_senegalensis
+2026-11-19 18:34:22.383764 INFO::Fitting model to feature number 192, GGB33586_SGB53517
+2026-11-19 18:34:22.385057 INFO::Fitting model to feature number 193, Dorea_sp_AF36_15AT
+2026-11-19 18:34:22.386291 INFO::Fitting model to feature number 194, Allisonella_histaminiformans
+2026-11-19 18:34:22.387487 INFO::Fitting model to feature number 195, Bacteroides_fragilis
+2026-11-19 18:34:22.388694 INFO::Fitting model to feature number 196, Mediterraneibacter_butyricigenes
+2026-11-19 18:34:22.389957 INFO::Fitting model to feature number 197, Oscillospiraceae_bacterium_Marseille_Q3528
+2026-11-19 18:34:22.391186 INFO::Fitting model to feature number 198, Ruminococcus_gnavus
+2026-11-19 18:34:22.392443 INFO::Fitting model to feature number 199, GGB9365_SGB14341
+2026-11-19 18:34:22.393658 INFO::Fitting model to feature number 200, GGB9787_SGB15410
+2026-11-19 18:34:22.394822 INFO::Fitting model to feature number 201, Coprobacillus_cateniformis
+2026-11-19 18:34:22.396033 INFO::Fitting model to feature number 202, GGB9616_SGB15052
+2026-11-19 18:34:22.397298 INFO::Fitting model to feature number 203, Ruthenibacterium_lactatiformans
+2026-11-19 18:34:22.398522 INFO::Fitting model to feature number 204, Lachnospiraceae_bacterium
+2026-11-19 18:34:22.39976 INFO::Fitting model to feature number 205, Eubacterium_sp_AF16_48
+2026-11-19 18:34:22.401038 INFO::Fitting model to feature number 206, Eubacterium_ramulus
+2026-11-19 18:34:22.402306 INFO::Fitting model to feature number 207, Blautia_massiliensis
+2026-11-19 18:34:22.40358 INFO::Fitting model to feature number 208, GGB35068_SGB47850
+2026-11-19 18:34:22.405774 INFO::Fitting model to feature number 209, Anaerobutyricum_soehngenii
+2026-11-19 18:34:22.407119 INFO::Fitting model to feature number 210, Clostridium_leptum
+2026-11-19 18:34:22.408398 INFO::Fitting model to feature number 211, GGB9512_SGB14909
+2026-11-19 18:34:22.409609 INFO::Fitting model to feature number 212, Clostridiaceae_unclassified_SGB4771
+2026-11-19 18:34:22.410822 INFO::Fitting model to feature number 213, Holdemania_filiformis
+2026-11-19 18:34:22.412038 INFO::Fitting model to feature number 214, Blautia_sp_OF03_15BH
+2026-11-19 18:34:22.413268 INFO::Fitting model to feature number 215, GGB58485_SGB80143
+2026-11-19 18:34:22.414473 INFO::Fitting model to feature number 216, Clostridium_sp_AM49_4BH
+2026-11-19 18:34:22.415652 INFO::Fitting model to feature number 217, Streptococcus_parasanguinis
+2026-11-19 18:34:22.41685 INFO::Fitting model to feature number 218, Bacteroides_finegoldii
+2026-11-19 18:34:22.418042 INFO::Fitting model to feature number 219, Alistipes_ihumii
+2026-11-19 18:34:22.429874 INFO::Fitting model to feature number 220, GGB9781_SGB66170
+2026-11-19 18:34:22.431149 INFO::Fitting model to feature number 221, GGB9781_SGB15402
+2026-11-19 18:34:22.432282 INFO::Fitting model to feature number 222, Butyricimonas_synergistica
+2026-11-19 18:34:22.43338 INFO::Fitting model to feature number 223, Blautia_SGB4815
+2026-11-19 18:34:22.434507 INFO::Fitting model to feature number 224, Blautia_luti
+2026-11-19 18:34:22.435614 INFO::Fitting model to feature number 225, Colidextribacter_sp_210702_DFI_3_9
+2026-11-19 18:34:22.436697 INFO::Fitting model to feature number 226, Adlercreutzia_equolifaciens
+2026-11-19 18:34:22.43779 INFO::Fitting model to feature number 227, GGB9522_SGB14921
+2026-11-19 18:34:22.438865 INFO::Fitting model to feature number 228, GGB9062_SGB13981
+2026-11-19 18:34:22.44002 INFO::Fitting model to feature number 229, Faecalibacillus_intestinalis
+2026-11-19 18:34:22.441146 INFO::Fitting model to feature number 230, Romboutsia_timonensis
+2026-11-19 18:34:22.442255 INFO::Fitting model to feature number 231, Klebsiella_variicola
+2026-11-19 18:34:22.443361 INFO::Fitting model to feature number 232, Lachnospiraceae_bacterium_CLA_AA_H215
+2026-11-19 18:34:22.44445 INFO::Fitting model to feature number 233, GGB3828_SGB5197
+2026-11-19 18:34:22.445537 INFO::Fitting model to feature number 234, Clostridium_sp_AM42_4
+2026-11-19 18:34:22.44666 INFO::Fitting model to feature number 235, Eubacteriales_bacterium
+2026-11-19 18:34:22.447746 INFO::Fitting model to feature number 236, Anaerotruncus_rubiinfantis
+2026-11-19 18:34:22.448825 INFO::Fitting model to feature number 237, Senegalimassilia_anaerobia
+2026-11-19 18:34:22.449913 INFO::Fitting model to feature number 238, GGB9627_SGB15081
+2026-11-19 18:34:22.450992 INFO::Fitting model to feature number 239, Youxingia_wuxianensis
+2026-11-19 18:34:22.452065 INFO::Fitting model to feature number 240, Anaerosacchariphilus_sp_NSJ_68
+2026-11-19 18:34:22.453156 INFO::Fitting model to feature number 241, Phocea_massiliensis
+2026-11-19 18:34:22.454223 INFO::Fitting model to feature number 242, Phocaeicola_dorei
+2026-11-19 18:34:22.45538 INFO::Fitting model to feature number 243, GGB9237_SGB14179
+2026-11-19 18:34:22.45657 INFO::Fitting model to feature number 244, Lachnospiraceae_bacterium_OF09_6
+2026-11-19 18:34:22.457694 INFO::Fitting model to feature number 245, GGB9646_SGB15123
+2026-11-19 18:34:22.458831 INFO::Fitting model to feature number 246, GGB52130_SGB14966
+2026-11-19 18:34:22.459952 INFO::Fitting model to feature number 247, GGB9759_SGB15370
+2026-11-19 18:34:22.46106 INFO::Fitting model to feature number 248, Clostridium_sp_AF12_28
+2026-11-19 18:34:22.462146 INFO::Fitting model to feature number 249, bacterium_210917_DFI_7_65
+2026-11-19 18:34:22.463263 INFO::Fitting model to feature number 250, GGB9537_SGB14940
+2026-11-19 18:34:22.464438 INFO::Fitting model to feature number 251, Mediterraneibacter_sp_NSJ_151
+2026-11-19 18:34:22.465616 INFO::Fitting model to feature number 252, Coprobacter_fastidiosus
+2026-11-19 18:34:22.466731 INFO::Fitting model to feature number 253, Bacteroides_salyersiae
+2026-11-19 18:34:22.46788 INFO::Fitting model to feature number 254, GGB38239_SGB47716
+2026-11-19 18:34:22.468994 INFO::Fitting model to feature number 255, Rothia_mucilaginosa
+2026-11-19 18:34:22.470107 INFO::Fitting model to feature number 256, Guopingia_tenuis
+2026-11-19 18:34:22.471194 INFO::Fitting model to feature number 257, Jingyaoa_shaoxingensis
+2026-11-19 18:34:22.472323 INFO::Fitting model to feature number 258, Anaerotignum_faecicola
+2026-11-19 18:34:22.473555 INFO::Fitting model to feature number 259, Prevotella_corporis
+2026-11-19 18:34:22.47471 INFO::Fitting model to feature number 260, GGB9063_SGB13982
+2026-11-19 18:34:22.475815 INFO::Fitting model to feature number 261, GGB9770_SGB15390
+2026-11-19 18:34:22.476943 INFO::Fitting model to feature number 262, Intestinimonas_butyriciproducens
+2026-11-19 18:34:22.478044 INFO::Fitting model to feature number 263, Intestinibacter_bartlettii
+2026-11-19 18:34:22.479169 INFO::Fitting model to feature number 264, GGB3537_SGB4727
+2026-11-19 18:34:22.48028 INFO::Fitting model to feature number 265, Intestinimonas_gabonensis
+2026-11-19 18:34:22.481375 INFO::Fitting model to feature number 266, Blautia_faecicola
+2026-11-19 18:34:22.482491 INFO::Fitting model to feature number 267, GGB74463_SGB54347
+2026-11-19 18:34:22.483592 INFO::Fitting model to feature number 268, GGB9491_SGB14888
+2026-11-19 18:34:22.484691 INFO::Fitting model to feature number 269, GGB2848_SGB3813
+2026-11-19 18:34:22.485799 INFO::Fitting model to feature number 270, Streptococcus_anginosus
+2026-11-19 18:34:22.486925 INFO::Fitting model to feature number 271, Ligaoa_zhengdingensis
+2026-11-19 18:34:22.488052 INFO::Fitting model to feature number 272, Lentihominibacter_faecis
+2026-11-19 18:34:22.489204 INFO::Fitting model to feature number 273, Bianquea_renquensis
+2026-11-19 18:34:22.490375 INFO::Fitting model to feature number 274, Oscillibacter_sp_PC13
+2026-11-19 18:34:22.491491 INFO::Fitting model to feature number 275, GGB2980_SGB3962
+2026-11-19 18:34:22.492616 INFO::Fitting model to feature number 276, Prevotella_buccalis
+2026-11-19 18:34:22.493755 INFO::Fitting model to feature number 277, Ruminococcus_sp_AF13_28
+2026-11-19 18:34:22.494952 INFO::Fitting model to feature number 278, Enterocloster_asparagiformis
+2026-11-19 18:34:22.496076 INFO::Fitting model to feature number 279, Pseudoflavonifractor_capillosus
+2026-11-19 18:34:22.497286 INFO::Fitting model to feature number 280, Haemophilus_parainfluenzae
+2026-11-19 18:34:22.498388 INFO::Fitting model to feature number 281, Raoultella_ornithinolytica
+2026-11-19 18:34:22.499477 INFO::Fitting model to feature number 282, Clostridiales_bacterium
+2026-11-19 18:34:22.500571 INFO::Fitting model to feature number 283, Streptococcus_australis
+2026-11-19 18:34:22.501769 INFO::Fitting model to feature number 284, Blautia_stercoris
+2026-11-19 18:34:22.502887 INFO::Fitting model to feature number 285, Bacteroides_thetaiotaomicron
+2026-11-19 18:34:22.504014 INFO::Fitting model to feature number 286, Bacteroides_nordii
+2026-11-19 18:34:22.505113 INFO::Fitting model to feature number 287, Hungatella_hathewayi
+2026-11-19 18:34:22.50636 INFO::Fitting model to feature number 288, Enterobacter_hormaechei
+2026-11-19 18:34:22.507485 INFO::Fitting model to feature number 289, Gehongia_tenuis
+2026-11-19 18:34:22.508595 INFO::Fitting model to feature number 290, GGB9730_SGB15290
+2026-11-19 18:34:22.509686 INFO::Fitting model to feature number 291, GGB45432_SGB63101
+2026-11-19 18:34:22.510789 INFO::Fitting model to feature number 292, GGB9561_SGB14972
+2026-11-19 18:34:22.51192 INFO::Fitting model to feature number 293, Clostridium_sp_Marseille_P3244
+2026-11-19 18:34:22.513012 INFO::Fitting model to feature number 294, GGB9531_SGB14932
+2026-11-19 18:34:22.514132 INFO::Fitting model to feature number 295, GGB58233_SGB79883
+2026-11-19 18:34:22.515236 INFO::Fitting model to feature number 296, Phocaeicola_massiliensis
+2026-11-19 18:34:22.516367 INFO::Fitting model to feature number 297, GGB58158_SGB79798
+2026-11-19 18:34:22.51751 INFO::Fitting model to feature number 298, Wansuia_hejianensis
+2026-11-19 18:34:22.518695 INFO::Fitting model to feature number 299, TM7_phylum_sp_oral_taxon_352
+2026-11-19 18:34:22.519891 INFO::Fitting model to feature number 300, Luoshenia_tenuis
+2026-11-19 18:34:22.521056 INFO::Fitting model to feature number 301, Synergistes_jonesii
+2026-11-19 18:34:22.522273 INFO::Fitting model to feature number 302, Streptococcus_sanguinis
+2026-11-19 18:34:22.523541 INFO::Fitting model to feature number 303, Eisenbergiella_tayi
+2026-11-19 18:34:22.524689 INFO::Fitting model to feature number 304, Pyramidobacter_piscolens
+2026-11-19 18:34:22.525812 INFO::Fitting model to feature number 305, Christensenella_minuta
+2026-11-19 18:34:22.526952 INFO::Fitting model to feature number 306, Enterocloster_citroniae
+2026-11-19 18:34:22.528077 INFO::Fitting model to feature number 307, Lachnotalea_sp_AF33_28
+2026-11-19 18:34:22.529191 INFO::Fitting model to feature number 308, Veillonella_parvula
+2026-11-19 18:34:22.530335 INFO::Fitting model to feature number 309, Fumia_xinanensis
+2026-11-19 18:34:22.531488 INFO::Fitting model to feature number 310, Anaerotruncus_colihominis
+2026-11-19 18:34:22.532731 INFO::Fitting model to feature number 311, Massiliimalia_massiliensis
+2026-11-19 18:34:22.533991 INFO::Fitting model to feature number 312, Megamonas_funiformis
+2026-11-19 18:34:22.535234 INFO::Fitting model to feature number 313, Veillonella_rogosae
+2026-11-19 18:34:22.536448 INFO::Fitting model to feature number 314, Enterocloster_hominis
+2026-11-19 18:34:22.537721 INFO::Fitting model to feature number 315, Evtepia_gabavorous
+2026-11-19 18:34:22.53892 INFO::Fitting model to feature number 316, Streptococcus_thermophilus
+2026-11-19 18:34:22.540106 INFO::Fitting model to feature number 317, Holdemania_massiliensis
+2026-11-19 18:34:22.541325 INFO::Fitting model to feature number 318, Alistipes_finegoldii
+2026-11-19 18:34:22.542542 INFO::Fitting model to feature number 319, Faecalibacillus_faecis
+2026-11-19 18:34:22.543686 INFO::Fitting model to feature number 320, Eggerthella_lenta
+2026-11-19 18:34:22.544831 INFO::Fitting model to feature number 321, Bifidobacterium_dentium
+2026-11-19 18:34:22.545996 INFO::Fitting model to feature number 322, GGB41458_SGB58520
+2026-11-19 18:34:22.54715 INFO::Fitting model to feature number 323, GGB34228_SGB72916
+2026-11-19 18:34:22.548322 INFO::Fitting model to feature number 324, Butyricimonas_faecihominis
+2026-11-19 18:34:22.549501 INFO::Fitting model to feature number 325, Dielma_fastidiosa
+2026-11-19 18:34:22.550634 INFO::Fitting model to feature number 326, Gordonibacter_pamelaeae
+2026-11-19 18:34:22.551802 INFO::Fitting model to feature number 327, Veillonella_tobetsuensis
+2026-11-19 18:34:22.552927 INFO::Fitting model to feature number 328, Clostridium_innocuum
+2026-11-19 18:34:22.554073 INFO::Fitting model to feature number 329, Enterocloster_bolteae
+2026-11-19 18:34:22.55523 INFO::Fitting model to feature number 330, Clostridium_sp_AT4
+2026-11-19 18:34:22.556437 INFO::Fitting model to feature number 331, Veillonella_atypica
+2026-11-19 18:34:22.55767 INFO::Fitting model to feature number 332, Veillonella_dispar
+2026-11-19 18:34:22.55889 INFO::Fitting model to feature number 333, Enterocloster_aldenensis
+2026-11-19 18:34:22.560086 INFO::Fitting model to feature number 334, Raoultibacter_timonensis
+2026-11-19 18:34:22.561218 INFO::Fitting model to feature number 335, Clostridium_scindens
+2026-11-19 18:34:22.562325 INFO::Fitting model to feature number 336, GGB55957_SGB77276
+2026-11-19 18:34:22.563506 INFO::Fitting model to feature number 337, Streptococcus_rubneri
+2026-11-19 18:34:22.564589 INFO::Fitting model to feature number 338, Granulicatella_SGB8255
+2026-11-19 18:34:22.565737 INFO::Fitting model to feature number 339, Faecalicatena_contorta
+2026-11-19 18:34:22.566877 INFO::Fitting model to feature number 340, Dialister_invisus
+2026-11-19 18:34:22.568083 INFO::Fitting model to feature number 341, Streptococcus_sp_F0442
+2026-11-19 18:34:22.569219 INFO::Fitting model to feature number 342, Butyricimonas_paravirosa
+2026-11-19 18:34:22.570366 INFO::Fitting model to feature number 343, Schaalia_SGB17157
+2026-11-19 18:34:22.571524 INFO::Fitting model to feature number 344, Clostridium_symbiosum
+2026-11-19 18:34:22.572803 INFO::Fitting model to feature number 345, Massilioclostridium_coli
+2026-11-19 18:34:22.574125 INFO::Fitting model to feature number 346, Segatella_sinensis
+2026-11-19 18:34:22.575395 INFO::Fitting model to feature number 347, Anaerofilum_hominis
+2026-11-19 18:34:22.576623 INFO::Fitting model to feature number 348, Eisenbergiella_massiliensis
+2026-11-19 18:34:22.577809 INFO::Fitting model to feature number 349, Klebsiella_michiganensis
+2026-11-19 18:34:22.579014 INFO::Fitting model to feature number 350, GGB12785_SGB19823
+2026-11-19 18:34:22.580239 INFO::Fitting model to feature number 351, Clostridia_bacterium_UC5_1_1D1
+2026-11-19 18:34:22.581484 INFO::Fitting model to feature number 352, Enterocloster_lavalensis
+2026-11-19 18:34:22.582656 INFO::Fitting model to feature number 353, Neobittarella_massiliensis
+2026-11-19 18:34:22.583809 INFO::Fitting model to feature number 354, Cuneatibacter_sp_NSJ_177
+2026-11-19 18:34:22.584966 INFO::Fitting model to feature number 355, Erysipelatoclostridium_ramosum
+2026-11-19 18:34:22.586104 INFO::Fitting model to feature number 356, Actinomyces_sp_oral_taxon_448
+2026-11-19 18:34:22.587325 INFO::Fitting model to feature number 357, Streptococcus_cristatus
+2026-11-19 18:34:22.58847 INFO::Fitting model to feature number 358, Prevotella_stercorea
+2026-11-19 18:34:22.589629 INFO::Fitting model to feature number 359, Gemella_sanguinis
+2026-11-19 18:34:22.590745 INFO::Fitting model to feature number 360, Actinomyces_sp_ICM47
+2026-11-19 18:34:22.591847 INFO::Fitting model to feature number 361, Escherichia_marmotae
+2026-11-19 18:34:22.592944 INFO::Fitting model to feature number 362, TM7_phylum_sp_oral_taxon_348
+2026-11-19 18:34:22.594127 INFO::Fitting model to feature number 363, GGB4456_SGB6141
+2026-11-19 18:34:22.595229 INFO::Fitting model to feature number 364, Bacteroides_clarus
+2026-11-19 18:34:22.596319 INFO::Fitting model to feature number 365, Phocaeicola_sartorii
+2026-11-19 18:34:22.597425 INFO::Fitting model to feature number 366, Fusobacterium_periodonticum
+2026-11-19 18:34:22.598533 INFO::Fitting model to feature number 367, Sutterella_wadsworthensis
+2026-11-19 18:34:22.599655 INFO::Fitting model to feature number 368, GGB51647_SGB4348
+2026-11-19 18:34:22.600763 INFO::Fitting model to feature number 369, GGB3363_SGB4447
+2026-11-19 18:34:22.601883 INFO::Fitting model to feature number 370, Ligilactobacillus_salivarius
+2026-11-19 18:34:22.60307 INFO::Fitting model to feature number 371, Negativibacillus_massiliensis
+2026-11-19 18:34:22.604192 INFO::Fitting model to feature number 372, GGB6649_SGB9391
+2026-11-19 18:34:22.605317 INFO::Fitting model to feature number 373, Hydrogeniiclostridium_mannosilyticum
+2026-11-19 18:34:22.606517 INFO::Fitting model to feature number 374, Mediterraneibacter_glycyrrhizinilyticus
+2026-11-19 18:34:22.60767 INFO::Fitting model to feature number 375, Intestinimonas_sp_MSJ_38
+2026-11-19 18:34:22.608819 INFO::Fitting model to feature number 376, GGB9501_SGB14898
+2026-11-19 18:34:22.610037 INFO::Fitting model to feature number 377, Zhenpiania_hominis
+2026-11-19 18:34:22.611174 INFO::Fitting model to feature number 378, GGB45613_SGB63326
+2026-11-19 18:34:22.612333 INFO::Fitting model to feature number 379, Streptococcus_mitis
+2026-11-19 18:34:22.613479 INFO::Fitting model to feature number 380, Lactobacillus_gasseri
+2026-11-19 18:34:22.61462 INFO::Fitting model to feature number 381, Enterobacter_roggenkampii
+2026-11-19 18:34:22.615739 INFO::Fitting model to feature number 382, Streptococcus_vestibularis
+2026-11-19 18:34:22.616908 INFO::Fitting model to feature number 383, Bittarella_massiliensis
+2026-11-19 18:34:22.61809 INFO::Fitting model to feature number 384, Streptococcus_sinensis
+2026-11-19 18:34:22.619259 INFO::Fitting model to feature number 385, Pseudoflavonifractor_gallinarum
+2026-11-19 18:34:22.620412 INFO::Fitting model to feature number 386, Longicatena_caecimuris
+2026-11-19 18:34:22.621561 INFO::Fitting model to feature number 387, Streptococcus_gordonii
+2026-11-19 18:34:22.62279 INFO::Fitting model to feature number 388, Candidatus_Nanosynsacchari_sp_TM7_ANC_38_39_G1_1
+2026-11-19 18:34:22.624086 INFO::Fitting model to feature number 389, Gemella_morbillorum
+2026-11-19 18:34:22.625292 INFO::Fitting model to feature number 390, Mogibacterium_diversum
+2026-11-19 18:34:22.626463 INFO::Fitting model to feature number 391, Lactonifactor_longoviformis
+2026-11-19 18:34:22.627635 INFO::Fitting model to feature number 392, GGB12798_SGB135773
+2026-11-19 18:34:22.628845 INFO::Fitting model to feature number 393, Schaalia_odontolytica
+2026-11-19 18:34:22.630072 INFO::Fitting model to feature number 394, Actinomyces_graevenitzii
+2026-11-19 18:34:22.631297 INFO::Fitting model to feature number 395, GGB3444_SGB4594
+2026-11-19 18:34:22.632495 INFO::Fitting model to feature number 396, Christensenella_hongkongensis
+2026-11-19 18:34:22.63367 INFO::Fitting model to feature number 397, Actinomyces_bouchesdurhonensis
+2026-11-19 18:34:22.63485 INFO::Fitting model to feature number 398, Enterobacter_kobei
+2026-11-19 18:34:22.636057 INFO::Fitting model to feature number 399, Actinomyces_dentalis
+2026-11-19 18:34:22.63741 INFO::Fitting model to feature number 400, Eubacterium_sulci
+2026-11-19 18:34:22.638624 INFO::Fitting model to feature number 401, Diplocloster_agilis
+2026-11-19 18:34:22.639941 INFO::Fitting model to feature number 402, Enterocloster_clostridioformis
+2026-11-19 18:34:22.641198 INFO::Fitting model to feature number 403, Parascardovia_denticolens
+2026-11-19 18:34:22.656386 INFO::Fitting model to feature number 404, Actinomyces_oris
+2026-11-19 18:34:22.657659 INFO::Fitting model to feature number 405, Candidatus_Saccharibacteria_unclassified_SGB19846
+2026-11-19 18:34:22.658786 INFO::Fitting model to feature number 406, Schaalia_SGB17168
+2026-11-19 18:34:22.659945 INFO::Fitting model to feature number 407, GGB9694_SGB15204
+2026-11-19 18:34:22.661041 INFO::Fitting model to feature number 408, Streptococcus_oralis
+2026-11-19 18:34:22.662158 INFO::Fitting model to feature number 409, TM7_phylum_sp_oral_taxon_350
+2026-11-19 18:34:22.663267 INFO::Fitting model to feature number 410, Schaalia_SGB17158
+2026-11-19 18:34:22.664374 INFO::Fitting model to feature number 411, Lachnoclostridium_sp_An138
+2026-11-19 18:34:22.665445 INFO::Fitting model to feature number 412, Streptococcus_mutans
+2026-11-19 18:34:22.66654 INFO::Fitting model to feature number 413, Solobacterium_SGB6829
+2026-11-19 18:34:22.667614 INFO::Fitting model to feature number 414, Candidatus_Nanoperiomorbus_periodonticus
+2026-11-19 18:34:22.668688 INFO::Fitting model to feature number 415, Lactobacillus_crispatus
+2026-11-19 18:34:22.669757 INFO::Fitting model to feature number 416, Shuttleworthia_satelles
+2026-11-19 18:34:22.670818 INFO::Fitting model to feature number 417, Scardovia_inopinata
+2026-11-19 18:34:22.671888 INFO::Fitting model to feature number 418, Anaerofustis_stercorihominis
+2026-11-19 18:34:22.67299 INFO::Fitting model to feature number 419, Propionibacterium_acidifaciens
+2026-11-19 18:34:22.674101 INFO::Fitting model to feature number 420, GGB12785_SGB19827
+2026-11-19 18:34:22.675175 INFO::Fitting model to feature number 421, TM7_phylum_sp_oral_taxon_349
+2026-11-19 18:34:22.676249 INFO::Fitting model to feature number 422, Roseburia_sp_AM23_20
+2026-11-19 18:34:22.677319 INFO::Fitting model to feature number 423, Actinomyces_SGB17132
+2026-11-19 18:34:22.678409 INFO::Fitting model to feature number 424, Granulicatella_adiacens
+2026-11-19 18:34:22.679493 INFO::Fitting model to feature number 425, Olsenella_sp_oral_taxon_807
+2026-11-19 18:34:22.680594 INFO::Fitting model to feature number 426, Phascolarctobacterium_SGB5790
+2026-11-19 18:34:22.681658 INFO::Fitting model to feature number 427, Blautia_SGB71764
+2026-11-19 18:34:22.682744 INFO::Fitting model to feature number 428, GGB3109_SGB4121
+2026-11-19 18:34:22.683846 INFO::Fitting model to feature number 429, Blautia_hansenii
+2026-11-19 18:34:22.684972 INFO::Fitting model to feature number 430, Megasphaera_micronuciformis
+2026-11-19 18:34:22.686041 INFO::Fitting model to feature number 431, Gemella_haemolysans
+2026-11-19 18:34:22.687105 INFO::Fitting model to feature number 432, Oribacterium_sinus
+2026-11-19 18:34:22.688177 INFO::Fitting model to feature number 433, Lentihominibacter_hominis
+2026-11-19 18:34:22.689266 INFO::Fitting model to feature number 434, Massiliimalia_timonensis
+2026-11-19 18:34:22.690363 INFO::Fitting model to feature number 435, Actinomyces_sp_ph3
+2026-11-19 18:34:22.691461 INFO::Fitting model to feature number 436, bacterium_210917_SL_2_15
+2026-11-19 18:34:22.692524 INFO::Fitting model to feature number 437, Oribacterium_parvum
+2026-11-19 18:34:22.693612 INFO::Fitting model to feature number 438, Lancefieldella_parvula
+2026-11-19 18:34:22.694685 INFO::Fitting model to feature number 439, Dialister_pneumosintes
+2026-11-19 18:34:22.695808 INFO::Fitting model to feature number 440, Blautia_caecimuris
+2026-11-19 18:34:22.696893 INFO::Fitting model to feature number 441, GGB3109_SGB4119
+2026-11-19 18:34:22.69798 INFO::Fitting model to feature number 442, Blautia_producta
+2026-11-19 18:34:22.699054 INFO::Fitting model to feature number 443, Clostridium_spiroforme
+2026-11-19 18:34:22.70017 INFO::Fitting model to feature number 444, Eubacterium_callanderi
+2026-11-19 18:34:22.701324 INFO::Fitting model to feature number 445, Corynebacterium_durum
+2026-11-19 18:34:22.70249 INFO::Fitting model to feature number 446, Peptostreptococcus_stomatis
+2026-11-19 18:34:22.703664 INFO::Fitting model to feature number 447, Parvimonas_micra
+2026-11-19 18:34:22.704901 INFO::Fitting model to feature number 448, GGB4277_SGB5832
+2026-11-19 18:34:22.706149 INFO::Fitting model to feature number 449, Enterococcus_faecalis
+2026-11-19 18:34:22.707321 INFO::Fitting model to feature number 450, Rothia_SGB49305
+2026-11-19 18:34:22.708451 INFO::Fitting model to feature number 451, Anaerostipes_caccae
+2026-11-19 18:34:22.709588 INFO::Fitting model to feature number 452, GGB9619_SGB15067
+2026-11-19 18:34:22.710721 INFO::Fitting model to feature number 453, GGB3740_SGB5077
+2026-11-19 18:34:22.711838 INFO::Fitting model to feature number 454, GGB9602_SGB15028
+2026-11-19 18:34:22.712993 INFO::Fitting model to feature number 455, Ruminococcus_lactaris
+2026-11-19 18:34:22.714325 INFO::Fitting model to feature number 456, GGB2982_SGB3964
+2026-11-19 18:34:22.715535 INFO::Fitting model to feature number 457, GGB9719_SGB15272
+2026-11-19 18:34:22.716728 INFO::Fitting model to feature number 458, Weissella_cibaria
+2026-11-19 18:34:22.717856 INFO::Fitting model to feature number 459, Lachnoclostridium_pacaense
+2026-11-19 18:34:22.718977 INFO::Fitting model to feature number 460, GGB9453_SGB14845
+2026-11-19 18:34:22.72015 INFO::Fitting model to feature number 461, Eubacterium_hominis
+2026-11-19 18:34:22.721319 INFO::Fitting model to feature number 462, Neisseria_subflava
+2026-11-19 18:34:22.72244 INFO::Fitting model to feature number 463, Desulfovibrio_desulfuricans
+2026-11-19 18:34:22.723587 INFO::Fitting model to feature number 464, Turicibacter_bilis
+2026-11-19 18:34:22.724743 INFO::Fitting model to feature number 465, GGB9767_SGB15385
+2026-11-19 18:34:22.725851 INFO::Fitting model to feature number 466, GGB9302_SGB14263
+2026-11-19 18:34:22.726966 INFO::Fitting model to feature number 467, Enterococcus_faecium
+2026-11-19 18:34:22.728069 INFO::Fitting model to feature number 468, GGB9590_SGB15012
+2026-11-19 18:34:22.729203 INFO::Fitting model to feature number 469, Mediterraneibacter_massiliensis
+2026-11-19 18:34:22.730367 INFO::Fitting model to feature number 470, Limosilactobacillus_mucosae
+2026-11-19 18:34:22.731529 INFO::Fitting model to feature number 471, Weissella_confusa
+2026-11-19 18:34:22.732669 INFO::Fitting model to feature number 472, Yeguia_hominis
+2026-11-19 18:34:22.733764 INFO::Fitting model to feature number 473, Diplocloster_modestus
+2026-11-19 18:34:22.734856 INFO::Fitting model to feature number 474, Christensenella_timonensis
+2026-11-19 18:34:22.735959 INFO::Fitting model to feature number 475, Clostridium_saudiense
+2026-11-19 18:34:22.737074 INFO::Fitting model to feature number 476, Candidatus_Nanosynbacter_sp_HMT_352
+2026-11-19 18:34:22.738179 INFO::Fitting model to feature number 477, Emergencia_timonensis
+2026-11-19 18:34:22.739314 INFO::Fitting model to feature number 478, Turicibacter_sanguinis
+2026-11-19 18:34:22.740439 INFO::Fitting model to feature number 479, Phascolarctobacterium_succinatutens
+2026-11-19 18:34:22.741555 INFO::Fitting model to feature number 480, Faecalimonas_umbilicata
+2026-11-19 18:34:22.742654 INFO::Fitting model to feature number 481, Finegoldia_magna
+2026-11-19 18:34:22.743767 INFO::Fitting model to feature number 482, Anaerococcus_obesiensis
+2026-11-19 18:34:22.744895 INFO::Fitting model to feature number 483, Citrobacter_freundii
+2026-11-19 18:34:22.745997 INFO::Fitting model to feature number 484, Campylobacter_ureolyticus
+2026-11-19 18:34:22.747149 INFO::Fitting model to feature number 485, Peptoniphilus_harei
+2026-11-19 18:34:22.748273 INFO::Fitting model to feature number 486, Citrobacter_portucalensis
+2026-11-19 18:34:22.749386 INFO::Fitting model to feature number 487, Solobacterium_SGB6828
+2026-11-19 18:34:22.750503 INFO::Fitting model to feature number 488, GGB88417_SGB135709
+2026-11-19 18:34:22.751611 INFO::Fitting model to feature number 489, Megasphaera_elsdenii
+2026-11-19 18:34:22.752701 INFO::Fitting model to feature number 490, Streptococcus_intermedius
+2026-11-19 18:34:22.753794 INFO::Fitting model to feature number 491, Clostridium_sp_1001270J_160509_D11
+2026-11-19 18:34:22.754926 INFO::Fitting model to feature number 492, Schaalia_SGB17154
+2026-11-19 18:34:22.756045 INFO::Fitting model to feature number 493, Schaalia_SGB17153
+2026-11-19 18:34:22.757203 INFO::Fitting model to feature number 494, Streptococcus_constellatus
+2026-11-19 18:34:22.758345 INFO::Fitting model to feature number 495, Aggregatibacter_segnis
+2026-11-19 18:34:22.759453 INFO::Fitting model to feature number 496, Solobacterium_SGB6834
+2026-11-19 18:34:22.760578 INFO::Fitting model to feature number 497, Streptococcus_infantis
+2026-11-19 18:34:22.761694 INFO::Fitting model to feature number 498, Peptoniphilus_lacrimalis
+2026-11-19 18:34:22.76282 INFO::Fitting model to feature number 499, Peptostreptococcus_SGB749
+2026-11-19 18:34:22.763954 INFO::Fitting model to feature number 500, Actinomyces_naeslundii
+2026-11-19 18:34:22.765036 INFO::Fitting model to feature number 501, Eubacteriales_Family_XIII_Incertae_Sedis_unclassified_SGB3978
+2026-11-19 18:34:22.766133 INFO::Fitting model to feature number 502, GGB3304_SGB4365
+2026-11-19 18:34:22.767227 INFO::Fitting model to feature number 503, Mogibacterium_pumilum
+2026-11-19 18:34:22.768328 INFO::Fitting model to feature number 504, Porphyromonas_uenonis
+2026-11-19 18:34:22.769481 INFO::Fitting model to feature number 505, Porphyromonas_somerae
+2026-11-19 18:34:22.770576 INFO::Fitting model to feature number 506, Eubacterium_brachy
+2026-11-19 18:34:22.77167 INFO::Fitting model to feature number 507, Arachnia_propionica
+2026-11-19 18:34:22.772814 INFO::Fitting model to feature number 508, Clostridium_methylpentosum
+2026-11-19 18:34:22.77397 INFO::Fitting model to feature number 509, Oscillospiraceae_unclassified_SGB15256
+2026-11-19 18:34:22.775165 INFO::Fitting model to feature number 510, Provencibacterium_massiliense
+2026-11-19 18:34:22.77625 INFO::Fitting model to feature number 511, Clostridium_perfringens
+2026-11-19 18:34:22.777333 INFO::Fitting model to feature number 512, Tyzzerella_nexilis
+2026-11-19 18:34:22.778429 INFO::Fitting model to feature number 513, Scardovia_wiggsiae
+2026-11-19 18:34:22.779523 INFO::Fitting model to feature number 514, Alloscardovia_omnicolens
+2026-11-19 18:34:22.780684 INFO::Fitting model to feature number 515, Abiotrophia_defectiva
+2026-11-19 18:34:22.781921 INFO::Fitting model to feature number 516, Pseudoflavonifractor_phocaeensis
+2026-11-19 18:34:22.783111 INFO::Fitting model to feature number 517, Streptococcus_sobrinus
+2026-11-19 18:34:22.784267 INFO::Fitting model to feature number 518, Lancefieldella_rimae
+2026-11-19 18:34:22.785399 INFO::Fitting model to feature number 519, Holdemanella_porci
+2026-11-19 18:34:22.786483 INFO::Fitting model to feature number 520, Corynebacterium_argentoratense
+2026-11-19 18:34:22.787559 INFO::Fitting model to feature number 521, Roseburia_SGB4939
+2026-11-19 18:34:22.788635 INFO::Fitting model to feature number 522, Pseudoflavonifractor_sp_AF19_9AC
+2026-11-19 18:34:22.789832 INFO::Fitting model to feature number 523, Rothia_aeria
+2026-11-19 18:34:22.790991 INFO::Fitting model to feature number 524, Sellimonas_intestinalis
+2026-11-19 18:34:22.792147 INFO::Fitting model to feature number 525, Schaalia_turicensis
+2026-11-19 18:34:22.793305 INFO::Fitting model to feature number 526, Candidatus_Nanosynbacter_SGB19893
+2026-11-19 18:34:22.794429 INFO::Fitting model to feature number 527, Streptococcus_gallolyticus
+2026-11-19 18:34:22.795557 INFO::Fitting model to feature number 528, Candidatus_Nanosynbacter_lyticus
+2026-11-19 18:34:22.796674 INFO::Fitting model to feature number 529, Eubacterium_saphenum
+2026-11-19 18:34:22.79782 INFO::Fitting model to feature number 530, Porphyromonas_SGB1980
+2026-11-19 18:34:22.798938 INFO::Fitting model to feature number 531, Bulleidia_extructa
+2026-11-19 18:34:22.80006 INFO::Fitting model to feature number 532, GGB9712_SGB15244
+2026-11-19 18:34:22.801164 INFO::Fitting model to feature number 533, GGB9347_SGB14313
+2026-11-19 18:34:22.802277 INFO::Fitting model to feature number 534, GGB1663_SGB2279
+2026-11-19 18:34:22.803405 INFO::Fitting model to feature number 535, Vescimonas_fastidiosa
+2026-11-19 18:34:22.804574 INFO::Fitting model to feature number 536, GGB3429_SGB71704
+2026-11-19 18:34:22.805752 INFO::Fitting model to feature number 537, Fournierella_massiliensis
+2026-11-19 18:34:22.807454 INFO::Fitting model to feature number 538, GGB9533_SGB14936
+2026-11-19 18:34:22.80865 INFO::Fitting model to feature number 539, GGB9724_SGB15278
+2026-11-19 18:34:22.809773 INFO::Fitting model to feature number 540, GGB31234_SGB14869
+2026-11-19 18:34:22.810875 INFO::Fitting model to feature number 541, GGB2977_SGB3959
+2026-11-19 18:34:22.811997 INFO::Fitting model to feature number 542, Alistipes_SGB2302
+2026-11-19 18:34:22.813116 INFO::Fitting model to feature number 543, Porphyromonas_SGB1982
+2026-11-19 18:34:22.814216 INFO::Fitting model to feature number 544, Massilimicrobiota_timonensis
+2026-11-19 18:34:22.8153 INFO::Fitting model to feature number 545, GGB3034_SGB4030
+2026-11-19 18:34:22.816394 INFO::Fitting model to feature number 546, Desulfovibrio_piger
+2026-11-19 18:34:22.817511 INFO::Fitting model to feature number 547, Alloprevotella_tannerae
+2026-11-19 18:34:22.818638 INFO::Fitting model to feature number 548, Eisenbergiella_sp_OF01_20
+2026-11-19 18:34:22.819769 INFO::Fitting model to feature number 549, GGB1495_SGB2071
+2026-11-19 18:34:22.820881 INFO::Fitting model to feature number 550, Eubacteriales_unclassified_SGB15150
+2026-11-19 18:34:22.822013 INFO::Fitting model to feature number 551, Porphyromonas_SGB1979
+2026-11-19 18:34:22.823218 INFO::Fitting model to feature number 552, Pseudomonas_aeruginosa
+2026-11-19 18:34:22.824373 INFO::Fitting model to feature number 553, GGB3385_SGB4471
+2026-11-19 18:34:22.825459 INFO::Fitting model to feature number 554, Lachnoanaerobaculum_sp_ICM7
+2026-11-19 18:34:22.826555 INFO::Fitting model to feature number 555, Abiotrophia_sp_HMSC24B09
+2026-11-19 18:34:22.827638 INFO::Fitting model to feature number 556, Anaerotruncus_massiliensis
+2026-11-19 18:34:22.828718 INFO::Fitting model to feature number 557, GGB3385_SGB4472
+2026-11-19 18:34:22.829815 INFO::Fitting model to feature number 558, Clostridium_paraputrificum
+2026-11-19 18:34:22.83091 INFO::Fitting model to feature number 559, Raoultibacter_massiliensis
+2026-11-19 18:34:22.831992 INFO::Fitting model to feature number 560, Fusobacterium_nucleatum
+2026-11-19 18:34:22.833155 INFO::Fitting model to feature number 561, Fusobacterium_varium
+2026-11-19 18:34:22.834292 INFO::Fitting model to feature number 562, Porphyromonas_asaccharolytica
+2026-11-19 18:34:22.835391 INFO::Fitting model to feature number 563, Peptostreptococcus_anaerobius
+2026-11-19 18:34:22.83647 INFO::Fitting model to feature number 564, Actinobaculum_sp_oral_taxon_183
+2026-11-19 18:34:22.837555 INFO::Fitting model to feature number 565, Solobacterium_moorei
+2026-11-19 18:34:22.838629 INFO::Fitting model to feature number 566, Candidatus_Saccharibacteria_bacterium_oral_taxon_955
+2026-11-19 18:34:22.839731 INFO::Fitting model to feature number 567, Eubacterium_infirmum
+2026-11-19 18:34:22.840827 INFO::Fitting model to feature number 568, Porphyromonas_SGB1977
+2026-11-19 18:34:22.841916 INFO::Fitting model to feature number 569, Morganella_morganii
+2026-11-19 18:34:22.843063 INFO::Fitting model to feature number 570, Merdimonas_faecis
+2026-11-19 18:34:22.844167 INFO::Fitting model to feature number 571, Eubacterium_sp_c_25
+2026-11-19 18:34:22.84526 INFO::Fitting model to feature number 572, Anaeroglobus_geminatus
+2026-11-19 18:34:22.846377 INFO::Fitting model to feature number 573, Enterococcus_avium
+2026-11-19 18:34:22.847523 INFO::Fitting model to feature number 574, Schaalia_meyeri
+2026-11-19 18:34:22.848645 INFO::Fitting model to feature number 575, Mediterraneibacter_SGB4607
+2026-11-19 18:34:22.84974 INFO::Fitting model to feature number 576, Porphyromonas_SGB1983
+2026-11-19 18:34:22.850837 INFO::Fitting model to feature number 577, Criibacterium_bergeronii
+2026-11-19 18:34:22.851918 INFO::Fitting model to feature number 578, Prevotella_intermedia
+2026-11-19 18:34:22.853027 INFO::Fitting model to feature number 579, Eikenella_corrodens
+2026-11-19 18:34:22.854124 INFO::Fitting model to feature number 580, Porphyromonas_endodontalis
+2026-11-19 18:34:22.855223 INFO::Fitting model to feature number 581, Olsenella_uli
+2026-11-19 18:34:22.856396 INFO::Fitting model to feature number 582, Oribacterium_sp_oral_taxon_102
+2026-11-19 18:34:22.857504 INFO::Fitting model to feature number 583, Pauljensenia_hongkongensis
+2026-11-19 18:34:22.858616 INFO::Fitting model to feature number 584, Eubacterium_nodatum
+2026-11-19 18:34:22.859715 INFO::Fitting model to feature number 585, GGB12788_SGB19838
+2026-11-19 18:34:22.860834 INFO::Fitting model to feature number 586, Schaalia_cardiffensis
+2026-11-19 18:34:22.876731 INFO::Fitting model to feature number 587, Fretibacterium_fastidiosum
+2026-11-19 18:34:22.878068 INFO::Fitting model to feature number 588, GGB38873_SGB47522
+2026-11-19 18:34:22.879248 INFO::Fitting model to feature number 589, Mogibacterium_timidum
+2026-11-19 18:34:22.880355 INFO::Fitting model to feature number 590, Olsenella_phocaeensis
+2026-11-19 18:34:22.881451 INFO::Fitting model to feature number 591, Filifactor_alocis
+2026-11-19 18:34:22.882578 INFO::Fitting model to feature number 592, Slackia_exigua
+2026-11-19 18:34:22.883676 INFO::Fitting model to feature number 593, Cryptobacterium_curtum
+2026-11-19 18:34:22.884767 INFO::Fitting model to feature number 594, Olsenella_profusa
+2026-11-19 18:34:22.88586 INFO::Fitting model to feature number 595, Oscillibacter_ruminantium
+2026-11-19 18:34:22.886966 INFO::Fitting model to feature number 596, Candidatus_Saccharibacteria_bacterium_oral_taxon_488
+2026-11-19 18:34:22.888104 INFO::Fitting model to feature number 597, Parvimonas_sp_oral_taxon_393
+2026-11-19 18:34:22.889288 INFO::Fitting model to feature number 598, GGB96297_SGB123797
+2026-11-19 18:34:22.925603 INFO::Counting total values for each feature
+2026-11-19 18:34:22.953504 INFO::Writing filtered data to file data/output/maaslin2_harbin_crc_vs_harbin_normal/features/filtered_data.tsv
+2026-11-19 18:34:23.032659 INFO::Writing filtered, normalized data to file data/output/maaslin2_harbin_crc_vs_harbin_normal/features/filtered_data_norm.tsv
+2026-11-19 18:34:23.121886 INFO::Writing filtered, normalized, transformed data to file data/output/maaslin2_harbin_crc_vs_harbin_normal/features/filtered_data_norm_transformed.tsv
+2026-11-19 18:34:23.258637 INFO::Writing residuals to file data/output/maaslin2_harbin_crc_vs_harbin_normal/fits/residuals.rds
+2026-11-19 18:34:23.329525 INFO::Writing fitted values to file data/output/maaslin2_harbin_crc_vs_harbin_normal/fits/fitted.rds
+2026-11-19 18:34:23.393063 INFO::Writing all results to file (ordered by increasing q-values): data/output/maaslin2_harbin_crc_vs_harbin_normal/all_results.tsv
+2026-11-19 18:34:23.398965 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): data/output/maaslin2_harbin_crc_vs_harbin_normal/significant_results.tsv
+2026-11-19 18:34:23.401231 INFO::Writing heatmap of significant results to file: data/output/maaslin2_harbin_crc_vs_harbin_normal/heatmap.pdf
+2026-11-19 18:34:23.443519 INFO::Writing association plots (one for each significant association) to output folder: data/output/maaslin2_harbin_crc_vs_harbin_normal
+2026-11-19 18:34:23.448361 INFO::Plotting associations from most to least significant, grouped by metadata
+2026-11-19 18:34:23.448778 INFO::Plotting data for metadata number 1, disease
+2026-11-19 18:34:23.449784 INFO::Creating boxplot for categorical data, disease vs Gemella_morbillorum
+2026-11-19 18:34:23.571891 INFO::Creating boxplot for categorical data, disease vs Parvimonas_micra
+2026-11-19 18:34:23.667495 INFO::Creating boxplot for categorical data, disease vs Peptostreptococcus_stomatis
+2026-11-19 18:34:23.782691 INFO::Creating boxplot for categorical data, disease vs Granulicatella_adiacens
+2026-11-19 18:34:24.048254 INFO::Creating boxplot for categorical data, disease vs Mogibacterium_diversum
+2026-11-19 18:34:24.696196 INFO::Creating boxplot for categorical data, disease vs Solobacterium_moorei
+2026-11-19 18:34:25.423702 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_nucleatum
+2026-11-19 18:34:25.635762 INFO::Creating boxplot for categorical data, disease vs Schaalia_odontolytica
+2026-11-19 18:34:25.911591 INFO::Creating boxplot for categorical data, disease vs Streptococcus_constellatus
+2026-11-19 18:34:26.178508 INFO::Creating boxplot for categorical data, disease vs Clostridiales_bacterium_KLE1615
+2026-11-19 18:34:26.476078 INFO::Creating boxplot for categorical data, disease vs Streptococcus_anginosus
+2026-11-19 18:34:26.656632 INFO::Creating boxplot for categorical data, disease vs Gemella_sanguinis
+2026-11-19 18:34:26.779476 INFO::Creating boxplot for categorical data, disease vs Dialister_pneumosintes
+2026-11-19 18:34:26.902782 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_periodonticum
+2026-11-19 18:34:27.019244 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17158
+2026-11-19 18:34:27.134705 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17154
+2026-11-19 18:34:27.238809 INFO::Creating boxplot for categorical data, disease vs Schaalia_meyeri
+2026-11-19 18:34:27.34412 INFO::Creating boxplot for categorical data, disease vs Actinomyces_SGB17132
+2026-11-19 18:34:27.428889 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17168
+2026-11-19 18:34:27.524115 INFO::Creating boxplot for categorical data, disease vs Lancefieldella_parvula
+2026-11-19 18:34:27.618687 INFO::Creating boxplot for categorical data, disease vs Streptococcus_oralis
+2026-11-19 18:34:27.716781 INFO::Creating boxplot for categorical data, disease vs Lachnospira_pectinoschiza
+2026-11-19 18:34:27.812264 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM33_3
+2026-11-19 18:34:27.909446 INFO::Creating boxplot for categorical data, disease vs TM7_phylum_sp_oral_taxon_348
+2026-11-19 18:34:28.000056 INFO::Creating boxplot for categorical data, disease vs Slackia_exigua
+2026-11-19 18:34:28.103175 INFO::Creating boxplot for categorical data, disease vs Eubacterium_infirmum
+2026-11-19 18:34:28.200439 INFO::Creating boxplot for categorical data, disease vs Mogibacterium_timidum
+2026-11-19 18:34:28.289429 INFO::Creating boxplot for categorical data, disease vs Roseburia_faecis
+2026-11-19 18:34:28.380205 INFO::Creating boxplot for categorical data, disease vs Eikenella_corrodens
+2026-11-19 18:34:28.47983 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sulci
+2026-11-19 18:34:28.568958 INFO::Creating boxplot for categorical data, disease vs Lachnospira_eligens
+2026-11-19 18:34:28.66082 INFO::Creating boxplot for categorical data, disease vs Candidatus_Nanosynbacter_lyticus
+2026-11-19 18:34:28.756983 INFO::Creating boxplot for categorical data, disease vs Erysipelatoclostridium_ramosum
+2026-11-19 18:34:28.850874 INFO::Creating boxplot for categorical data, disease vs Roseburia_intestinalis
+2026-11-19 18:34:28.942624 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17157
+2026-11-19 18:34:29.080267 INFO::Creating boxplot for categorical data, disease vs Corynebacterium_durum
+2026-11-19 18:34:29.184438 INFO::Creating boxplot for categorical data, disease vs Candidatus_Nanosynsacchari_sp_TM7_ANC_38_39_G1_1
+2026-11-19 18:34:29.278069 INFO::Creating boxplot for categorical data, disease vs Anaerococcus_obesiensis
+2026-11-19 18:34:29.37553 INFO::Creating boxplot for categorical data, disease vs Solobacterium_SGB6829
+2026-11-19 18:34:29.464403 INFO::Creating boxplot for categorical data, disease vs Clostridium_symbiosum
+2026-11-19 18:34:29.559215 INFO::Creating boxplot for categorical data, disease vs Actinomyces_sp_ph3
+2026-11-19 18:34:29.656115 INFO::Creating boxplot for categorical data, disease vs Filifactor_alocis
+2026-11-19 18:34:29.745515 INFO::Creating boxplot for categorical data, disease vs Actinomyces_oris
+2026-11-19 18:34:29.840139 INFO::Creating boxplot for categorical data, disease vs Prevotella_intermedia
+2026-11-19 18:34:29.936583 INFO::Creating boxplot for categorical data, disease vs Candidatus_Saccharibacteria_unclassified_SGB19846
+2026-11-19 18:34:30.023984 INFO::Creating boxplot for categorical data, disease vs Lancefieldella_rimae
+2026-11-19 18:34:30.118479 INFO::Creating boxplot for categorical data, disease vs Blautia_wexlerae
+2026-11-19 18:34:30.214625 INFO::Creating boxplot for categorical data, disease vs GGB3828_SGB5197
+2026-11-19 18:34:30.304364 INFO::Creating boxplot for categorical data, disease vs Gemella_haemolysans
+2026-11-19 18:34:30.397075 INFO::Creating boxplot for categorical data, disease vs GGB9614_SGB15049
+2026-11-19 18:34:30.490573 INFO::Creating boxplot for categorical data, disease vs Brotolimicola_acetigignens
+2026-11-19 18:34:30.580852 INFO::Creating boxplot for categorical data, disease vs Schaalia_turicensis
+2026-11-19 18:34:30.675748 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_bicirculans
+2026-11-19 18:34:30.779329 INFO::Creating boxplot for categorical data, disease vs Eubacterium_rectale
+2026-11-19 18:34:30.873011 INFO::Creating boxplot for categorical data, disease vs Mediterraneibacter_SGB4607
+2026-11-19 18:34:30.967936 INFO::Creating boxplot for categorical data, disease vs Solobacterium_SGB6828
+2026-11-19 18:34:31.062529 INFO::Creating boxplot for categorical data, disease vs Streptococcus_sanguinis
+2026-11-19 18:34:31.156329 INFO::Creating boxplot for categorical data, disease vs Lawsonibacter_SGB15145
+2026-11-19 18:34:31.243775 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF27_2AA
+2026-11-19 18:34:31.338353 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium
+2026-11-19 18:34:31.431374 INFO::Creating boxplot for categorical data, disease vs Anaerobutyricum_hallii
+2026-11-19 18:34:31.518488 INFO::Creating boxplot for categorical data, disease vs Candidatus_Nanosynbacter_sp_HMT_352
+2026-11-19 18:34:31.611805 INFO::Creating boxplot for categorical data, disease vs Clostridium_scindens
+2026-11-19 18:34:31.709257 INFO::Creating boxplot for categorical data, disease vs Clostridium_innocuum
+2026-11-19 18:34:31.80515 INFO::Creating boxplot for categorical data, disease vs Schaalia_cardiffensis
+2026-11-19 18:34:31.89814 INFO::Creating boxplot for categorical data, disease vs GGB12798_SGB135773
+2026-11-19 18:34:32.01542 INFO::Creating boxplot for categorical data, disease vs Escherichia_marmotae
+2026-11-19 18:34:32.122363 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM42_4
+2026-11-19 18:34:32.209658 INFO::Creating boxplot for categorical data, disease vs Streptococcus_infantis
+2026-11-19 18:34:32.3076 INFO::Creating boxplot for categorical data, disease vs Actinomyces_dentalis
+2026-11-19 18:34:32.40507 INFO::Creating boxplot for categorical data, disease vs Abiotrophia_defectiva
+2026-11-19 18:34:32.497769 INFO::Creating boxplot for categorical data, disease vs Granulicatella_SGB8255
+2026-11-19 18:34:32.594463 INFO::Creating boxplot for categorical data, disease vs Streptococcus_cristatus
+2026-11-19 18:34:32.688211 INFO::Creating boxplot for categorical data, disease vs Lachnospira_sp_NSJ_43
+2026-11-19 18:34:32.785541 INFO::Creating boxplot for categorical data, disease vs Eubacterium_ventriosum
+2026-11-19 18:34:32.889527 INFO::Creating boxplot for categorical data, disease vs Anaerostipes_hadrus
+2026-11-19 18:34:33.100401 INFO::Creating boxplot for categorical data, disease vs Eubacterium_nodatum
+2026-11-19 18:34:33.337985 INFO::Creating boxplot for categorical data, disease vs Faecalicatena_contorta
+2026-11-19 18:34:33.445342 INFO::Creating boxplot for categorical data, disease vs Actinomyces_bouchesdurhonensis
+2026-11-19 18:34:33.540358 INFO::Creating boxplot for categorical data, disease vs Pauljensenia_hongkongensis
+2026-11-19 18:34:34.40227 INFO::Creating boxplot for categorical data, disease vs Hungatella_hathewayi
+2026-11-19 18:34:34.58301 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_Marseille_Q4143
+2026-11-19 18:34:35.034211 INFO::Creating boxplot for categorical data, disease vs Rothia_SGB49305
+2026-11-19 18:34:35.953491 INFO::Creating boxplot for categorical data, disease vs Streptococcus_gordonii
+2026-11-19 18:34:36.192559 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_AM48_27BH
+2026-11-19 18:34:36.297363 INFO::Creating boxplot for categorical data, disease vs GGB9616_SGB15052
+2026-11-19 18:34:36.393162 INFO::Creating boxplot for categorical data, disease vs GGB51441_SGB71759
+2026-11-19 18:34:36.49522 INFO::Creating boxplot for categorical data, disease vs Eubacterium_brachy
+2026-11-19 18:34:36.59518 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB4750
+2026-11-19 18:34:36.685778 INFO::Creating boxplot for categorical data, disease vs Candidatus_Saccharibacteria_bacterium_oral_taxon_955
+2026-11-19 18:34:36.785661 INFO::Creating boxplot for categorical data, disease vs Ruthenibacterium_lactatiformans
+2026-11-19 18:34:36.882767 INFO::Creating boxplot for categorical data, disease vs Alloprevotella_tannerae
+2026-11-19 18:34:36.983689 INFO::Creating boxplot for categorical data, disease vs Faecalibacterium_SGB15346
+2026-11-19 18:34:37.078434 INFO::Creating boxplot for categorical data, disease vs Pseudomonas_aeruginosa
+2026-11-19 18:34:37.182588 INFO::Creating boxplot for categorical data, disease vs Coprococcus_eutactus
+2026-11-19 18:34:37.279719 INFO::Creating boxplot for categorical data, disease vs Corynebacterium_argentoratense
+2026-11-19 18:34:37.421086 INFO::Creating boxplot for categorical data, disease vs Segatella_copri
+2026-11-19 18:34:37.517125 INFO::Creating boxplot for categorical data, disease vs GGB9561_SGB14972
+2026-11-19 18:34:37.642015 INFO::Creating boxplot for categorical data, disease vs Eubacterium_callanderi
+2026-11-19 18:34:37.732308 INFO::Creating boxplot for categorical data, disease vs Simiaoa_sunii
+2026-11-19 18:34:37.832909 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_endodontalis
+2026-11-19 18:34:37.943233 INFO::Creating boxplot for categorical data, disease vs Olsenella_uli
+2026-11-19 18:34:38.034897 INFO::Creating boxplot for categorical data, disease vs Olsenella_phocaeensis
+2026-11-19 18:34:38.136671 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM49_4BH
+2026-11-19 18:34:38.235452 INFO::Creating boxplot for categorical data, disease vs Streptococcus_intermedius
+2026-11-19 18:34:38.323816 INFO::Creating boxplot for categorical data, disease vs Candidatus_Saccharibacteria_bacterium_oral_taxon_488
+2026-11-19 18:34:38.422942 INFO::Creating boxplot for categorical data, disease vs Parvimonas_sp_oral_taxon_393
+2026-11-19 18:34:38.519918 INFO::Creating boxplot for categorical data, disease vs Mesosutterella_multiformis
+2026-11-19 18:34:38.608317 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF32_12BH
+2026-11-19 18:34:38.70562 INFO::Creating boxplot for categorical data, disease vs Fusicatenibacter_saccharivorans
+2026-11-19 18:34:38.804842 INFO::Creating boxplot for categorical data, disease vs Lacrimispora_amygdalina
+2026-11-19 18:34:38.894585 INFO::Creating boxplot for categorical data, disease vs Escherichia_coli
+2026-11-19 18:34:38.997579 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB6179
+2026-11-19 18:34:39.106588 INFO::Creating boxplot for categorical data, disease vs Mogibacterium_pumilum
+2026-11-19 18:34:39.200527 INFO::Creating boxplot for categorical data, disease vs Blautia_luti
+2026-11-19 18:34:39.298623 INFO::Creating boxplot for categorical data, disease vs GGB88417_SGB135709
+2026-11-19 18:34:39.397342 INFO::Creating boxplot for categorical data, disease vs Faecalibacterium_prausnitzii
+2026-11-19 18:34:39.489891 INFO::Creating boxplot for categorical data, disease vs Wujia_chipingensis
+2026-11-19 18:34:39.590871 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AM22_11AC
+2026-11-19 18:34:39.740786 INFO::Creating boxplot for categorical data, disease vs GGB9616_SGB15051
+2026-11-19 18:34:39.866671 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_Marseille_Q4145
+2026-11-19 18:34:39.966291 INFO::Creating boxplot for categorical data, disease vs Parasutterella_excrementihominis
+2026-11-19 18:34:40.078061 INFO::Creating boxplot for categorical data, disease vs Actinomyces_naeslundii
+2026-11-19 18:34:40.191066 INFO::Creating boxplot for categorical data, disease vs Anaeroglobus_geminatus
+2026-11-19 18:34:40.293932 INFO::Creating boxplot for categorical data, disease vs TM7_phylum_sp_oral_taxon_352
+2026-11-19 18:34:40.393338 INFO::Creating boxplot for categorical data, disease vs Propionibacterium_acidifaciens
+2026-11-19 18:34:40.496934 INFO::Creating boxplot for categorical data, disease vs GGB12785_SGB19827
+2026-11-19 18:34:40.623273 INFO::Creating boxplot for categorical data, disease vs GGB3363_SGB4447
+2026-11-19 18:34:40.718275 INFO::Creating boxplot for categorical data, disease vs Streptococcus_sinensis
+2026-11-19 18:34:40.823605 INFO::Creating boxplot for categorical data, disease vs Arachnia_propionica
+2026-11-19 18:34:40.931031 INFO::Creating boxplot for categorical data, disease vs Eubacterium_saphenum
+2026-11-19 18:34:41.020673 INFO::Creating boxplot for categorical data, disease vs Olsenella_profusa
+2026-11-19 18:34:41.121991 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_CLA_AA_H215
+2026-11-19 18:34:41.227955 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB6173
+2026-11-19 18:34:41.323907 INFO::Creating boxplot for categorical data, disease vs Oliverpabstia_intestinalis
+2026-11-19 18:34:41.443744 INFO::Creating boxplot for categorical data, disease vs Peptostreptococcus_anaerobius
+2026-11-19 18:34:41.553357 INFO::Creating boxplot for categorical data, disease vs Streptococcus_mitis
+2026-11-19 18:34:41.650484 INFO::Creating boxplot for categorical data, disease vs Eisenbergiella_tayi
+2026-11-19 18:34:41.75747 INFO::Creating boxplot for categorical data, disease vs GGB38873_SGB47522
+2026-11-19 18:34:41.860076 INFO::Creating boxplot for categorical data, disease vs Roseburia_inulinivorans
+2026-11-19 18:34:41.958624 INFO::Creating boxplot for categorical data, disease vs Roseburia_hominis
+2026-11-19 18:34:42.063336 INFO::Creating boxplot for categorical data, disease vs GGB9062_SGB13981
+2026-11-19 18:34:42.169931 INFO::Creating boxplot for categorical data, disease vs Actinomyces_graevenitzii
+2026-11-19 18:34:42.263959 INFO::Creating boxplot for categorical data, disease vs Streptococcus_vestibularis
+2026-11-19 18:34:42.369657 INFO::Creating boxplot for categorical data, disease vs Peptostreptococcus_SGB749
+2026-11-19 18:34:42.477253 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_sp_PC13
+2026-11-19 18:34:42.566949 INFO::Creating boxplot for categorical data, disease vs Rothia_aeria
+2026-11-19 18:34:42.668541 INFO::Creating boxplot for categorical data, disease vs GGB55957_SGB77276
+2026-11-19 18:34:42.770788 INFO::Creating boxplot for categorical data, disease vs Solobacterium_SGB6834
+2026-11-19 18:34:42.867437 INFO::Creating boxplot for categorical data, disease vs Bulleidia_extructa
+2026-11-19 18:34:42.962673 INFO::Creating boxplot for categorical data, disease vs Clostridium_fessum
+2026-11-19 18:34:43.06604 INFO::Creating boxplot for categorical data, disease vs Enterococcus_faecalis
+2026-11-19 18:34:43.171029 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_ruminantium
+2026-11-19 18:34:43.271236 INFO::Creating boxplot for categorical data, disease vs Oribacterium_parvum
+2026-11-19 18:34:43.3743 INFO::Creating boxplot for categorical data, disease vs GGB3385_SGB4472
+2026-11-19 18:34:43.476093 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_bacterium_AF18_31LB
+2026-11-19 18:34:43.57915 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_SGB1977
+2026-11-19 18:34:43.990631 INFO::Creating boxplot for categorical data, disease vs Finegoldia_magna
+2026-11-19 18:34:44.078885 INFO::Creating boxplot for categorical data, disease vs Oribacterium_sinus
+2026-11-19 18:34:44.179778 INFO::Creating boxplot for categorical data, disease vs Peptoniphilus_lacrimalis
+2026-11-19 18:34:44.269528 INFO::Creating boxplot for categorical data, disease vs Fretibacterium_fastidiosum
+2026-11-19 18:34:44.365053 INFO::Creating boxplot for categorical data, disease vs GGB96297_SGB123797
+2026-11-19 18:34:44.463316 INFO::Creating boxplot for categorical data, disease vs Mediterraneibacter_massiliensis
+2026-11-19 18:34:44.554361 INFO::Creating boxplot for categorical data, disease vs Abiotrophia_sp_HMSC24B09
+2026-11-19 18:34:44.645595 INFO::Creating boxplot for categorical data, disease vs Roseburia_sp_AM23_20
+2026-11-19 18:34:44.74006 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF20_17LB
+2026-11-19 18:34:44.825427 INFO::Creating boxplot for categorical data, disease vs Tyzzerella_nexilis
+2026-11-19 18:34:44.921961 INFO::Creating boxplot for categorical data, disease vs Oribacterium_sp_oral_taxon_102
+2026-11-19 18:34:45.009615 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_valericigenes
+2026-11-19 18:34:45.1009 INFO::Creating boxplot for categorical data, disease vs Scardovia_inopinata
+2026-11-19 18:34:45.195081 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_SGB4421
+2026-11-19 18:34:45.283922 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_SGB1980
+2026-11-19 18:34:45.376236 INFO::Creating boxplot for categorical data, disease vs Cryptobacterium_curtum
+2026-11-19 18:34:45.472267 INFO::Creating boxplot for categorical data, disease vs Eggerthella_lenta
+2026-11-19 18:34:45.564191 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_somerae
+2026-11-19 18:34:45.660564 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_gnavus
+2026-11-19 18:34:45.753969 INFO::Creating boxplot for categorical data, disease vs Peptoniphilus_harei
+2026-11-19 18:34:45.84115 INFO::Creating boxplot for categorical data, disease vs Clostridium_SGB4751
+2026-11-19 18:34:45.938957 INFO::Creating boxplot for categorical data, disease vs Agathobaculum_butyriciproducens
+2026-11-19 18:34:46.032909 INFO::Creating boxplot for categorical data, disease vs GGB9758_SGB15368
+2026-11-19 18:34:46.124616 INFO::Creating boxplot for categorical data, disease vs Haemophilus_parainfluenzae
+2026-11-19 18:34:46.21401 INFO::Creating boxplot for categorical data, disease vs Fusobacterium_varium
+2026-11-19 18:34:46.307225 INFO::Creating boxplot for categorical data, disease vs Morganella_morganii
+2026-11-19 18:34:46.396677 INFO::Creating boxplot for categorical data, disease vs GGB9593_SGB15015
+2026-11-19 18:34:46.483294 INFO::Creating boxplot for categorical data, disease vs Olsenella_sp_oral_taxon_807
+2026-11-19 18:34:46.580019 INFO::Creating boxplot for categorical data, disease vs Candidatus_Nanoperiomorbus_periodonticus
+2026-11-19 18:34:46.669183 INFO::Creating boxplot for categorical data, disease vs GGB9602_SGB15031
+2026-11-19 18:34:46.759887 INFO::Creating boxplot for categorical data, disease vs GGB52130_SGB14966
+2026-11-19 18:34:46.848772 INFO::Creating boxplot for categorical data, disease vs Candidatus_Nanosynbacter_SGB19893
+2026-11-19 18:34:46.958732 INFO::Creating boxplot for categorical data, disease vs Bacteroides_uniformis
+2026-11-19 18:34:47.055749 INFO::Creating boxplot for categorical data, disease vs Clostridiaceae_unclassified_SGB4771
+2026-11-19 18:34:47.144401 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_callidus
+2026-11-19 18:34:47.240802 INFO::Creating boxplot for categorical data, disease vs GGB9597_SGB15022
+2026-11-19 18:34:47.338248 INFO::Creating boxplot for categorical data, disease vs Actinomyces_sp_oral_taxon_448
+2026-11-19 18:34:47.459547 INFO::Creating boxplot for categorical data, disease vs Anaerosacchariphilus_sp_NSJ_68
+2026-11-19 18:34:47.565889 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_SGB1979
+2026-11-19 18:34:47.660336 INFO::Creating boxplot for categorical data, disease vs Bacteroides_fragilis
+2026-11-19 18:34:47.763732 INFO::Creating boxplot for categorical data, disease vs GGB9590_SGB15012
+2026-11-19 18:34:47.864068 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_vulgatus
+2026-11-19 18:34:47.953622 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF12_28
+2026-11-19 18:34:48.061654 INFO::Creating boxplot for categorical data, disease vs Eubacteriales_Family_XIII_Incertae_Sedis_unclassified_SGB3978
+2026-11-19 18:34:48.1603 INFO::Creating boxplot for categorical data, disease vs Streptococcus_australis
+2026-11-19 18:34:48.24954 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_bromii
+2026-11-19 18:34:48.348267 INFO::Creating boxplot for categorical data, disease vs Roseburia_sp_AF02_12
+2026-11-19 18:34:48.451056 INFO::Creating boxplot for categorical data, disease vs Synergistes_jonesii
+2026-11-19 18:34:48.542283 INFO::Creating boxplot for categorical data, disease vs GGB3385_SGB4471
+2026-11-19 18:34:48.640016 INFO::Creating boxplot for categorical data, disease vs Anaerofustis_stercorihominis
+2026-11-19 18:34:48.73805 INFO::Creating boxplot for categorical data, disease vs Zhenpiania_hominis
+2026-11-19 18:34:48.834708 INFO::Creating boxplot for categorical data, disease vs TM7_phylum_sp_oral_taxon_349
+2026-11-19 18:34:48.926182 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium_CLA_AA_H244
+2026-11-19 18:34:49.02445 INFO::Creating boxplot for categorical data, disease vs Blautia_obeum
+2026-11-19 18:34:49.126366 INFO::Creating boxplot for categorical data, disease vs Bacteroides_stercoris
+2026-11-19 18:34:49.215128 INFO::Creating boxplot for categorical data, disease vs Alloscardovia_omnicolens
+2026-11-19 18:34:49.310539 INFO::Creating boxplot for categorical data, disease vs Prevotella_corporis
+2026-11-19 18:34:49.404243 INFO::Creating boxplot for categorical data, disease vs Enterococcus_avium
+2026-11-19 18:34:49.498613 INFO::Creating boxplot for categorical data, disease vs GGB12788_SGB19838
+2026-11-19 18:34:49.58703 INFO::Creating boxplot for categorical data, disease vs Schaalia_SGB17153
+2026-11-19 18:34:49.684256 INFO::Creating boxplot for categorical data, disease vs Aggregatibacter_segnis
+2026-11-19 18:34:49.781497 INFO::Creating boxplot for categorical data, disease vs GGB34228_SGB72916
+2026-11-19 18:34:49.899581 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_SGB1983
+2026-11-19 18:34:49.989999 INFO::Creating boxplot for categorical data, disease vs Enterocloster_aldenensis
+2026-11-19 18:34:50.098037 INFO::Creating boxplot for categorical data, disease vs Clostridiales_bacterium
+2026-11-19 18:34:50.193714 INFO::Creating boxplot for categorical data, disease vs Faecalicatena_fissicatena
+2026-11-19 18:34:50.311857 INFO::Creating boxplot for categorical data, disease vs Enterocloster_clostridioformis
+2026-11-19 18:34:50.408341 INFO::Creating boxplot for categorical data, disease vs GGB13404_SGB14252
+2026-11-19 18:34:50.495528 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_asaccharolytica
+2026-11-19 18:34:50.589667 INFO::Creating boxplot for categorical data, disease vs GGB9707_SGB15229
+2026-11-19 18:34:50.686786 INFO::Creating boxplot for categorical data, disease vs GGB3740_SGB5077
+2026-11-19 18:34:50.775129 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_sp_MSJ_31
+2026-11-19 18:34:50.869222 INFO::Creating boxplot for categorical data, disease vs GGB9760_SGB15373
+2026-11-19 18:34:50.981512 INFO::Creating boxplot for categorical data, disease vs Bifidobacterium_adolescentis
+2026-11-19 18:34:51.069962 INFO::Creating boxplot for categorical data, disease vs GGB9618_SGB15065
+2026-11-19 18:34:51.166543 INFO::Creating boxplot for categorical data, disease vs Rothia_mucilaginosa
+2026-11-19 18:34:51.269877 INFO::Creating boxplot for categorical data, disease vs Candidatus_Cibionibacter_quicibialis
+2026-11-19 18:34:51.368491 INFO::Creating boxplot for categorical data, disease vs Faecalibacterium_sp_HTFF
+2026-11-19 18:34:51.474113 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_sp_AF13_28
+2026-11-19 18:34:51.573834 INFO::Creating boxplot for categorical data, disease vs Eubacterium_ramulus
+2026-11-19 18:34:51.682861 INFO::Creating boxplot for categorical data, disease vs Pseudoflavonifractor_gallinarum
+2026-11-19 18:34:51.828678 INFO::Creating boxplot for categorical data, disease vs Blautia_glucerasea
+2026-11-19 18:34:51.935349 INFO::Creating boxplot for categorical data, disease vs Enterocloster_bolteae
+2026-11-19 18:34:52.031296 INFO::Creating boxplot for categorical data, disease vs GGB3619_SGB4894
+2026-11-19 18:34:52.140982 INFO::Creating boxplot for categorical data, disease vs Romboutsia_timonensis
+2026-11-19 18:34:52.244874 INFO::Creating boxplot for categorical data, disease vs Faecalibacillus_faecis
+2026-11-19 18:34:52.347707 INFO::Creating boxplot for categorical data, disease vs Oscillospiraceae_bacterium
+2026-11-19 18:34:52.441731 INFO::Creating boxplot for categorical data, disease vs Christensenella_hongkongensis
+2026-11-19 18:34:52.542392 INFO::Creating boxplot for categorical data, disease vs Porphyromonas_uenonis
+2026-11-19 18:34:52.647192 INFO::Creating boxplot for categorical data, disease vs Lentihominibacter_faecis
+2026-11-19 18:34:52.752292 INFO::Creating boxplot for categorical data, disease vs GGB9766_SGB15383
+2026-11-19 18:34:52.846237 INFO::Creating boxplot for categorical data, disease vs Lachnoanaerobaculum_sp_ICM7
+2026-11-19 18:34:52.951484 INFO::Creating boxplot for categorical data, disease vs Alistipes_finegoldii
+2026-11-19 18:34:53.082618 INFO::Creating boxplot for categorical data, disease vs GGB36267_SGB14177
+2026-11-19 18:34:53.176876 INFO::Creating boxplot for categorical data, disease vs Oscillibacter_sp_ER4
+2026-11-19 18:34:53.290601 INFO::Creating boxplot for categorical data, disease vs Eisenbergiella_sp_OF01_20
+2026-11-19 18:34:53.39791 INFO::Creating boxplot for categorical data, disease vs Bacteroides_intestinalis
+2026-11-19 18:34:53.489675 INFO::Creating boxplot for categorical data, disease vs GGB3109_SGB4121
+2026-11-19 18:34:53.592563 INFO::Creating boxplot for categorical data, disease vs Parasutterella_SGB9260
+2026-11-19 18:34:53.693057 INFO::Creating boxplot for categorical data, disease vs Blautia_sp_MCC283
+2026-11-19 18:34:53.793239 INFO::Creating boxplot for categorical data, disease vs Clostridium_methylpentosum
+2026-11-19 18:34:53.899269 INFO::Creating boxplot for categorical data, disease vs Campylobacter_ureolyticus
+2026-11-19 18:34:53.99729 INFO::Creating boxplot for categorical data, disease vs Roseburia_lenta
+2026-11-19 18:34:54.093186 INFO::Creating boxplot for categorical data, disease vs Shuttleworthia_satelles
+2026-11-19 18:34:54.193505 INFO::Creating boxplot for categorical data, disease vs GGB9730_SGB15291
+2026-11-19 18:34:54.291978 INFO::Creating boxplot for categorical data, disease vs GGB58158_SGB79798
+2026-11-19 18:34:54.390588 INFO::Creating boxplot for categorical data, disease vs Dysosmobacter_welbionis
+2026-11-19 18:34:54.491318 INFO::Creating boxplot for categorical data, disease vs Anaerobutyricum_soehngenii
+2026-11-19 18:34:54.58928 INFO::Creating boxplot for categorical data, disease vs Lachnospiraceae_bacterium
+2026-11-19 18:34:54.684806 INFO::Creating boxplot for categorical data, disease vs GGB9715_SGB15265
+2026-11-19 18:34:54.787726 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sp_AF34_35BH
+2026-11-19 18:34:54.894575 INFO::Creating boxplot for categorical data, disease vs Clostridium_sp_AF36_4
+2026-11-19 18:34:55.006525 INFO::Creating boxplot for categorical data, disease vs Bacteroides_ovatus
+2026-11-19 18:34:55.10809 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_lactaris
+2026-11-19 18:34:55.21132 INFO::Creating boxplot for categorical data, disease vs Gemmiger_formicilis
+2026-11-19 18:34:55.306112 INFO::Creating boxplot for categorical data, disease vs Colidextribacter_sp_210702_DFI_3_9
+2026-11-19 18:34:55.409937 INFO::Creating boxplot for categorical data, disease vs Bacteroides_eggerthii
+2026-11-19 18:34:55.513673 INFO::Creating boxplot for categorical data, disease vs Anaerotignum_sp_MSJ_24
+2026-11-19 18:34:55.61798 INFO::Creating boxplot for categorical data, disease vs GGB9699_SGB15216
+2026-11-19 18:34:55.764291 INFO::Creating boxplot for categorical data, disease vs GGB9619_SGB15067
+2026-11-19 18:34:55.933548 INFO::Creating boxplot for categorical data, disease vs Criibacterium_bergeronii
+2026-11-19 18:34:56.06924 INFO::Creating boxplot for categorical data, disease vs GGB9708_SGB15233
+2026-11-19 18:34:56.187547 INFO::Creating boxplot for categorical data, disease vs Blautia_massiliensis
+2026-11-19 18:34:56.291303 INFO::Creating boxplot for categorical data, disease vs Segatella_sinensis
+2026-11-19 18:34:56.469245 INFO::Creating boxplot for categorical data, disease vs Veillonella_rogosae
+2026-11-19 18:34:56.583866 INFO::Creating boxplot for categorical data, disease vs GGB9813_SGB15447
+2026-11-19 18:34:56.685926 INFO::Creating boxplot for categorical data, disease vs Actinobaculum_sp_oral_taxon_183
+2026-11-19 18:34:56.954915 INFO::Creating boxplot for categorical data, disease vs Prevotella_stercorea
+2026-11-19 18:34:57.515165 INFO::Creating boxplot for categorical data, disease vs Megasphaera_micronuciformis
+2026-11-19 18:34:57.647851 INFO::Creating boxplot for categorical data, disease vs GGB9444_SGB14834
+2026-11-19 18:34:57.760479 INFO::Creating boxplot for categorical data, disease vs GGB9063_SGB13982
+2026-11-19 18:34:57.867113 INFO::Creating boxplot for categorical data, disease vs Blautia_faecis
+2026-11-19 18:34:57.99514 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_sp_MSJ_38
+2026-11-19 18:34:58.113463 INFO::Creating boxplot for categorical data, disease vs GGB9759_SGB15370
+2026-11-19 18:34:58.222184 INFO::Creating boxplot for categorical data, disease vs Alistipes_communis
+2026-11-19 18:34:58.341603 INFO::Creating boxplot for categorical data, disease vs GGB3345_SGB4425
+2026-11-19 18:34:58.447648 INFO::Creating boxplot for categorical data, disease vs Ruminococcus_torques
+2026-11-19 18:34:58.54927 INFO::Creating boxplot for categorical data, disease vs GGB9708_SGB15234
+2026-11-19 18:34:58.648961 INFO::Creating boxplot for categorical data, disease vs Actinomyces_sp_ICM47
+2026-11-19 18:34:58.757627 INFO::Creating boxplot for categorical data, disease vs GGB33586_SGB53517
+2026-11-19 18:34:58.863645 INFO::Creating boxplot for categorical data, disease vs GGB9365_SGB14341
+2026-11-19 18:34:58.964099 INFO::Creating boxplot for categorical data, disease vs Christensenella_timonensis
+2026-11-19 18:34:59.075552 INFO::Creating boxplot for categorical data, disease vs GGB9715_SGB15260
+2026-11-19 18:34:59.181101 INFO::Creating boxplot for categorical data, disease vs Anaerostipes_caccae
+2026-11-19 18:34:59.273874 INFO::Creating boxplot for categorical data, disease vs Massilioclostridium_coli
+2026-11-19 18:34:59.378977 INFO::Creating boxplot for categorical data, disease vs Bacteroides_xylanisolvens
+2026-11-19 18:34:59.480379 INFO::Creating boxplot for categorical data, disease vs GGB13493_SGB15238
+2026-11-19 18:34:59.577666 INFO::Creating boxplot for categorical data, disease vs Fusicatenibacter_sp_CLA_AA_H277
+2026-11-19 18:34:59.679415 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_gabonensis
+2026-11-19 18:34:59.795274 INFO::Creating boxplot for categorical data, disease vs Scardovia_wiggsiae
+2026-11-19 18:34:59.899831 INFO::Creating boxplot for categorical data, disease vs GGB9715_SGB15267
+2026-11-19 18:35:00.011953 INFO::Creating boxplot for categorical data, disease vs Coprobacter_fastidiosus
+2026-11-19 18:35:00.156779 INFO::Creating boxplot for categorical data, disease vs Diplocloster_modestus
+2026-11-19 18:35:00.282239 INFO::Creating boxplot for categorical data, disease vs GGB3034_SGB4030
+2026-11-19 18:35:00.579012 INFO::Creating boxplot for categorical data, disease vs GGB2983_SGB3965
+2026-11-19 18:35:00.759789 INFO::Creating boxplot for categorical data, disease vs GGB3256_SGB4303
+2026-11-19 18:35:00.886876 INFO::Creating boxplot for categorical data, disease vs GGB9595_SGB15019
+2026-11-19 18:35:01.003781 INFO::Creating boxplot for categorical data, disease vs Lactonifactor_longoviformis
+2026-11-19 18:35:01.100381 INFO::Creating boxplot for categorical data, disease vs Phocea_massiliensis
+2026-11-19 18:35:01.216008 INFO::Creating boxplot for categorical data, disease vs Blautia_stercoris
+2026-11-19 18:35:01.327205 INFO::Creating boxplot for categorical data, disease vs Faecalibacillus_intestinalis
+2026-11-19 18:35:01.432599 INFO::Creating boxplot for categorical data, disease vs Bacteroides_cellulosilyticus
+2026-11-19 18:35:01.538918 INFO::Creating boxplot for categorical data, disease vs Clostridium_leptum
+2026-11-19 18:35:01.641743 INFO::Creating boxplot for categorical data, disease vs Streptococcus_mutans
+2026-11-19 18:35:01.746542 INFO::Creating boxplot for categorical data, disease vs GGB3277_SGB4327
+2026-11-19 18:35:01.856777 INFO::Creating boxplot for categorical data, disease vs Coprococcus_comes
+2026-11-19 18:35:02.083598 INFO::Creating boxplot for categorical data, disease vs Streptococcus_parasanguinis
+2026-11-19 18:35:02.291763 INFO::Creating boxplot for categorical data, disease vs GGB9634_SGB15093
+2026-11-19 18:35:02.424885 INFO::Creating boxplot for categorical data, disease vs Blautia_SGB4815
+2026-11-19 18:35:02.524585 INFO::Creating boxplot for categorical data, disease vs bacterium_210917_DFI_7_65
+2026-11-19 18:35:02.622134 INFO::Creating boxplot for categorical data, disease vs GGB3653_SGB4964
+2026-11-19 18:35:02.731754 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sp_AF16_48
+2026-11-19 18:35:02.84565 INFO::Creating boxplot for categorical data, disease vs Veillonella_dispar
+2026-11-19 18:35:03.03384 INFO::Creating boxplot for categorical data, disease vs Barnesiella_intestinihominis
+2026-11-19 18:35:03.15367 INFO::Creating boxplot for categorical data, disease vs Blautia_faecicola
+2026-11-19 18:35:03.265003 INFO::Creating boxplot for categorical data, disease vs Paraprevotella_clara
+2026-11-19 18:35:03.378918 INFO::Creating boxplot for categorical data, disease vs Turicibacter_bilis
+2026-11-19 18:35:03.479367 INFO::Creating boxplot for categorical data, disease vs Blautia_SGB71764
+2026-11-19 18:35:03.586952 INFO::Creating boxplot for categorical data, disease vs Weissella_cibaria
+2026-11-19 18:35:03.716202 INFO::Creating boxplot for categorical data, disease vs Bacteroides_clarus
+2026-11-19 18:35:03.820051 INFO::Creating boxplot for categorical data, disease vs Pyramidobacter_piscolens
+2026-11-19 18:35:03.924455 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_coprocola
+2026-11-19 18:35:04.036495 INFO::Creating boxplot for categorical data, disease vs Desulfovibrio_piger
+2026-11-19 18:35:04.154232 INFO::Creating boxplot for categorical data, disease vs Dialister_invisus
+2026-11-19 18:35:04.970919 INFO::Creating boxplot for categorical data, disease vs GGB49418_SGB69331
+2026-11-19 18:35:05.061244 INFO::Creating boxplot for categorical data, disease vs GGB4456_SGB6141
+2026-11-19 18:35:05.336573 INFO::Creating boxplot for categorical data, disease vs GGB9293_SGB14250
+2026-11-19 18:35:05.453508 INFO::Creating boxplot for categorical data, disease vs Intestinimonas_butyriciproducens
+2026-11-19 18:35:05.553904 INFO::Creating boxplot for categorical data, disease vs Streptococcus_gallolyticus
+2026-11-19 18:35:05.66746 INFO::Creating boxplot for categorical data, disease vs GGB1495_SGB2071
+2026-11-19 18:35:05.794796 INFO::Creating boxplot for categorical data, disease vs Anaerotruncus_colihominis
+2026-11-19 18:35:06.208846 INFO::Creating boxplot for categorical data, disease vs Eubacterium_hominis
+2026-11-19 18:35:06.440334 INFO::Creating boxplot for categorical data, disease vs Akkermansia_muciniphila
+2026-11-19 18:35:06.547443 INFO::Creating boxplot for categorical data, disease vs Eubacterium_sp_c_25
+2026-11-19 18:35:06.666411 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_plebeius
+2026-11-19 18:35:06.767187 INFO::Creating boxplot for categorical data, disease vs GGB9690_SGB15196
+2026-11-19 18:35:06.859699 INFO::Creating boxplot for categorical data, disease vs Enterococcus_faecium
+2026-11-19 18:35:06.966323 INFO::Creating boxplot for categorical data, disease vs Intestinibacter_bartlettii
+2026-11-19 18:35:07.059028 INFO::Creating boxplot for categorical data, disease vs Acidaminococcus_massiliensis
+2026-11-19 18:35:07.152723 INFO::Creating boxplot for categorical data, disease vs Phocaeicola_sartorii
+2026-11-19 18:35:07.245862 INFO::Creating boxplot for categorical data, disease vs Enterobacter_kobei
+2026-11-19 18:35:07.352987 INFO::Creating boxplot for categorical data, disease vs GGB51884_SGB49168
+2026-11-19 18:35:07.452883 INFO::Creating boxplot for categorical data, disease vs Jingyaoa_shaoxingensis
+2026-11-19 18:35:07.549429 INFO::Creating boxplot for categorical data, disease vs Parascardovia_denticolens
+2026-11-19 18:35:07.645505 INFO::Creating boxplot for categorical data, disease vs GGB9534_SGB14937
+2026-11-19 18:35:07.748636 INFO::Creating boxplot for categorical data, disease vs Dialister_hominis
+2026-11-19 18:35:08.66124 INFO::Plotting data for metadata number 2, Age
+2026-11-19 18:35:08.662795 INFO::Creating scatter plot for continuous data, Age vs Schaalia_SGB17158
+0  features are filtered!
+The filtered data has  426  samples and  598  features will be tested!
+Fit linear models ...
+Completed.
+Checking the input data type ...
+The input data is of type: matrix
+The imported data is in a generic 'matrix'/'data.frame' format.
+PASS
+Checking the sample metadata ...
+The specified variables in the formula: disease, Age, Sex
+The available variables in the sample metadata: cohort, disease, type, patientID, Age, BMI, Sex, Stage, Tumor_Location, PNI, mmr_status, RECIST, NeoImmunity, MMR_study
+PASS
+Checking other arguments ...
+PASS
+Obtaining initial estimates ...
+Estimating sample-specific biases ...
+Conducting sensitivity analysis for pseudo-count addition to 0s ...
+For taxa that are significant but do not pass the sensitivity analysis,
+please flag them and proceed with caution, as they are likely false positives.
+For detailed instructions on performing sensitivity analysis,
+please refer to the package vignette.
+ANCOM-BC2 primary results ...
+New names:
+• `` -> `...1`
+# A tibble: 1 × 6
+  Maaslin_filtered_count Maaslin_up_count Maaslin_down_count Final_is_1_count
+                   <int>            <int>              <int>            <int>
+1                    240              122                118              238
+# ℹ 2 more variables: Final_up_count <int>, Final_down_count <int>
+Completed: harbin_crc_vs_harbin_normal
+Warning messages:
+1: There was 1 warning in `mutate()`.
+ℹ In argument: `BMI = as.numeric(BMI)`.
+Caused by warning:
+! NAs introduced by coercion 
+2: In run_crc_comparison(case_cohort = "Harbin", output_prefix = "harbin_crc_vs_harbin_normal",  :
+  harbin_crc_vs_harbin_normal: validated MaAsLin2 results; continuing after a later error: <ggplot2::labels> object is invalid:
+- every label must be named.
+pdf 
+  2 
+pdf 
+  2 
