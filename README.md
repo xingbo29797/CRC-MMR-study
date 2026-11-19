@@ -1,3 +1,2 @@
 # CRC-MMR-study
-
-CRC MMR study project.
+A study for gut microbiome differences between dMMR and pMMR colorectal cancer and their associations with immunotherapy response.
