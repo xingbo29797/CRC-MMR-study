@@ -6,7 +6,7 @@ colorectal cancer, and their associations with immunotherapy response.
 
 ## Repository organization
 
-Planned directory structure:
+Directory structure:
 
 ```text
 CRC-MMR-study/
@@ -35,8 +35,6 @@ Any access restrictions and request procedures will be documented here.
 ## Reproducibility information
 
 - Software and package versions: [To be added]
-- Input data preparation and analysis parameters: [To be added]
-- Script execution instructions: [To be added]
 
 ## Citation and publication version
 
@@ -44,5 +42,4 @@ The following entries are placeholders and will be updated before publication.
 
 - Manuscript citation: [To be added]
 - Manuscript DOI: `doi:xxx`
-- Publication code version: [To be added]
-- Code archive DOI: `doi:xxx`
+
